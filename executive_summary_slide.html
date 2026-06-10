@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Traceability — Executive Summary</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f8f9fa;
+            color: #1a1a2e;
+            padding: 40px;
+            line-height: 1.5;
+        }
+        .slide {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            padding: 48px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 3px solid #1F4E79;
+        }
+        .header h1 {
+            font-size: 28px;
+            color: #1F4E79;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .header .subtitle {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sections {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+            margin-bottom: 32px;
+        }
+        .section {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 24px;
+            border: 1px solid #e9ecef;
+        }
+        .section-full {
+            grid-column: 1 / -1;
+        }
+        .section h2 {
+            font-size: 16px;
+            color: #1F4E79;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #1F4E79;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .section h2 .badge {
+            background: #1F4E79;
+            color: white;
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-weight: 600;
+        }
+        .stat-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 6px 0;
+            border-bottom: 1px solid #e9ecef;
+        }
+        .stat-row:last-child { border-bottom: none; }
+        .stat-row .label { font-size: 13px; color: #495057; }
+        .stat-row .value { font-size: 13px; font-weight: 600; color: #1F4E79; }
+
+        .big-stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+        .big-stat {
+            text-align: center;
+            padding: 20px 12px;
+            background: white;
+            border-radius: 10px;
+            border: 1px solid #e9ecef;
+        }
+        .big-stat .number {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.1;
+        }
+        .big-stat .desc {
+            font-size: 11px;
+            color: #6c757d;
+            margin-top: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .big-stat.green .number { color: #006100; }
+        .big-stat.amber .number { color: #9C5700; }
+        .big-stat.red .number { color: #9C0006; }
+        .big-stat.blue .number { color: #1F4E79; }
+
+        .coverage-bar {
+            margin: 20px 0;
+            background: #e9ecef;
+            border-radius: 8px;
+            height: 32px;
+            display: flex;
+            overflow: hidden;
+        }
+        .coverage-bar .covered {
+            background: linear-gradient(135deg, #28a745, #20c997);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .coverage-bar .partial {
+            background: linear-gradient(135deg, #ffc107, #fd7e14);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .coverage-bar .not-covered {
+            background: #dee2e6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6c757d;
+            font-size: 11px;
+            font-weight: 600;
+        }
+
+        .suite-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 12px;
+        }
+        .suite-table th {
+            background: #1F4E79;
+            color: white;
+            padding: 8px 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+        .suite-table th:not(:first-child) { text-align: center; }
+        .suite-table td {
+            padding: 6px 12px;
+            border-bottom: 1px solid #e9ecef;
+        }
+        .suite-table td:not(:first-child) { text-align: center; }
+        .suite-table tr:hover { background: #f1f8ff; }
+        .suite-table .total-row { background: #e8f4fd; font-weight: 600; }
+
+        .cat-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+        }
+        .cat-chip {
+            background: white;
+            border: 1px solid #e9ecef;
+            border-radius: 6px;
+            padding: 8px 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .cat-chip .name { font-size: 12px; color: #495057; }
+        .cat-chip .count {
+            font-size: 12px;
+            font-weight: 700;
+            color: #1F4E79;
+            background: #e8f4fd;
+            padding: 2px 8px;
+            border-radius: 10px;
+        }
+
+        .portal-cats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px;
+        }
+        .portal-cat {
+            background: white;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 12px;
+            text-align: center;
+        }
+        .portal-cat .name { font-size: 11px; color: #495057; margin-bottom: 4px; }
+        .portal-cat .count { font-size: 20px; font-weight: 700; color: #1F4E79; }
+
+        .legend {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            margin-top: 12px;
+            font-size: 12px;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .legend-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 3px;
+        }
+        .legend-dot.green { background: #28a745; }
+        .legend-dot.amber { background: #ffc107; }
+        .legend-dot.gray { background: #dee2e6; }
+
+        .footer {
+            text-align: center;
+            margin-top: 24px;
+            padding-top: 16px;
+            border-top: 1px solid #e9ecef;
+            font-size: 11px;
+            color: #adb5bd;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #1F4E79 0%, #2d6da3 100%);
+            border-radius: 10px;
+            padding: 20px 24px;
+            color: white;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .highlight-box .big { font-size: 42px; font-weight: 700; }
+        .highlight-box .label { font-size: 13px; opacity: 0.9; margin-top: 4px; }
+    </style>
+</head>
+<body>
+<div class="slide">
+    <div class="header">
+        <h1>NPI Certification — Test Traceability Summary</h1>
+        <div class="subtitle">PORTAL Phase 1 Automation ↔ Vizio 3P Manual Test Suites | June 2026</div>
+    </div>
+
+    <!-- ============ SECTION 1: 3P STATS ============ -->
+    <div class="sections">
+        <div class="section section-full">
+            <h2>Vizio 3P Manual Test Suites <span class="badge">TestRail</span></h2>
+            <table class="suite-table">
+                <thead>
+                    <tr>
+                        <th>Suite Name</th>
+                        <th>Test Cases</th>
+                        <th>Categories</th>
+                        <th>Top Categories</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>TV 101 Full Sweep</td>
+                        <td><strong>2,589</strong></td>
+                        <td>15</td>
+                        <td style="text-align:left; font-size:11px">Network (523) · Power (297) · Remote (219) · Settings (206)</td>
+                    </tr>
+                    <tr>
+                        <td>Remote Control (IR/BT)</td>
+                        <td><strong>359</strong></td>
+                        <td>10</td>
+                        <td style="text-align:left; font-size:11px">IR Functionality (164) · Other (112) · BT (19)</td>
+                    </tr>
+                    <tr>
+                        <td>Wi-Fi Sanity Test</td>
+                        <td><strong>71</strong></td>
+                        <td>10</td>
+                        <td style="text-align:left; font-size:11px">Encryption (12) · 6GHz (9) · 2.4/5GHz (6 each)</td>
+                    </tr>
+                    <tr>
+                        <td>Retail Demo</td>
+                        <td>31</td>
+                        <td>6</td>
+                        <td style="text-align:left; font-size:11px">Demo Content (9) · Demo Launch/Exit (6)</td>
+                    </tr>
+                    <tr>
+                        <td>PQ Functionality</td>
+                        <td>22</td>
+                        <td>8</td>
+                        <td style="text-align:left; font-size:11px">Brightness (5) · Color (4) · Advanced (4)</td>
+                    </tr>
+                    <tr>
+                        <td>Other Suites (6)</td>
+                        <td>33</td>
+                        <td>—</td>
+                        <td style="text-align:left; font-size:11px">OTA (10) · Wi-Fi Perf (10) · MAC/ULPK (5) · OOB (3) · Loop (3) · BT Perf (2)</td>
+                    </tr>
+                    <tr class="total-row">
+                        <td>TOTAL</td>
+                        <td><strong>3,105</strong></td>
+                        <td>—</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- ============ SECTION 2: PORTAL STATS ============ -->
+        <div class="section section-full">
+            <h2>PORTAL Phase 1 Automation Test Cases <span class="badge">62 Total</span></h2>
+            <div class="portal-cats">
+                <div class="portal-cat"><div class="count">9</div><div class="name">Input/HDMI/CEC</div></div>
+                <div class="portal-cat"><div class="count">8</div><div class="name">Network/Connectivity</div></div>
+                <div class="portal-cat"><div class="count">7</div><div class="name">Display/Video</div></div>
+                <div class="portal-cat"><div class="count">6</div><div class="name">Remote Control</div></div>
+                <div class="portal-cat"><div class="count">5</div><div class="name">OOB/OTA Updates</div></div>
+                <div class="portal-cat"><div class="count">5</div><div class="name">Settings/System UI</div></div>
+                <div class="portal-cat"><div class="count">4</div><div class="name">Power Management</div></div>
+                <div class="portal-cat"><div class="count">4</div><div class="name">Device Provisioning</div></div>
+                <div class="portal-cat"><div class="count">4</div><div class="name">OOBE/Initial Setup</div></div>
+                <div class="portal-cat"><div class="count">4</div><div class="name">Streaming Apps</div></div>
+                <div class="portal-cat"><div class="count">3</div><div class="name">Audio Output</div></div>
+                <div class="portal-cat"><div class="count">3</div><div class="name">Antenna/Tuner</div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============ SECTION 3: TRACEABILITY ============ -->
+    <div class="section section-full" style="background: #fff; border: 2px solid #1F4E79;">
+        <h2>Traceability Coverage — Automation vs Manual <span class="badge">Reviewed</span></h2>
+        
+        <div class="highlight-box">
+            <div class="big">155 / 3,105</div>
+            <div class="label">Unique 3P manual test cases are <strong>fully covered</strong> by PORTAL Phase 1 automation (intent-matched)</div>
+        </div>
+
+        <div class="big-stats">
+            <div class="big-stat blue">
+                <div class="number">3,105</div>
+                <div class="desc">Total 3P Test Cases</div>
+            </div>
+            <div class="big-stat green">
+                <div class="number">155</div>
+                <div class="desc">Covered (Intent Match)</div>
+            </div>
+            <div class="big-stat amber">
+                <div class="number">50</div>
+                <div class="desc">Partially Matching</div>
+            </div>
+            <div class="big-stat red">
+                <div class="number">20</div>
+                <div class="desc">Not Matching</div>
+            </div>
+        </div>
+
+        <p style="text-align:center; font-size:13px; color:#495057; margin-bottom:12px;">
+            Out of <strong>3,105</strong> total 3P manual test cases, <strong>205</strong> are covered (fully or partially) by 62 PORTAL automation tests
+        </p>
+
+        <div class="coverage-bar">
+            <div class="covered" style="width: 68.9%;">155 Covered (68.9%)</div>
+            <div class="partial" style="width: 22.2%;">50 Partial (22.2%)</div>
+            <div class="not-covered" style="width: 8.9%;">20 (8.9%)</div>
+        </div>
+
+        <div class="legend">
+            <div class="legend-item"><div class="legend-dot green"></div> Covered — same functional intent & outcome</div>
+            <div class="legend-item"><div class="legend-dot amber"></div> Partial — related but not identical test scope</div>
+            <div class="legend-item"><div class="legend-dot gray"></div> Not Matching — different intent</div>
+        </div>
+
+        <div style="margin-top:24px; display:grid; grid-template-columns: 1fr 1fr; gap:16px;">
+            <div style="background:#f8f9fa; border-radius:8px; padding:16px;">
+                <div style="font-size:12px; font-weight:600; color:#1F4E79; margin-bottom:8px;">Effective Coverage (Covered + Partial)</div>
+                <div style="font-size:28px; font-weight:700; color:#1F4E79;">205 <span style="font-size:14px; color:#6c757d; font-weight:400;">/ 3,105 total 3P test cases (6.6%)</span></div>
+            </div>
+            <div style="background:#f8f9fa; border-radius:8px; padding:16px;">
+                <div style="font-size:12px; font-weight:600; color:#1F4E79; margin-bottom:8px;">PORTAL Automation Reach</div>
+                <div style="font-size:28px; font-weight:700; color:#1F4E79;">62 <span style="font-size:14px; color:#6c757d; font-weight:400;">automation TCs cover 155+ manual scenarios</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        Method: Semantic Embedding Retrieval + LLM Intent Evaluation + Manual Review | Generated June 2026
+    </div>
+</div>
+</body>
+</html>

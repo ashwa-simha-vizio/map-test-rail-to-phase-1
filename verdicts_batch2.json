@@ -1,0 +1,98 @@
+{
+  "TC-VID-006": [
+    {"3p_id": "31008595", "verdict": "YES", "confidence": "HIGH_CONFIDENCE", "reason": "Directly tests cycling through all picture modes (Bright, Calibrated, Calibrated Dark, Sports) in Picture Settings, same functional intent as PORTAL TC"},
+    {"3p_id": "31007613", "verdict": "PARTIAL", "confidence": "MEDIUM_CONFIDENCE", "reason": "Changes picture mode but primary focus is verifying settings persistence across reboots, not cycling through all modes"},
+    {"3p_id": "31007682", "verdict": "NO", "confidence": "HIGH_CONFIDENCE", "reason": "Tests HDMI Picture Size and Position settings, completely unrelated to picture mode switching"},
+    {"3p_id": "31007612", "verdict": "PARTIAL", "confidence": "MEDIUM_CONFIDENCE", "reason": "Changes picture mode via IR remote All Settings menu, but focus is on remote control navigation access to settings, not verifying all mode switching"},
+    {"3p_id": "31007515", "verdict": "PARTIAL", "confidence": "LOW_CONFIDENCE", "reason": "Tests asterisk indicator appearing when picture mode is edited, tangentially related to picture modes but different verification target"},
+    {"3p_id": "31007516", "verdict": "NO", "confidence": "HIGH_CONFIDENCE", "reason": "Tests circular navigation behavior of Quick Settings Menu UI, unrelated to picture mode switching"},
+    {"3p_id": "31008007", "verdict": "NO", "confidence": "HIGH_CONFIDENCE", "reason": "Tests Zoom Mode sector changes in Accessibility, completely different feature from picture modes"},
+    {"3p_id": "31008052", "verdict": "NO", "confidence": "HIGH_CONFIDENCE", "reason": "Tests Digital Style Background Color in Accessibility/Captions, unrelated to picture mode switching"},
+    {"3p_id": "31008600", "verdict": "PARTIAL", "confidence": "MEDIUM_CONFIDENCE", "reason": "Tests editing/saving/deleting custom picture modes, related to picture mode functionality but different focus than cycling through preset modes"},
+    {"3p_id": "31008510", "verdict": "NO", "confidence": "HIGH_CONFIDENCE", "reason": "Tests HDMI Mode listing (Auto/Standard/Compatibility), entirely different setting from display picture modes"}
+  ],
+  "TC-VID-007": [
+    {"3p_id": "31008596", "verdict": "YES", "confidence": "HIGH_CONFIDENCE", "reason": "Directly tests adjusting Brightness from 0 to 100 in Picture Settings and verifying black level changes, identical functional intent"},
+    {"3p_id": "31007612", "verdict": "NO", "confidence": "MEDIUM_CONFIDENCE", "reason": "Tests changing Picture Mode via IR remote in All Settings menu, not brightness adjustment across range"},
+    {"3p_id": "31008595", "verdict": "NO", "confidence": "HIGH_CONFIDENCE", "reason": "Tests cycling through picture modes, not brightness slider adjustment"},
+    {"3p_id": "31007515", "verdict": "NO", "confidence": "HIGH_CONFIDENCE", "reason": "Tests asterisk indicator for edited picture modes, unrelated to brightness adjustment"},
+    {"3p_id": "31008052", "verdict": "NO", "confidence": "HIGH_CONFIDENCE", "reason": "Tests Digital Style Background Color in Accessibility/Captions, completely unrelated to brightness"},
+    {"3p_id": "31008414", "verdict": "NO", "confidence": "HIGH_CONFIDENCE", "reason": "Tests Digital Style Text Color in Accessibility/Captions, completely unrelated to brightness"},
+    {"3p_id": "31007613", "verdict": "NO", "confidence": "HIGH_CONFIDENCE", "reason": "Tests settings persistence across All Settings, not brightness adjustment across range"},
+    {"3p_id": "31007677", "verdict": "NO", "confidence": "HIGH_CONFIDENCE", "reason": "Tests HDMI Color Space Range setting, unrelated to display brightness adjustment"},
+    {"3p_id": "31008389", "verdict": "NO", "confidence": "HIGH_CONFIDENCE", "reason": "Tests View Data Value on first power-on/OOBE exit, completely different feature"},
+    {"3p_id": "31008051", "verdict": "NO", "confidence": "HIGH_CONFIDENCE", "reason": "Tests Digital Style Text Edges Color in Accessibility/Captions, completely unrelated to brightness"}
+  ],
+  "TC-VID-008": [
+    {"3p_id": "31008612", "verdict": "PARTIAL", "confidence": "MEDIUM_CONFIDENCE", "reason": "Tests Contrast Enhancer (Black Detail) feature which is a local contrast enhancement, not the main Contrast slider adjustment"},
+    {"3p_id": "31008608", "verdict": "YES", "confidence": "HIGH_CONFIDENCE", "reason": "Directly tests the Contrast setting in Picture Settings across all picture modes and formats, same functional intent as adjusting contrast across range"},
+    {"3p_id": "31008607", "verdict": "PARTIAL", "confidence": "MEDIUM_CONFIDENCE", "reason": "Tests Black Level setting which affects dark tones but is a separate control from the main Contrast slider"},
+    {"3p_id": "31008052", "verdict": "NO", "confidence": "HIGH_CONFIDENCE", "reason": "Tests Digital Style Background Color in Accessibility/Captions, completely unrelated to contrast adjustment"},
+    {"3p_id": "31008595", "verdict": "NO", "confidence": "HIGH_CONFIDENCE", "reason": "Tests cycling through picture modes, not contrast slider adjustment"},
+    {"3p_id": "31008615", "verdict": "PARTIAL", "confidence": "LOW_CONFIDENCE", "reason": "Tests Active Pixel Tuning (Local Contrast) which is an advanced picture processing feature, not the main Contrast slider"},
+    {"3p_id": "31007677", "verdict": "NO", "confidence": "HIGH_CONFIDENCE", "reason": "Tests HDMI Color Space Range setting, unrelated to contrast adjustment"},
+    {"3p_id": "31008596", "verdict": "NO", "confidence": "HIGH_CONFIDENCE", "reason": "Tests Brightness setting adjustment, different picture control than Contrast"},
+    {"3p_id": "31007612", "verdict": "NO", "confidence": "MEDIUM_CONFIDENCE", "reason": "Tests changing Picture Mode via IR remote, not contrast adjustment across range"},
+    {"3p_id": "31008051", "verdict": "NO", "confidence": "HIGH_CONFIDENCE", "reason": "Tests Digital Style Text Edges Color in Accessibility/Captions, completely unrelated to contrast"}
+  ],
+  "TC-AUD-001": [
+    {"3p_id": "31008140", "verdict": "PARTIAL", "confidence": "MEDIUM_CONFIDENCE", "reason": "Tests audio attenuation to 50% during TalkBack, involves internal speaker audio but tests a different behavior (accessibility audio ducking)"},
+    {"3p_id": "31007603", "verdict": "PARTIAL", "confidence": "HIGH_CONFIDENCE", "reason": "Tests TV Speaker Test utility which verifies speakers produce audio, but uses diagnostic tool rather than verifying speaker path during normal content playback"},
+    {"3p_id": "31007606", "verdict": "NO", "confidence": "MEDIUM_CONFIDENCE", "reason": "Tests that TV Speaker Test app works without network connectivity, different intent from verifying internal speaker audio output"},
+    {"3p_id": "31007602", "verdict": "PARTIAL", "confidence": "MEDIUM_CONFIDENCE", "reason": "Navigates to TV Speaker Test in support menu, tests speaker diagnostic utility rather than active audio path during content playback"},
+    {"3p_id": "31008141", "verdict": "NO", "confidence": "MEDIUM_CONFIDENCE", "reason": "Tests TalkBack audio attenuation behavior during app playback, different intent from confirming basic internal speaker output"},
+    {"3p_id": "31008181", "verdict": "NO", "confidence": "HIGH_CONFIDENCE", "reason": "Tests that TV does not auto power-off when audio app stops playing, completely different intent"},
+    {"3p_id": "31007605", "verdict": "PARTIAL", "confidence": "MEDIUM_CONFIDENCE", "reason": "Tests left/right speaker pink noise output via Speaker Test utility, verifies speakers work but via diagnostic tool not content playback"},
+    {"3p_id": "31008308", "verdict": "NO", "confidence": "HIGH_CONFIDENCE", "reason": "Tests that audio type indicator is blank when no audio is playing or unsupported format, opposite scenario from verifying audio output"},
+    {"3p_id": "31008448", "verdict": "NO", "confidence": "HIGH_CONFIDENCE", "reason": "Tests volume control OSD notification display, unrelated to verifying internal speaker audio output path"},
+    {"3p_id": "31007547", "verdict": "NO", "confidence": "HIGH_CONFIDENCE", "reason": "Tests that no soundbar info shows on Support Code page when soundbar is connected, unrelated to internal speaker verification"}
+  ],
+  "TC-AUD-002": [
+    {"3p_id": "31008448", "verdict": "YES", "confidence": "HIGH_CONFIDENCE", "reason": "Tests Volume +/- from remote and verifies on-screen volume notification displays with level, same functional intent of verifying volume adjustment with OSD indicator"},
+    {"3p_id": "31007617", "verdict": "NO", "confidence": "HIGH_CONFIDENCE", "reason": "Tests that Volume/Mute keys do NOT dismiss the All Settings Menu, different intent from verifying volume incremental adjustment"},
+    {"3p_id": "31008449", "verdict": "PARTIAL", "confidence": "MEDIUM_CONFIDENCE", "reason": "Tests volume notification with soundbar connected showing 1-100 range in steps of 4, related to volume OSD but different device context (soundbar vs TV speakers)"},
+    {"3p_id": "31008581", "verdict": "PARTIAL", "confidence": "MEDIUM_CONFIDENCE", "reason": "Tests Volume Control Display behavior when Quick Settings is open, related to volume OSD but tests a specific interaction scenario rather than basic volume adjustment"},
+    {"3p_id": "31008580", "verdict": "NO", "confidence": "HIGH_CONFIDENCE", "reason": "Tests volume control via voice commands with BT remote, different input method from Volume Up/Down buttons"},
+    {"3p_id": "31007984", "verdict": "NO", "confidence": "HIGH_CONFIDENCE", "reason": "Tests that Vol/Mute/Info keys do not affect No Signal countdown timer, completely different intent"},
+    {"3p_id": "31008239", "verdict": "NO", "confidence": "MEDIUM_CONFIDENCE", "reason": "Tests volume notification POSITION when Zoom Mode is enabled, not basic volume adjustment functionality"},
+    {"3p_id": "31009042", "verdict": "NO", "confidence": "HIGH_CONFIDENCE", "reason": "Tests MUTE button functionality, not Volume Up/Down adjustment"},
+    {"3p_id": "31009037", "verdict": "PARTIAL", "confidence": "HIGH_CONFIDENCE", "reason": "Tests Vol+ button on remote control, directly related but likely a basic remote control button verification rather than full incremental adjustment with OSD validation"},
+    {"3p_id": "31008131", "verdict": "NO", "confidence": "HIGH_CONFIDENCE", "reason": "Tests Input Change Control display conditions, completely unrelated to volume adjustment"}
+  ],
+  "TC-AUD-003": [
+    {"3p_id": "31008140", "verdict": "NO", "confidence": "MEDIUM_CONFIDENCE", "reason": "Tests TalkBack audio attenuation to 50% of system volume, different behavior from mute/unmute toggle"},
+    {"3p_id": "31007617", "verdict": "NO", "confidence": "HIGH_CONFIDENCE", "reason": "Tests that Mute key does not dismiss All Settings Menu, completely different intent from verifying mute/unmute audio behavior"},
+    {"3p_id": "31008448", "verdict": "NO", "confidence": "HIGH_CONFIDENCE", "reason": "Tests volume control notification display, not mute/unmute functionality"},
+    {"3p_id": "31009042", "verdict": "YES", "confidence": "MEDIUM_CONFIDENCE", "reason": "Tests MUTE button on remote control in Volume/Mute category, likely verifies mute/unmute toggle behavior though steps are not detailed"},
+    {"3p_id": "31013883", "verdict": "YES", "confidence": "MEDIUM_CONFIDENCE", "reason": "Tests MUTE button on remote control in Audio category, likely verifies mute/unmute toggle behavior though steps are not detailed"},
+    {"3p_id": "31008141", "verdict": "NO", "confidence": "MEDIUM_CONFIDENCE", "reason": "Tests TalkBack media audio attenuation during playback, different intent from basic mute/unmute"},
+    {"3p_id": "31009186", "verdict": "NO", "confidence": "HIGH_CONFIDENCE", "reason": "Tests Store Demo volume behavior where volume resets to muted/0 after power cycle, different context and intent from normal mute toggle"},
+    {"3p_id": "31007640", "verdict": "NO", "confidence": "HIGH_CONFIDENCE", "reason": "Tests that Mute key launches TTS (text-to-speech) on OOBE language screen, completely different function from audio mute/unmute"},
+    {"3p_id": "31008934", "verdict": "YES", "confidence": "MEDIUM_CONFIDENCE", "reason": "Tests MUTE button on BT remote control, likely verifies mute/unmute toggle behavior though steps are not detailed"},
+    {"3p_id": "31008181", "verdict": "NO", "confidence": "HIGH_CONFIDENCE", "reason": "Tests that TV does not auto power-off when audio app stops playing, completely different intent from mute/unmute"}
+  ],
+  "TC-NET-001": [
+    {"3p_id": "31009380", "verdict": "PARTIAL", "confidence": "MEDIUM_CONFIDENCE", "reason": "Verifies Wi-Fi Networks list is displayed in settings, part of connection flow but only tests network discovery not actual connection and IP assignment"},
+    {"3p_id": "31009363", "verdict": "PARTIAL", "confidence": "MEDIUM_CONFIDENCE", "reason": "Tests network connected state when SSID is connected but no internet, related scenario but tests a failure condition rather than successful connection"},
+    {"3p_id": "31009383", "verdict": "PARTIAL", "confidence": "MEDIUM_CONFIDENCE", "reason": "Verifies Network Connection info display, related to checking connection status but focuses on UI display rather than the act of connecting"},
+    {"3p_id": "31009401", "verdict": "PARTIAL", "confidence": "MEDIUM_CONFIDENCE", "reason": "Tests Add Network Manually functionality, a related network connection method but different approach (manual entry vs selecting from list)"},
+    {"3p_id": "31009384", "verdict": "PARTIAL", "confidence": "LOW_CONFIDENCE", "reason": "Tests Network Information display page, shows connection details but is about viewing info, not performing the connection itself"},
+    {"3p_id": "31009388", "verdict": "PARTIAL", "confidence": "MEDIUM_CONFIDENCE", "reason": "Verifies IPv4 IP Address display in network info, directly related to IP assignment verification but only the display aspect not the connection process"},
+    {"3p_id": "31009385", "verdict": "PARTIAL", "confidence": "MEDIUM_CONFIDENCE", "reason": "Verifies Wi-Fi Network field in Network Connection info, related to confirming connection but tests info display not the connection act"},
+    {"3p_id": "31009382", "verdict": "NO", "confidence": "MEDIUM_CONFIDENCE", "reason": "Tests More Available Networks list display, only shows available networks without testing actual connection"},
+    {"3p_id": "31009396", "verdict": "NO", "confidence": "HIGH_CONFIDENCE", "reason": "Tests Wi-Fi Security info display field, not about establishing or verifying a Wi-Fi connection"},
+    {"3p_id": "31007994", "verdict": "NO", "confidence": "HIGH_CONFIDENCE", "reason": "Tests slow internet notification during OS update downloads, completely different scenario from basic Wi-Fi connection verification"}
+  ],
+  "TC-NET-002": [
+    {"3p_id": "31005940", "verdict": "NO", "confidence": "HIGH_CONFIDENCE", "reason": "Tests slow internet notification during OS updates, unrelated to verifying 5GHz connection with 4K streaming"},
+    {"3p_id": "31007994", "verdict": "NO", "confidence": "HIGH_CONFIDENCE", "reason": "Tests slow internet notification during OS update downloads, unrelated to 5GHz connection with 4K content playback"},
+    {"3p_id": "31007274", "verdict": "NO", "confidence": "HIGH_CONFIDENCE", "reason": "Tests Wake on LAN magic packet functionality, completely different intent even though it mentions 5GHz AP configuration"},
+    {"3p_id": "31005651", "verdict": "NO", "confidence": "HIGH_CONFIDENCE", "reason": "Tests WiFi network screen UI display during OOBE, not about connecting to 5GHz and streaming 4K content"},
+    {"3p_id": "31005995", "verdict": "NO", "confidence": "HIGH_CONFIDENCE", "reason": "Tests WiFi network screen UI display during OOBE, not about 5GHz connection or 4K streaming capability"},
+    {"3p_id": "31009386", "verdict": "PARTIAL", "confidence": "LOW_CONFIDENCE", "reason": "Tests Wi-Fi Signal Strength display in network info, tangentially related to connection quality but does not test 5GHz connection or 4K streaming"},
+    {"3p_id": "31005713", "verdict": "NO", "confidence": "HIGH_CONFIDENCE", "reason": "Tests Spanish-language WiFi connection screen UI during OOBE, not about 5GHz connection or streaming"},
+    {"3p_id": "31007273", "verdict": "PARTIAL", "confidence": "LOW_CONFIDENCE", "reason": "Tests Wi-Fi interface On/Off toggle with 5GHz/2.4GHz AP, involves 5GHz connectivity but tests interface cycling not stable 4K streaming"},
+    {"3p_id": "31006136", "verdict": "NO", "confidence": "HIGH_CONFIDENCE", "reason": "Tests offline mode display behavior when network is disconnected, opposite scenario from verifying stable connection"},
+    {"3p_id": "31006221", "verdict": "NO", "confidence": "HIGH_CONFIDENCE", "reason": "Tests offline mode display behavior when network is disconnected, opposite scenario from verifying stable 5GHz connection"}
+  ]
+}

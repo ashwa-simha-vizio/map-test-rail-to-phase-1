@@ -1,0 +1,3784 @@
+{
+  "TC-PWR-002": [
+    {
+      "3p_id": "31007309",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Powers on TV from off state but uses native app hotkey (not Power button) and expects app screen (not home screen)"
+    },
+    {
+      "3p_id": "31007301",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests AC power off/on (plug cycle) to VIZIO Home, not standby-to-on via remote Power button"
+    },
+    {
+      "3p_id": "31008429",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests power on via app hotkeys specifically after maintenance reboot scenario, different intent entirely"
+    },
+    {
+      "3p_id": "31007303",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Same mechanism (remote power button to VIZIO Home) but specifically tests 3-second ECO mode timing benchmark rather than general power-on functionality"
+    },
+    {
+      "3p_id": "31008426",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests maintenance reboot trigger behavior after 6 DC power cycles, not standard power-on from standby"
+    },
+    {
+      "3p_id": "31008428",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests power on via HTML app hotkeys after maintenance reboot, completely different scenario and trigger"
+    },
+    {
+      "3p_id": "31007800",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests front panel button to power OFF the TV, not power ON via remote"
+    },
+    {
+      "3p_id": "31008430",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests power on via Home hotkey specifically after maintenance reboot, different scenario and purpose"
+    },
+    {
+      "3p_id": "31008432",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests maintenance reboot timing by powering on at 5th minute after 6th DC OFF, unrelated to basic power-on"
+    },
+    {
+      "3p_id": "31007311",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Powers on from off state via native app hotkeys to Last Used TV Input, different trigger mechanism and expected landing screen"
+    }
+  ],
+  "TC-PWR-003": [
+    {
+      "3p_id": "31013870",
+      "verdict": "YES",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Step 2 tests pressing power button to power off the TV, same functional intent as portal test's standby transition via remote"
+    },
+    {
+      "3p_id": "31008431",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests maintenance reboot suspension behavior after 6 DC power cycles, unrelated to standby transition"
+    },
+    {
+      "3p_id": "31007302",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests AC power off/on timing in ECO mode, not remote-initiated standby transition"
+    },
+    {
+      "3p_id": "31007800",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "TV powers off to standby but via front panel button with 3-second countdown, not via remote Power button"
+    },
+    {
+      "3p_id": "31009029",
+      "verdict": "YES",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Step 2 tests pressing power button to power off TV, same user-facing behavior as portal test's standby transition"
+    },
+    {
+      "3p_id": "31008179",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests that TV does NOT power off during retail demo, opposite intent from verifying power-off works"
+    },
+    {
+      "3p_id": "31008497",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests cast wake behavior and countdown timer display, unrelated to power-off-to-standby"
+    },
+    {
+      "3p_id": "31007304",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests DC power-on speed in ECO mode, not the power-off-to-standby transition"
+    },
+    {
+      "3p_id": "31007850",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests power off via front panel during demo mode with notification, related behavior but different mechanism and context"
+    },
+    {
+      "3p_id": "31008444",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests TV powering on to correct input after DC power cycle, not the power-off-to-standby transition"
+    }
+  ],
+  "TC-PWR-005": [
+    {
+      "3p_id": "31007800",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests front panel button power-off behavior with countdown, not Quick Start standby resume"
+    },
+    {
+      "3p_id": "31008556",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Uses Quick Start mode and tests power cycling with HDMI device, but focus is HDMI content resume not instant-on home screen loading"
+    },
+    {
+      "3p_id": "31007302",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests AC power off/on timing in ECO mode, not Quick Start standby resume via remote"
+    },
+    {
+      "3p_id": "31007311",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests power on via native app hotkeys in ECO mode, not Quick Start standby resume"
+    },
+    {
+      "3p_id": "31007304",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests DC power on speed in ECO mode, not Quick Start standby resume behavior"
+    },
+    {
+      "3p_id": "31013870",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests basic power on/off via remote but does not verify Quick Start mode or instant-on timing"
+    },
+    {
+      "3p_id": "31006239",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Quick Start mode wake behavior but via Wake on LAN network packet, not remote control Power button"
+    },
+    {
+      "3p_id": "31007799",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests front panel short press UI display (input selector), unrelated to Quick Start resume"
+    },
+    {
+      "3p_id": "31007305",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests restart from OSD menu in ECO mode, not Quick Start standby resume"
+    },
+    {
+      "3p_id": "31009029",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests basic power on/off via remote but does not verify Quick Start mode or instant-on timing"
+    }
+  ],
+  "TC-PWR-006": [
+    {
+      "3p_id": "31007302",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests single AC power cycle timing, not repeated cycle stability"
+    },
+    {
+      "3p_id": "31008431",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Involves 6 consecutive DC power cycles but tests maintenance reboot suspension, not general stability"
+    },
+    {
+      "3p_id": "31008432",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Involves 6 DC power cycles but tests maintenance reboot trigger timing, not cycle stability verification"
+    },
+    {
+      "3p_id": "31007305",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests single restart from OSD menu with timing measurement, not repeated power cycle stability"
+    },
+    {
+      "3p_id": "31006985",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Wi-Fi re-scan behavior during power cycle on troubleshoot page, different feature entirely"
+    },
+    {
+      "3p_id": "31008646",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests power cycle loop stability (500 cycles) but uses special loop-test firmware build, different methodology and scale than standard 10-cycle functional test"
+    },
+    {
+      "3p_id": "31008426",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Involves 6 DC power cycles but purpose is testing maintenance reboot trigger, not general cycle stability"
+    },
+    {
+      "3p_id": "31007304",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests single DC power cycle speed in ECO mode, not repeated cycle stability"
+    },
+    {
+      "3p_id": "31007311",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests single power-on via native app hotkeys, not repeated power cycle stability"
+    },
+    {
+      "3p_id": "31008497",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests countdown timer behavior during cast wake, unrelated to power cycle stability"
+    }
+  ],
+  "TC-VID-002": [
+    {
+      "3p_id": "31008599",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Involves verifying resolution in TV information across formats including 4K, but primary purpose is testing Super Resolution picture enhancement feature"
+    },
+    {
+      "3p_id": "31008605",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Clear Action motion handling feature, not 4K resolution output verification"
+    },
+    {
+      "3p_id": "31008615",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Active Pixel Tuning picture quality feature, unrelated to resolution verification"
+    },
+    {
+      "3p_id": "31008609",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Quantum Color feature across formats, not 4K resolution display verification"
+    },
+    {
+      "3p_id": "31008606",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Tone Mapping for HDR content, not 4K resolution output verification"
+    },
+    {
+      "3p_id": "31008610",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Tint color setting adjustment, unrelated to resolution verification"
+    },
+    {
+      "3p_id": "31008612",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Contrast Enhancer feature, unrelated to 4K resolution verification"
+    },
+    {
+      "3p_id": "31008608",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Contrast setting adjustment, unrelated to resolution verification"
+    },
+    {
+      "3p_id": "31008607",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Black Level setting adjustment, unrelated to resolution verification"
+    },
+    {
+      "3p_id": "31008614",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Sharpness setting adjustment, unrelated to 4K resolution verification"
+    }
+  ],
+  "TC-VID-003": [
+    {
+      "3p_id": "31007680",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests HDMI Device Discovery settings page functionality, not 1080p content display verification"
+    },
+    {
+      "3p_id": "31007682",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Picture Size and Position settings in HDMI menu, not 1080p resolution display verification"
+    },
+    {
+      "3p_id": "31008133",
+      "verdict": "PARTIAL",
+      "confidence": "LOW_CONFIDENCE",
+      "reason": "Involves input switching and resolution display but tests Input Change Control UI behavior, not 1080p content rendering"
+    },
+    {
+      "3p_id": "31008154",
+      "verdict": "PARTIAL",
+      "confidence": "LOW_CONFIDENCE",
+      "reason": "Tests resolution display in Input Change Control overlay during input switching, tangentially related but different focus"
+    },
+    {
+      "3p_id": "31008510",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests HDMI Mode setting options (Auto/Standard/Compatibility), not 1080p display output"
+    },
+    {
+      "3p_id": "31005548",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests HDMI Mode naming conventions, unrelated to 1080p display verification"
+    },
+    {
+      "3p_id": "31005524",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests input switching with audio/video verification on HDMI, related to HDMI content display but not specifically 1080p resolution verification"
+    },
+    {
+      "3p_id": "31008556",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests power cycling with HDMI device in Quick Start mode, not 1080p display verification"
+    },
+    {
+      "3p_id": "31009167",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests HDR content overlay during retail demo mode, unrelated to 1080p display"
+    },
+    {
+      "3p_id": "31007683",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests HDMI Device Info display page in settings, not 1080p content rendering"
+    }
+  ],
+  "TC-VID-004": [
+    {
+      "3p_id": "31008556",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests power cycling with HDMI device, HDR/DV content is incidental test material not the verification focus"
+    },
+    {
+      "3p_id": "31005524",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests input switching between tuner and HDMI, not HDR10 indicator verification"
+    },
+    {
+      "3p_id": "31005525",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Plays HDR10 content and verifies playback but focus is on frame tearing artifacts, not HDR indicator display"
+    },
+    {
+      "3p_id": "31005522",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests input switching after streaming DV content, not HDR10 content display verification"
+    },
+    {
+      "3p_id": "31008508",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Game Menu settings including Game HDR option availability, not HDR10 content playback verification"
+    },
+    {
+      "3p_id": "31008346",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests Dolby Vision logo display not HDR10; both verify HDR format indicators but different formats (DV vs HDR10)"
+    },
+    {
+      "3p_id": "31008606",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Tone Mapping with HDR content and verifies HDR logo appears, but primary focus is tone mapping feature not HDR10 indicator verification"
+    },
+    {
+      "3p_id": "31007980",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests HDMI no-signal countdown OK-key behavior, unrelated to HDR10 content display"
+    },
+    {
+      "3p_id": "31007981",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests HDMI no-signal countdown cancellation behavior, unrelated to HDR10 content display"
+    },
+    {
+      "3p_id": "31007683",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests HDMI Device Info settings page, unrelated to HDR10 content rendering"
+    }
+  ],
+  "TC-VID-005": [
+    {
+      "3p_id": "31008346",
+      "verdict": "YES",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Plays Dolby Vision content and verifies DV logo displays for 3 seconds, same functional intent and expected outcome"
+    },
+    {
+      "3p_id": "31005498",
+      "verdict": "YES",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Plays Dolby Vision content on Disney+ and verifies DV logo displays for 3 seconds, same verification"
+    },
+    {
+      "3p_id": "31005496",
+      "verdict": "YES",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Plays Dolby Vision content on Netflix and verifies DV logo displays, same functional intent"
+    },
+    {
+      "3p_id": "31005499",
+      "verdict": "YES",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Switches to Apple TV HDMI input and verifies Dolby Vision logo appears with DV content, same verification"
+    },
+    {
+      "3p_id": "31005497",
+      "verdict": "YES",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Verifies DV logo appears when switching from non-DV to DV content on Netflix, same end-state verification with additional transition step"
+    },
+    {
+      "3p_id": "31008140",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Talk Back audio attenuation to 50% volume, completely unrelated to Dolby Vision display"
+    },
+    {
+      "3p_id": "31008556",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests power cycling with HDMI device, DV content is incidental test material not the verification focus"
+    },
+    {
+      "3p_id": "31008301",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Dolby Audio logo display, different format entirely (audio vs vision)"
+    },
+    {
+      "3p_id": "31008358",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests Dolby Vision logo in Input Change Control overlay specifically, not during general content playback"
+    },
+    {
+      "3p_id": "31008059",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Text-to-Speech accessibility feature on Media Player navigation, unrelated to Dolby Vision"
+    }
+  ],
+  "TC-VID-006": [
+    {
+      "3p_id": "31008595",
+      "verdict": "YES",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Directly tests cycling through all picture modes (Bright, Calibrated, Calibrated Dark, Sports) in Picture Settings, same functional intent as PORTAL TC"
+    },
+    {
+      "3p_id": "31007613",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Changes picture mode but primary focus is verifying settings persistence across reboots, not cycling through all modes"
+    },
+    {
+      "3p_id": "31007682",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests HDMI Picture Size and Position settings, completely unrelated to picture mode switching"
+    },
+    {
+      "3p_id": "31007612",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Changes picture mode via IR remote All Settings menu, but focus is on remote control navigation access to settings, not verifying all mode switching"
+    },
+    {
+      "3p_id": "31007515",
+      "verdict": "PARTIAL",
+      "confidence": "LOW_CONFIDENCE",
+      "reason": "Tests asterisk indicator appearing when picture mode is edited, tangentially related to picture modes but different verification target"
+    },
+    {
+      "3p_id": "31007516",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests circular navigation behavior of Quick Settings Menu UI, unrelated to picture mode switching"
+    },
+    {
+      "3p_id": "31008007",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Zoom Mode sector changes in Accessibility, completely different feature from picture modes"
+    },
+    {
+      "3p_id": "31008052",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Digital Style Background Color in Accessibility/Captions, unrelated to picture mode switching"
+    },
+    {
+      "3p_id": "31008600",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests editing/saving/deleting custom picture modes, related to picture mode functionality but different focus than cycling through preset modes"
+    },
+    {
+      "3p_id": "31008510",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests HDMI Mode listing (Auto/Standard/Compatibility), entirely different setting from display picture modes"
+    }
+  ],
+  "TC-VID-007": [
+    {
+      "3p_id": "31008596",
+      "verdict": "YES",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Directly tests adjusting Brightness from 0 to 100 in Picture Settings and verifying black level changes, identical functional intent"
+    },
+    {
+      "3p_id": "31007612",
+      "verdict": "NO",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests changing Picture Mode via IR remote in All Settings menu, not brightness adjustment across range"
+    },
+    {
+      "3p_id": "31008595",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests cycling through picture modes, not brightness slider adjustment"
+    },
+    {
+      "3p_id": "31007515",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests asterisk indicator for edited picture modes, unrelated to brightness adjustment"
+    },
+    {
+      "3p_id": "31008052",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Digital Style Background Color in Accessibility/Captions, completely unrelated to brightness"
+    },
+    {
+      "3p_id": "31008414",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Digital Style Text Color in Accessibility/Captions, completely unrelated to brightness"
+    },
+    {
+      "3p_id": "31007613",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests settings persistence across All Settings, not brightness adjustment across range"
+    },
+    {
+      "3p_id": "31007677",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests HDMI Color Space Range setting, unrelated to display brightness adjustment"
+    },
+    {
+      "3p_id": "31008389",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests View Data Value on first power-on/OOBE exit, completely different feature"
+    },
+    {
+      "3p_id": "31008051",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Digital Style Text Edges Color in Accessibility/Captions, completely unrelated to brightness"
+    }
+  ],
+  "TC-VID-008": [
+    {
+      "3p_id": "31008612",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests Contrast Enhancer (Black Detail) feature which is a local contrast enhancement, not the main Contrast slider adjustment"
+    },
+    {
+      "3p_id": "31008608",
+      "verdict": "YES",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Directly tests the Contrast setting in Picture Settings across all picture modes and formats, same functional intent as adjusting contrast across range"
+    },
+    {
+      "3p_id": "31008607",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests Black Level setting which affects dark tones but is a separate control from the main Contrast slider"
+    },
+    {
+      "3p_id": "31008052",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Digital Style Background Color in Accessibility/Captions, completely unrelated to contrast adjustment"
+    },
+    {
+      "3p_id": "31008595",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests cycling through picture modes, not contrast slider adjustment"
+    },
+    {
+      "3p_id": "31008615",
+      "verdict": "PARTIAL",
+      "confidence": "LOW_CONFIDENCE",
+      "reason": "Tests Active Pixel Tuning (Local Contrast) which is an advanced picture processing feature, not the main Contrast slider"
+    },
+    {
+      "3p_id": "31007677",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests HDMI Color Space Range setting, unrelated to contrast adjustment"
+    },
+    {
+      "3p_id": "31008596",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Brightness setting adjustment, different picture control than Contrast"
+    },
+    {
+      "3p_id": "31007612",
+      "verdict": "NO",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests changing Picture Mode via IR remote, not contrast adjustment across range"
+    },
+    {
+      "3p_id": "31008051",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Digital Style Text Edges Color in Accessibility/Captions, completely unrelated to contrast"
+    }
+  ],
+  "TC-AUD-001": [
+    {
+      "3p_id": "31008140",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests audio attenuation to 50% during TalkBack, involves internal speaker audio but tests a different behavior (accessibility audio ducking)"
+    },
+    {
+      "3p_id": "31007603",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests TV Speaker Test utility which verifies speakers produce audio, but uses diagnostic tool rather than verifying speaker path during normal content playback"
+    },
+    {
+      "3p_id": "31007606",
+      "verdict": "NO",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests that TV Speaker Test app works without network connectivity, different intent from verifying internal speaker audio output"
+    },
+    {
+      "3p_id": "31007602",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Navigates to TV Speaker Test in support menu, tests speaker diagnostic utility rather than active audio path during content playback"
+    },
+    {
+      "3p_id": "31008141",
+      "verdict": "NO",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests TalkBack audio attenuation behavior during app playback, different intent from confirming basic internal speaker output"
+    },
+    {
+      "3p_id": "31008181",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests that TV does not auto power-off when audio app stops playing, completely different intent"
+    },
+    {
+      "3p_id": "31007605",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests left/right speaker pink noise output via Speaker Test utility, verifies speakers work but via diagnostic tool not content playback"
+    },
+    {
+      "3p_id": "31008308",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests that audio type indicator is blank when no audio is playing or unsupported format, opposite scenario from verifying audio output"
+    },
+    {
+      "3p_id": "31008448",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests volume control OSD notification display, unrelated to verifying internal speaker audio output path"
+    },
+    {
+      "3p_id": "31007547",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests that no soundbar info shows on Support Code page when soundbar is connected, unrelated to internal speaker verification"
+    }
+  ],
+  "TC-AUD-002": [
+    {
+      "3p_id": "31008448",
+      "verdict": "YES",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Volume +/- from remote and verifies on-screen volume notification displays with level, same functional intent of verifying volume adjustment with OSD indicator"
+    },
+    {
+      "3p_id": "31007617",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests that Volume/Mute keys do NOT dismiss the All Settings Menu, different intent from verifying volume incremental adjustment"
+    },
+    {
+      "3p_id": "31008449",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests volume notification with soundbar connected showing 1-100 range in steps of 4, related to volume OSD but different device context (soundbar vs TV speakers)"
+    },
+    {
+      "3p_id": "31008581",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests Volume Control Display behavior when Quick Settings is open, related to volume OSD but tests a specific interaction scenario rather than basic volume adjustment"
+    },
+    {
+      "3p_id": "31008580",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests volume control via voice commands with BT remote, different input method from Volume Up/Down buttons"
+    },
+    {
+      "3p_id": "31007984",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests that Vol/Mute/Info keys do not affect No Signal countdown timer, completely different intent"
+    },
+    {
+      "3p_id": "31008239",
+      "verdict": "NO",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests volume notification POSITION when Zoom Mode is enabled, not basic volume adjustment functionality"
+    },
+    {
+      "3p_id": "31009042",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests MUTE button functionality, not Volume Up/Down adjustment"
+    },
+    {
+      "3p_id": "31009037",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Vol+ button on remote control, directly related but likely a basic remote control button verification rather than full incremental adjustment with OSD validation"
+    },
+    {
+      "3p_id": "31008131",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Input Change Control display conditions, completely unrelated to volume adjustment"
+    }
+  ],
+  "TC-AUD-003": [
+    {
+      "3p_id": "31008140",
+      "verdict": "NO",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests TalkBack audio attenuation to 50% of system volume, different behavior from mute/unmute toggle"
+    },
+    {
+      "3p_id": "31007617",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests that Mute key does not dismiss All Settings Menu, completely different intent from verifying mute/unmute audio behavior"
+    },
+    {
+      "3p_id": "31008448",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests volume control notification display, not mute/unmute functionality"
+    },
+    {
+      "3p_id": "31009042",
+      "verdict": "YES",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests MUTE button on remote control in Volume/Mute category, likely verifies mute/unmute toggle behavior though steps are not detailed"
+    },
+    {
+      "3p_id": "31013883",
+      "verdict": "YES",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests MUTE button on remote control in Audio category, likely verifies mute/unmute toggle behavior though steps are not detailed"
+    },
+    {
+      "3p_id": "31008141",
+      "verdict": "NO",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests TalkBack media audio attenuation during playback, different intent from basic mute/unmute"
+    },
+    {
+      "3p_id": "31009186",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Store Demo volume behavior where volume resets to muted/0 after power cycle, different context and intent from normal mute toggle"
+    },
+    {
+      "3p_id": "31007640",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests that Mute key launches TTS (text-to-speech) on OOBE language screen, completely different function from audio mute/unmute"
+    },
+    {
+      "3p_id": "31008934",
+      "verdict": "YES",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests MUTE button on BT remote control, likely verifies mute/unmute toggle behavior though steps are not detailed"
+    },
+    {
+      "3p_id": "31008181",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests that TV does not auto power-off when audio app stops playing, completely different intent from mute/unmute"
+    }
+  ],
+  "TC-NET-001": [
+    {
+      "3p_id": "31009380",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Verifies Wi-Fi Networks list is displayed in settings, part of connection flow but only tests network discovery not actual connection and IP assignment"
+    },
+    {
+      "3p_id": "31009363",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests network connected state when SSID is connected but no internet, related scenario but tests a failure condition rather than successful connection"
+    },
+    {
+      "3p_id": "31009383",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Verifies Network Connection info display, related to checking connection status but focuses on UI display rather than the act of connecting"
+    },
+    {
+      "3p_id": "31009401",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests Add Network Manually functionality, a related network connection method but different approach (manual entry vs selecting from list)"
+    },
+    {
+      "3p_id": "31009384",
+      "verdict": "PARTIAL",
+      "confidence": "LOW_CONFIDENCE",
+      "reason": "Tests Network Information display page, shows connection details but is about viewing info, not performing the connection itself"
+    },
+    {
+      "3p_id": "31009388",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Verifies IPv4 IP Address display in network info, directly related to IP assignment verification but only the display aspect not the connection process"
+    },
+    {
+      "3p_id": "31009385",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Verifies Wi-Fi Network field in Network Connection info, related to confirming connection but tests info display not the connection act"
+    },
+    {
+      "3p_id": "31009382",
+      "verdict": "NO",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests More Available Networks list display, only shows available networks without testing actual connection"
+    },
+    {
+      "3p_id": "31009396",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Wi-Fi Security info display field, not about establishing or verifying a Wi-Fi connection"
+    },
+    {
+      "3p_id": "31007994",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests slow internet notification during OS update downloads, completely different scenario from basic Wi-Fi connection verification"
+    }
+  ],
+  "TC-NET-002": [
+    {
+      "3p_id": "31005940",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests slow internet notification during OS updates, unrelated to verifying 5GHz connection with 4K streaming"
+    },
+    {
+      "3p_id": "31007994",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests slow internet notification during OS update downloads, unrelated to 5GHz connection with 4K content playback"
+    },
+    {
+      "3p_id": "31007274",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Wake on LAN magic packet functionality, completely different intent even though it mentions 5GHz AP configuration"
+    },
+    {
+      "3p_id": "31005651",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests WiFi network screen UI display during OOBE, not about connecting to 5GHz and streaming 4K content"
+    },
+    {
+      "3p_id": "31005995",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests WiFi network screen UI display during OOBE, not about 5GHz connection or 4K streaming capability"
+    },
+    {
+      "3p_id": "31009386",
+      "verdict": "PARTIAL",
+      "confidence": "LOW_CONFIDENCE",
+      "reason": "Tests Wi-Fi Signal Strength display in network info, tangentially related to connection quality but does not test 5GHz connection or 4K streaming"
+    },
+    {
+      "3p_id": "31005713",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Spanish-language WiFi connection screen UI during OOBE, not about 5GHz connection or streaming"
+    },
+    {
+      "3p_id": "31007273",
+      "verdict": "PARTIAL",
+      "confidence": "LOW_CONFIDENCE",
+      "reason": "Tests Wi-Fi interface On/Off toggle with 5GHz/2.4GHz AP, involves 5GHz connectivity but tests interface cycling not stable 4K streaming"
+    },
+    {
+      "3p_id": "31006136",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests offline mode display behavior when network is disconnected, opposite scenario from verifying stable connection"
+    },
+    {
+      "3p_id": "31006221",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests offline mode display behavior when network is disconnected, opposite scenario from verifying stable 5GHz connection"
+    }
+  ],
+  "TC-NET-003": [
+    {
+      "3p_id": "31009435",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests 6GHz WPA3-Enhanced Open connection and network info but does not verify streaming throughput performance"
+    },
+    {
+      "3p_id": "31006326",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Same 6GHz WPA3-Enhanced Open connection test on different sheet, no streaming/throughput verification"
+    },
+    {
+      "3p_id": "31009436",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests 6GHz WPA2+WPA3 mixed mode connection and network info, does not verify high-throughput via streaming"
+    },
+    {
+      "3p_id": "31009428",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests 6GHz WPA3-SAE connection process including password entry and error handling, no throughput test"
+    },
+    {
+      "3p_id": "31006319",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Same 6GHz WPA3-SAE system menu connection test on different sheet, no streaming verification"
+    },
+    {
+      "3p_id": "31006327",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Same 6GHz WPA2+WPA3 mixed mode test on different sheet, verifies connection and network info but not throughput"
+    },
+    {
+      "3p_id": "31009434",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests 6GHz WPA3-SAE connection and network information page, does not verify streaming content playback"
+    },
+    {
+      "3p_id": "31009429",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests 6GHz Enhanced Open connection via system menu, verifies connection only not throughput"
+    },
+    {
+      "3p_id": "31009431",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests 6GHz connection during OOBE factory reset flow, entirely different operational context"
+    },
+    {
+      "3p_id": "31006325",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Same 6GHz WPA3-SAE network information test on different sheet, no streaming throughput verification"
+    }
+  ],
+  "TC-NET-004": [
+    {
+      "3p_id": "31009393",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Only verifies RJ45 MAC address field, does not test full Ethernet connection, IP assignment, or internet access"
+    },
+    {
+      "3p_id": "31007936",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests Ethernet auto-detection during OOBE setup, different operational context from normal Ethernet connection verification"
+    },
+    {
+      "3p_id": "31006154",
+      "verdict": "YES",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Connects Ethernet, verifies wired connection via Network Information, and confirms internet access \u2014 same functional intent"
+    },
+    {
+      "3p_id": "31006373",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Ethernet disconnect and reconnect recovery behavior, not initial connection and IP verification"
+    },
+    {
+      "3p_id": "31007369",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Same title 'Network> Wired Connection' but steps not documented, cannot confirm equivalent expected outcomes"
+    },
+    {
+      "3p_id": "31009383",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Verifies general network connection info on Wi-Fi connected TV, not specifically Ethernet connection verification"
+    },
+    {
+      "3p_id": "31006364",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests smooth Ethernet-to-WiFi handover transition when cable removed, different test focus than initial connection"
+    },
+    {
+      "3p_id": "31006395",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Same Ethernet-to-WiFi transition test on different sheet, not Ethernet connection establishment verification"
+    },
+    {
+      "3p_id": "31006489",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Same Ethernet-to-WiFi transition test on another sheet, tests handover not initial connection"
+    },
+    {
+      "3p_id": "31006426",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Same Ethernet-to-WiFi transition test on yet another sheet, not about verifying Ethernet connection and IP"
+    }
+  ],
+  "TC-NET-005": [
+    {
+      "3p_id": "31009383",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Verifies network connection info but unclear whether it checks all DHCP fields (IP, subnet, gateway, DNS)"
+    },
+    {
+      "3p_id": "31009384",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Navigates to NETWORK INFORMATION page but cannot confirm it verifies same DHCP-specific fields (subnet, gateway, DNS)"
+    },
+    {
+      "3p_id": "31009363",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests connected state with no actual internet access (SSID connected but no network), opposite scenario"
+    },
+    {
+      "3p_id": "31006154",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Verifies Ethernet connection via network info page, overlaps on IP display but focused on wired connection not DHCP fields"
+    },
+    {
+      "3p_id": "31005842",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Shows TV Information (serial, model, firmware) during OOBE, not DHCP network fields in Network Information"
+    },
+    {
+      "3p_id": "31009382",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Lists more available Wi-Fi networks for connection, completely unrelated to DHCP IP address verification"
+    },
+    {
+      "3p_id": "31007344",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests 'Checking' network status display state, not DHCP address assignment verification"
+    },
+    {
+      "3p_id": "31007958",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests Manual IPv4 setup grayed out when only IPv6 connected, related to IP addressing but different test focus"
+    },
+    {
+      "3p_id": "31009361",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests My Networks list UI with active network, not DHCP information fields"
+    },
+    {
+      "3p_id": "31007663",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests 'Checking' network status display, not DHCP IP/subnet/gateway/DNS field verification"
+    }
+  ],
+  "TC-NET-006": [
+    {
+      "3p_id": "31006345",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Netflix behavior after Ethernet disconnect/reconnect, not simple Netflix launch to verify DNS/internet"
+    },
+    {
+      "3p_id": "31009391",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Verifies preferred DNS server field in network info display, does not test actual DNS resolution via app launch"
+    },
+    {
+      "3p_id": "31006407",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Netflix recovery after router off/on, not initial launch to confirm DNS and internet work"
+    },
+    {
+      "3p_id": "31006470",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Same router off/on Netflix recovery test on different sheet, not verifying initial internet access"
+    },
+    {
+      "3p_id": "31006343",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Launches Netflix when Ethernet is disconnected to test failure behavior, opposite of verifying working internet"
+    },
+    {
+      "3p_id": "31006405",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Launches Netflix when WiFi router is OFF to test failure scenario, not verifying DNS resolution works"
+    },
+    {
+      "3p_id": "31006376",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Disconnects Ethernet while Netflix is at home page to test recovery, not initial launch verification"
+    },
+    {
+      "3p_id": "31006468",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Launches Netflix when WiFi router is OFF to test failure/recovery, opposite intent of verifying working internet"
+    },
+    {
+      "3p_id": "31006378",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Disconnects Ethernet during Netflix streaming to test recovery, not testing initial DNS/internet access"
+    },
+    {
+      "3p_id": "31006427",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "DC power cycle on troubleshooting page with WiFi off, entirely different feature and intent"
+    }
+  ],
+  "TC-NET-007": [
+    {
+      "3p_id": "31007268",
+      "verdict": "YES",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Configures AP in WPA2/WPA3/mixed modes, connects TV, and verifies Tx/Rx data link with ICMP \u2014 same functional intent"
+    },
+    {
+      "3p_id": "31009396",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Verifies Wi-Fi Security field display in network info, does not test actual connection to both WPA2 and WPA3"
+    },
+    {
+      "3p_id": "31007784",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests error message when TV lacks WPA3 support, failure scenario not successful authentication"
+    },
+    {
+      "3p_id": "31009383",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "General network connection info verification, unrelated to WPA2/WPA3 authentication testing"
+    },
+    {
+      "3p_id": "31007441",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests error notification for WPA3 unsupported scenario, failure case not authentication verification"
+    },
+    {
+      "3p_id": "31007874",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests 'Try again' flow after failed password during OOBE, not WPA2/WPA3 successful authentication"
+    },
+    {
+      "3p_id": "31005875",
+      "verdict": "PARTIAL",
+      "confidence": "LOW_CONFIDENCE",
+      "reason": "Tests 'Connecting' text display during Wi-Fi connection, tangentially related to connection process but different focus"
+    },
+    {
+      "3p_id": "31005656",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests invalid credential error handling and BACK/TRY AGAIN UI during OOBE, not encryption authentication"
+    },
+    {
+      "3p_id": "31006000",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Same invalid credential error handling test on different sheet, unrelated to WPA2/WPA3 auth verification"
+    },
+    {
+      "3p_id": "31007873",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests 'unable to connect' notification on connection failure, not successful WPA2/WPA3 authentication"
+    }
+  ],
+  "TC-NET-008": [
+    {
+      "3p_id": "31009383",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Verifies network connection info but cannot confirm it checks all specific fields (IP, MAC, type, signal strength)"
+    },
+    {
+      "3p_id": "31009384",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Targets NETWORK INFORMATION page specifically but steps unavailable to confirm all fields (IP, MAC, type, signal) verified"
+    },
+    {
+      "3p_id": "31005842",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Shows TV Information during OOBE including some network fields, but different context and broader scope"
+    },
+    {
+      "3p_id": "31009361",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests My Networks list with active network display, not Network Information field verification"
+    },
+    {
+      "3p_id": "31009399",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests the Test Connection feature functionality, not network information field display"
+    },
+    {
+      "3p_id": "31006221",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests offline mode notification behavior when network disconnected, entirely different intent"
+    },
+    {
+      "3p_id": "31006136",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Same offline mode display test on different sheet, unrelated to network info field verification"
+    },
+    {
+      "3p_id": "31009382",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Lists more available Wi-Fi networks for selection, not about displaying network information fields"
+    },
+    {
+      "3p_id": "31007638",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Shows TV Information including network fields on OOBE language screen, different context from post-setup network info"
+    },
+    {
+      "3p_id": "31009386",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Specifically verifies Wi-Fi Signal Strength field only, a single subset of the multiple fields PORTAL requires"
+    }
+  ],
+  "TC-PROV": [
+    {
+      "3p_id": "31007617",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests that volume/mute keys don't dismiss settings menu, not a comprehensive all-keys response verification"
+    },
+    {
+      "3p_id": "31013873",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests only directional button navigation, not all remote keys (Power, Home, Volume, Mute, Enter, Back)"
+    },
+    {
+      "3p_id": "31009037",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests only the Volume Up button response, PORTAL TC requires all keys verified"
+    },
+    {
+      "3p_id": "31009038",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests only the Volume Down button response, PORTAL TC requires all keys verified"
+    },
+    {
+      "3p_id": "31009039",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests only Channel Up button, a single key out of the full remote key set required by PORTAL"
+    },
+    {
+      "3p_id": "31009045",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests only the dash (-) button, a single key out of the full remote key set required by PORTAL"
+    },
+    {
+      "3p_id": "31009032",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests directional buttons on different sheet, still only a subset of all keys PORTAL requires"
+    },
+    {
+      "3p_id": "31013883",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests only the MUTE button response, PORTAL TC requires verification of all remote keys"
+    },
+    {
+      "3p_id": "31009040",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests only Channel Down button, a single key out of the full remote key set required by PORTAL"
+    },
+    {
+      "3p_id": "31013874",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests only the OK button response, PORTAL TC requires all keys verified comprehensively"
+    }
+  ],
+  "TC-PROV-001": [
+    {
+      "3p_id": "31009384",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Navigates to NETWORK INFORMATION page but unclear if it specifically verifies both WLAN and Ethernet MAC format"
+    },
+    {
+      "3p_id": "31009383",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "General network connection info check, may include MAC but not confirmed to verify both WLAN and Ethernet MAC addresses"
+    },
+    {
+      "3p_id": "31009393",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Specifically verifies RJ45/Ethernet MAC address but only covers half \u2014 missing WLAN MAC verification"
+    },
+    {
+      "3p_id": "31005842",
+      "verdict": "PARTIAL",
+      "confidence": "LOW_CONFIDENCE",
+      "reason": "TV Information during OOBE includes MAC incidentally but different primary context and scope"
+    },
+    {
+      "3p_id": "31009388",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Verifies IPv4 IP Address field, not MAC address assignment"
+    },
+    {
+      "3p_id": "31009385",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Verifies Wi-Fi Network name field, not MAC address display or format"
+    },
+    {
+      "3p_id": "31009394",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Specifically verifies WLAN MAC address but only covers half \u2014 missing Ethernet/RJ45 MAC verification"
+    },
+    {
+      "3p_id": "31006059",
+      "verdict": "PARTIAL",
+      "confidence": "LOW_CONFIDENCE",
+      "reason": "OOBE Ethernet connection flow displays MAC incidentally, different primary intent from MAC assignment verification"
+    },
+    {
+      "3p_id": "31005966",
+      "verdict": "PARTIAL",
+      "confidence": "LOW_CONFIDENCE",
+      "reason": "Same OOBE Ethernet flow on different sheet, MAC shown incidentally not as primary verification target"
+    },
+    {
+      "3p_id": "31009363",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests network connected state with SSID but no internet, completely unrelated to MAC address verification"
+    }
+  ],
+  "TC-RMT-004": [
+    {
+      "3p_id": "31009032",
+      "verdict": "YES",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Directly tests D-pad directional buttons navigating through Settings menu with expected focus changes on each key press."
+    },
+    {
+      "3p_id": "31007616",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests whether specific non-D-pad keys (INPUT, PIC, HOME) dismiss the Settings menu, not D-pad navigation functionality."
+    },
+    {
+      "3p_id": "31007725",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests D-pad left/right navigation guided by carats in Settings, covering only a subset of D-pad directions without Enter/Back verification."
+    },
+    {
+      "3p_id": "31007721",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests circular wrapping behavior when pressing Up at top of Settings menu, a specific navigation edge case rather than general D-pad functionality."
+    },
+    {
+      "3p_id": "31013873",
+      "verdict": "YES",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Identical test to candidate 1 testing all directional buttons navigating through menus and verifying focus changes."
+    },
+    {
+      "3p_id": "31005557",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests D-pad navigation behavior in OOBE App Selection screen, same functional concept but different context than general menu navigation."
+    },
+    {
+      "3p_id": "31005570",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests D-pad navigation in OOBE Genre/Interests screen, same navigation concept but restricted to setup wizard context."
+    },
+    {
+      "3p_id": "31007735",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests D-pad Up/Down navigation on WiFi network selection screen, verifying focus toggle between items but limited to one specific screen."
+    },
+    {
+      "3p_id": "31008453",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Input key behavior on OSD Menu list, not D-pad navigation functionality."
+    },
+    {
+      "3p_id": "31006124",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Network menu content and functionality; D-pad is merely the mechanism to reach it, not the subject under test."
+    }
+  ],
+  "TC-RMT-006": [
+    {
+      "3p_id": "31007617",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Presses Volume Up/Down keys and volume changes, but the assertion is that Settings Menu remains open, not that volume increments correctly with OSD."
+    },
+    {
+      "3p_id": "31009037",
+      "verdict": "YES",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests the +Vol button on IR/BT remote in Volume/Mute category, directly verifying volume up key response though no detailed steps available."
+    },
+    {
+      "3p_id": "31009038",
+      "verdict": "YES",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests the -Vol button on IR/BT remote in Volume/Mute category, directly verifying volume down key response though no detailed steps available."
+    },
+    {
+      "3p_id": "31008448",
+      "verdict": "YES",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Volume +/- from remote and verifies volume level notification displays on screen and dismisses after 3 seconds, matching OSD update verification."
+    },
+    {
+      "3p_id": "31009045",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests the dash (-) button for channel number input on IR remote, not volume down functionality."
+    },
+    {
+      "3p_id": "31013883",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests the MUTE button, not volume up/down key response."
+    },
+    {
+      "3p_id": "31009042",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests the MUTE button on a different remote variant, not volume up/down key response."
+    },
+    {
+      "3p_id": "31008932",
+      "verdict": "YES",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests + button on BT remote XRT260 in Volume/Mute category, likely the volume up button though title lacks explicit 'Vol' prefix."
+    },
+    {
+      "3p_id": "31009039",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests the +CH (Channel Up) button, not volume up despite being listed in Volume/Mute sheet category."
+    },
+    {
+      "3p_id": "31008933",
+      "verdict": "YES",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests - button on BT remote XRT260 in Volume/Mute category, likely the volume down button though title lacks explicit 'Vol' prefix."
+    }
+  ],
+  "TC-RMT-007": [
+    {
+      "3p_id": "31008282",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests channel scan/find functionality launching in sidebar, not channel up/down navigation during content viewing."
+    },
+    {
+      "3p_id": "31013599",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests IR hotkey launching a specific app FROM WatchFree, not channel up/down changing channels within WatchFree."
+    },
+    {
+      "3p_id": "31013522",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests IR hotkey launching a specific app FROM WatchFree, not channel up/down changing channels within WatchFree."
+    },
+    {
+      "3p_id": "31013645",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests IR hotkey launching a specific app FROM WatchFree, not channel up/down changing channels within WatchFree."
+    },
+    {
+      "3p_id": "31013831",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests IR hotkey launching a specific app FROM WatchFree, not channel up/down changing channels within WatchFree."
+    },
+    {
+      "3p_id": "31013706",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests IR hotkey launching a specific app FROM WatchFree, not channel up/down changing channels within WatchFree."
+    },
+    {
+      "3p_id": "31013937",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests IR hotkey launching a specific app FROM WatchFree, not channel up/down changing channels within WatchFree."
+    },
+    {
+      "3p_id": "31013922",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests IR hotkey launching a specific app FROM WatchFree, not channel up/down changing channels within WatchFree."
+    },
+    {
+      "3p_id": "31013907",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests IR hotkey launching a specific app FROM WatchFree, not channel up/down changing channels within WatchFree."
+    },
+    {
+      "3p_id": "31013553",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests IR hotkey launching a specific app FROM WatchFree, not channel up/down changing channels within WatchFree."
+    }
+  ],
+  "TC-RMT-008": [
+    {
+      "3p_id": "31006419",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests router disconnection/reconnection during Disney+ streaming, not whether the shortcut key launches Disney+ correctly."
+    },
+    {
+      "3p_id": "31006482",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Duplicate of candidate 1; tests network failure during Disney+ streaming, not app shortcut launch."
+    },
+    {
+      "3p_id": "31006345",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Ethernet disconnection during Netflix session, not whether the Netflix shortcut key launches the app."
+    },
+    {
+      "3p_id": "31007511",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Presses app hotkeys (Netflix/Disney+/Hulu) but asserts Quick Settings Menu is dismissed, not that the apps launch correctly."
+    },
+    {
+      "3p_id": "31006483",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests router disconnection during Hulu streaming, not whether the Hulu shortcut key launches the app."
+    },
+    {
+      "3p_id": "31006420",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Duplicate of candidate 5; tests network failure during Hulu streaming, not app shortcut launch."
+    },
+    {
+      "3p_id": "31006407",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests router disconnection while Netflix is at home page, not whether the Netflix shortcut key launches the app."
+    },
+    {
+      "3p_id": "31006470",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Duplicate of candidate 7; tests network failure during Netflix, not app shortcut launch."
+    },
+    {
+      "3p_id": "31006418",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests router disconnection while Hulu is at home page, not whether the shortcut key launches Hulu."
+    },
+    {
+      "3p_id": "31006481",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Duplicate of candidate 9; tests network failure during Hulu, not app shortcut launch."
+    }
+  ],
+  "TC-HDMI-001": [
+    {
+      "3p_id": "31007316",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Step 1 verifies HDMI-1 connection and playback, but the test's primary intent is measuring DC power-on timing in ECO mode."
+    },
+    {
+      "3p_id": "31007314",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Step 1 verifies HDMI-1 connection and playback, but the test's primary intent is measuring AC power-on timing in ECO mode."
+    },
+    {
+      "3p_id": "31005516",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests CEC device discovery on HDMI ports which includes detection, but focuses on device listing rather than signal/video verification on HDMI 1 specifically."
+    },
+    {
+      "3p_id": "31008351",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests auto power-off behavior after 10 minutes on a physical input without sync, not HDMI 1 signal detection and video output."
+    },
+    {
+      "3p_id": "31008556",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests power cycling behavior with an HDMI device in Quick Start mode, not HDMI 1 port detection and video output."
+    },
+    {
+      "3p_id": "31008552",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests HDMI port name reverting to defaults when CEC is disabled, not signal detection or video output."
+    },
+    {
+      "3p_id": "31008558",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests DC power cycling behavior on HDMI active input, not HDMI 1 port detection and video display."
+    },
+    {
+      "3p_id": "31007813",
+      "verdict": "PARTIAL",
+      "confidence": "LOW_CONFIDENCE",
+      "reason": "Verifies CEC device detected on any HDMI port (detection overlap), but focus is on input name using CEC name, not signal/video on HDMI 1."
+    },
+    {
+      "3p_id": "31009185",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Store Demo mode behavior while CEC device is connected, entirely different feature."
+    },
+    {
+      "3p_id": "31007315",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Step 1 verifies HDMI-1 connection and playback, but the test's primary intent is DC power-on timing with Input at Power On set to VIZIO Home."
+    }
+  ],
+  "TC-HDMI-002": [
+    {
+      "3p_id": "31007316",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Explicitly tests HDMI-1 port in preconditions and steps, not HDMI 2."
+    },
+    {
+      "3p_id": "31007314",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Explicitly tests HDMI-1 port in preconditions and steps, not HDMI 2."
+    },
+    {
+      "3p_id": "31007813",
+      "verdict": "PARTIAL",
+      "confidence": "LOW_CONFIDENCE",
+      "reason": "Tests CEC device detection on any HDMI port with name verification; overlaps with detection concept but not specific to HDMI 2 video output."
+    },
+    {
+      "3p_id": "31005516",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests CEC device discovery via soundbar on HDMI-1 ARC port specifically, not HDMI 2 port detection."
+    },
+    {
+      "3p_id": "31008556",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests power cycling with HDMI device in Quick Start mode, not HDMI 2 signal detection and video."
+    },
+    {
+      "3p_id": "31008552",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests HDMI port name reverting to defaults when CEC disabled, not HDMI 2 detection/video."
+    },
+    {
+      "3p_id": "31008558",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests DC power cycling on HDMI active input, not HDMI 2 port detection and video output."
+    },
+    {
+      "3p_id": "31007315",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Explicitly tests HDMI-1 port in preconditions and steps, not HDMI 2."
+    },
+    {
+      "3p_id": "31007680",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests HDMI Settings menu Device Discovery toggle setting, not actual HDMI 2 port signal detection and video display."
+    },
+    {
+      "3p_id": "31007313",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Explicitly tests HDMI-1 port in preconditions and steps, not HDMI 2."
+    }
+  ],
+  "TC-HDMI-003": [
+    {
+      "3p_id": "31007316",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Explicitly tests HDMI-1 port in preconditions and steps, not HDMI 3."
+    },
+    {
+      "3p_id": "31007680",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests HDMI Settings menu Device Discovery toggle setting, not actual HDMI 3 port signal detection and video display."
+    },
+    {
+      "3p_id": "31007314",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Explicitly tests HDMI-1 port in preconditions and steps, not HDMI 3."
+    },
+    {
+      "3p_id": "31005530",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests input switching across HDMI1-4 with Fire TV on HDMI 3, includes switching to HDMI 3 but focus is multi-port switching, not HDMI 3 detection/video specifically."
+    },
+    {
+      "3p_id": "31007813",
+      "verdict": "PARTIAL",
+      "confidence": "LOW_CONFIDENCE",
+      "reason": "Tests CEC device detection on any HDMI port with name verification; overlaps with detection concept but not specific to HDMI 3 video output."
+    },
+    {
+      "3p_id": "31008556",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests power cycling with HDMI device in Quick Start mode, not HDMI 3 signal detection and video."
+    },
+    {
+      "3p_id": "31005516",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests CEC device discovery via soundbar on HDMI-1 ARC port, not HDMI 3 detection."
+    },
+    {
+      "3p_id": "31005517",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests CEC device delisting when CEC is disabled, not HDMI 3 port detection and video output."
+    },
+    {
+      "3p_id": "31008552",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests HDMI port name reverting to defaults when CEC disabled, not HDMI 3 detection/video."
+    },
+    {
+      "3p_id": "31007315",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Explicitly tests HDMI-1 port in preconditions and steps, not HDMI 3."
+    }
+  ],
+  "TC-HDMI-004": [
+    {
+      "3p_id": "31007316",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Explicitly tests HDMI-1 port in preconditions and steps, not HDMI 4."
+    },
+    {
+      "3p_id": "31007314",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Explicitly tests HDMI-1 port in preconditions and steps, not HDMI 4."
+    },
+    {
+      "3p_id": "31008551",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests hiding empty HDMI ports from input list, not HDMI 4 signal detection and video output."
+    },
+    {
+      "3p_id": "31008552",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests HDMI port name reverting to defaults when CEC disabled, not HDMI 4 detection/video."
+    },
+    {
+      "3p_id": "31007315",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Explicitly tests HDMI-1 port in preconditions and steps, not HDMI 4."
+    },
+    {
+      "3p_id": "31007313",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Explicitly tests HDMI-1 port in preconditions and steps, not HDMI 4."
+    },
+    {
+      "3p_id": "31007680",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests HDMI Settings menu Device Discovery toggle setting, not actual HDMI 4 port detection and video display."
+    },
+    {
+      "3p_id": "31008384",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests HDMI port name fallback to customized name when CEC device removed, not HDMI 4 signal detection."
+    },
+    {
+      "3p_id": "31005530",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Preconditions state HDMI 4 has no device connected, so it cannot verify HDMI 4 detection and video output."
+    },
+    {
+      "3p_id": "31007813",
+      "verdict": "PARTIAL",
+      "confidence": "LOW_CONFIDENCE",
+      "reason": "Tests CEC device detection on any HDMI port with name verification; overlaps with detection concept but not specific to HDMI 4 video output."
+    }
+  ],
+  "TC-HDMI-005": [
+    {
+      "3p_id": "31007813",
+      "verdict": "YES",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Directly verifies CEC device detection and input automatically renamed to CEC device name, same functional outcome as portal test."
+    },
+    {
+      "3p_id": "31005517",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Includes device discovery verification but main focus is on delisting devices when CEC is disabled, not discovery itself."
+    },
+    {
+      "3p_id": "31008548",
+      "verdict": "YES",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Verifies default HDMI port names then connects CEC device and confirms name changes to device name, same discovery validation."
+    },
+    {
+      "3p_id": "31008552",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests port name reverting to default when CEC is disabled, not the positive discovery case."
+    },
+    {
+      "3p_id": "31008384",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests fallback to customized name after CEC device removal, not initial device discovery."
+    },
+    {
+      "3p_id": "31005516",
+      "verdict": "YES",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Directly verifies Device Discovery lists connected CEC devices, same functional intent as portal test."
+    },
+    {
+      "3p_id": "31007678",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Verifies CEC Device Control settings UI existence, not actual device discovery behavior."
+    },
+    {
+      "3p_id": "31005510",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests toggling CEC setting from Disabled to Enabled, not verifying device discovery."
+    },
+    {
+      "3p_id": "31005513",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Verifies CEC technical data is NOT shown in menu, unrelated to device discovery."
+    },
+    {
+      "3p_id": "31008382",
+      "verdict": "YES",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Verifies input is automatically renamed to device name when CEC device is detected, same expected outcome."
+    }
+  ],
+  "TC-HDMI-006": [
+    {
+      "3p_id": "31007679",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Verifies One Touch Play setting exists in HDMI Settings UI, not the actual OTP switching behavior."
+    },
+    {
+      "3p_id": "31005516",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests CEC device discovery, not one-touch play input switching."
+    },
+    {
+      "3p_id": "31005540",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests behavior when OTP is Disabled (TV stays off), the negative case of the portal test."
+    },
+    {
+      "3p_id": "31005539",
+      "verdict": "YES",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Powers on CEC device, TV auto-powers on and switches to that device's input \u2014 same one-touch play behavior."
+    },
+    {
+      "3p_id": "31005517",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests device delisting when CEC is disabled, unrelated to one-touch play."
+    },
+    {
+      "3p_id": "31005519",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests manual input switching to a CEC device, not automatic one-touch play triggered by external device."
+    },
+    {
+      "3p_id": "31005534",
+      "verdict": "YES",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Pressing PLAY on CEC device's RCU causes TV to switch active input to that device \u2014 exact OTP behavior."
+    },
+    {
+      "3p_id": "31005538",
+      "verdict": "YES",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "OTP Enabled in Eco Mode: powering on CEC device causes TV to power on and switch to that input."
+    },
+    {
+      "3p_id": "31005510",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests toggling CEC menu setting, not one-touch play functionality."
+    },
+    {
+      "3p_id": "31005537",
+      "verdict": "YES",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "OTP Enabled in Quickstart: powering on CEC device causes TV to switch input to device, same behavior."
+    }
+  ],
+  "TC-HDMI-007": [
+    {
+      "3p_id": "31008498",
+      "verdict": "NO",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests that countdown timer is not displayed during CEC wake-up, not system standby command processing."
+    },
+    {
+      "3p_id": "31008558",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "TV power-off causes CEC device to power down (related CEC standby behavior) but focuses on power cycling and content resume."
+    },
+    {
+      "3p_id": "31007316",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests DC power off/on timing with HDMI source, not CEC system standby command processing."
+    },
+    {
+      "3p_id": "31008555",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests CEC device powering off the TV (reverse direction), not TV standby powering off CEC devices."
+    },
+    {
+      "3p_id": "31008445",
+      "verdict": "NO",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests countdown timer absence during CEC wake-up, not system standby."
+    },
+    {
+      "3p_id": "31007314",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests AC power off/on timing, not CEC system standby command."
+    },
+    {
+      "3p_id": "31007315",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests DC power off/on timing with VIZIO Home input, not CEC standby."
+    },
+    {
+      "3p_id": "31007313",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests AC power off/on timing with VIZIO Home input, not CEC standby."
+    },
+    {
+      "3p_id": "31008552",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests HDMI port name reverting when CEC is disabled, completely different feature."
+    },
+    {
+      "3p_id": "31005540",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests CEC device power-on with OTP disabled, not system standby behavior."
+    }
+  ],
+  "TC-HDMI-008": [
+    {
+      "3p_id": "31008558",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests TV returning to HDMI input after power cycle via 'Last Used TV Input' setting, not auto-switching to newly active input."
+    },
+    {
+      "3p_id": "31008556",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests power cycling resume to HDMI in QuickStart mode, not auto-detection of newly active input."
+    },
+    {
+      "3p_id": "31007316",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests DC power on timing to Last Used TV Input, not auto input switching."
+    },
+    {
+      "3p_id": "31007314",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests AC power on timing, not auto input switching to active HDMI."
+    },
+    {
+      "3p_id": "31005516",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests CEC device discovery, unrelated to auto input switching."
+    },
+    {
+      "3p_id": "31007313",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests AC power on timing with VIZIO Home, not auto input switching."
+    },
+    {
+      "3p_id": "31007315",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests DC power on timing with VIZIO Home, not auto input switching."
+    },
+    {
+      "3p_id": "31008351",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests auto power-off when no signal detected, opposite scenario from auto-switching to active input."
+    },
+    {
+      "3p_id": "31007311",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests power on via native app hotkeys, not auto input switching."
+    },
+    {
+      "3p_id": "31008131",
+      "verdict": "PARTIAL",
+      "confidence": "LOW_CONFIDENCE",
+      "reason": "Tests Input Change Control notification display during input switches, related to input switching UX but not auto-switching trigger."
+    }
+  ],
+  "TC-HDMI-009": [
+    {
+      "3p_id": "31008549",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests user renaming HDMI input but does not verify persistence after power cycle."
+    },
+    {
+      "3p_id": "31008375",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests custom naming with 'Game Console' example and display format but does not verify persistence after reboot."
+    },
+    {
+      "3p_id": "31008404",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests automatic SPD InfoFrame naming from gaming console, not user custom name persistence."
+    },
+    {
+      "3p_id": "31008552",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests port name reverting when CEC disabled, opposite of persistence verification."
+    },
+    {
+      "3p_id": "31005503",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Input Change Control notification showing input names, not custom naming persistence."
+    },
+    {
+      "3p_id": "31008382",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests automatic CEC device naming, not user custom name persistence after reboot."
+    },
+    {
+      "3p_id": "31008153",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Input Change Control display, not custom naming persistence."
+    },
+    {
+      "3p_id": "31008548",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests automatic CEC device naming for new device, not user-set name persistence."
+    },
+    {
+      "3p_id": "31008551",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests hiding empty HDMI ports, unrelated to naming persistence."
+    },
+    {
+      "3p_id": "31007807",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests renaming input with special characters but does not verify persistence after power cycle."
+    }
+  ],
+  "TC-TUN-001": [
+    {
+      "3p_id": "31008378",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Runs channel scan but verifies Input Selector display change, not scan completion and channel count discovery."
+    },
+    {
+      "3p_id": "31008285",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Navigates to Find Channels and verifies available options in the UI, does not run scan to completion."
+    },
+    {
+      "3p_id": "31008284",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Initiates scan and verifies channel count accuracy, but cancels scan early rather than running to completion."
+    },
+    {
+      "3p_id": "31008259",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests that other functions are blocked during scanning, not scan completion and discovery."
+    },
+    {
+      "3p_id": "31007575",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Verifies Find New Channels UI options, not running a channel scan to discover channels."
+    },
+    {
+      "3p_id": "31008263",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Verifies Antenna Channels settings menu structure, not channel scanning."
+    },
+    {
+      "3p_id": "31007601",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Hide Channels feature, unrelated to channel scanning and discovery."
+    },
+    {
+      "3p_id": "31007576",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Runs Find New Channels scan to completion but focuses on channel numbering starting at channel 2."
+    },
+    {
+      "3p_id": "31008280",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Runs Find Channels scan and verifies completion, but focuses on timing performance rather than channel discovery."
+    },
+    {
+      "3p_id": "31008258",
+      "verdict": "YES",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Runs Find Channels scan to 100% completion and verifies digital channel count is shown, confirming channels discovered."
+    }
+  ],
+  "TC-TUN-002": [
+    {
+      "3p_id": "31008378",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Verifies input selector label change after scan, does not tune to a channel or verify audio/video playback."
+    },
+    {
+      "3p_id": "31008284",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests channel count accuracy, does not verify audio/video reception on a tuned channel."
+    },
+    {
+      "3p_id": "31008285",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Verifies Find Channels UI options, does not test channel reception or playback."
+    },
+    {
+      "3p_id": "31008259",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests blocked functions during scanning, unrelated to channel playback verification."
+    },
+    {
+      "3p_id": "31007584",
+      "verdict": "PARTIAL",
+      "confidence": "LOW_CONFIDENCE",
+      "reason": "Displays tuner diagnostic info (frequency, modulation, signal strength) but does not verify audio/video playback."
+    },
+    {
+      "3p_id": "31007575",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Verifies Find New Channels UI, not channel reception or playback."
+    },
+    {
+      "3p_id": "31008263",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Verifies Antenna Channels settings options, not channel reception."
+    },
+    {
+      "3p_id": "31007601",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Hide Channels feature, unrelated to tuner reception verification."
+    },
+    {
+      "3p_id": "31007576",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests channel map numbering, not audio/video reception."
+    },
+    {
+      "3p_id": "31008355",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tunes to digital channel on antenna and verifies audio plays, but specifically tests Spanish/Video Description audio track setting."
+    }
+  ],
+  "TC-TUN-003": [
+    {
+      "3p_id": "31007575",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Verifies Find New Channels UI settings, not channel up/down navigation."
+    },
+    {
+      "3p_id": "31008263",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Verifies Antenna Channels settings menu, not channel tuning behavior."
+    },
+    {
+      "3p_id": "31008285",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Verifies Find Channels UI options, not channel up/down tuning."
+    },
+    {
+      "3p_id": "31007584",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Displays tuner channel diagnostic info, does not test channel up/down navigation."
+    },
+    {
+      "3p_id": "31007979",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests 30-second no-signal message when switching inputs, not channel up/down."
+    },
+    {
+      "3p_id": "31007601",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Hide Channels feature, unrelated to channel navigation."
+    },
+    {
+      "3p_id": "31007772",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Video Description accessibility setting, not channel up/down tuning."
+    },
+    {
+      "3p_id": "31008180",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests auto power-off behavior on antenna input, not channel navigation."
+    },
+    {
+      "3p_id": "31007773",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Spanish/Video Description audio setting, not channel up/down."
+    },
+    {
+      "3p_id": "31005524",
+      "verdict": "PARTIAL",
+      "confidence": "LOW_CONFIDENCE",
+      "reason": "Tests input switching Tuner->HDMI->Tuner with audio/video verification, but tests input switching not channel up/down navigation."
+    }
+  ],
+  "TC-PROV-002": [
+    {
+      "3p_id": "31008652",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Verifies provisioning via NOC query using serial number, but focuses on provisioning status rather than serial number format compliance on TV UI."
+    },
+    {
+      "3p_id": "31008650",
+      "verdict": "YES",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Directly verifies serial number format is 15-character string from Settings > TV Information, matching the portal test's format compliance check."
+    },
+    {
+      "3p_id": "31009213",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Verifies firmware version number matches release notes, completely different field from serial number."
+    },
+    {
+      "3p_id": "31005835",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Displays TV Information including serial number field during OOBE, but does not specifically verify format compliance."
+    },
+    {
+      "3p_id": "31005837",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Shows TV Information popup with serial number field then tests restart, serial number display is incidental not the focus."
+    },
+    {
+      "3p_id": "31007638",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Verifies TV Information display including serial number field during OOBE, but no format validation."
+    },
+    {
+      "3p_id": "31007548",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Verifies basic TV status including serial number on Support Code page, but not format compliance."
+    },
+    {
+      "3p_id": "31005838",
+      "verdict": "PARTIAL",
+      "confidence": "LOW_CONFIDENCE",
+      "reason": "TV Information popup shows serial number then tests reset action; serial number display is incidental."
+    },
+    {
+      "3p_id": "31005836",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests dismissing the TV Information popup via back key; intent is UI navigation, not serial number verification."
+    },
+    {
+      "3p_id": "31007579",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Navigates to TV Information and verifies Serial Number field is displayed among other fields, but doesn't check format."
+    }
+  ],
+  "TC-PROV-003": [
+    {
+      "3p_id": "31005835",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Verifies general TV Information popup fields; no mention of ULPK or ULI ID verification."
+    },
+    {
+      "3p_id": "31005842",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Verifies TV Information during OOBE network connection; no ULPK/ULI content."
+    },
+    {
+      "3p_id": "31005836",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests dismissing TV Information popup; unrelated to ULPK verification."
+    },
+    {
+      "3p_id": "31005837",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "TV Information popup then restart; no ULPK/ULI field verification."
+    },
+    {
+      "3p_id": "31005843",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests dismissing TV Information popup during OOBE; unrelated to ULPK."
+    },
+    {
+      "3p_id": "31008651",
+      "verdict": "YES",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Directly checks UID under ULI information section in Settings > TV Information and validates on NOC, matching ULPK ID verification intent."
+    },
+    {
+      "3p_id": "31005838",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "TV Information popup then reset action; no ULPK/ULI verification."
+    },
+    {
+      "3p_id": "31005944",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests DC power cycle during Installing App Updates screen; completely different feature."
+    },
+    {
+      "3p_id": "31005844",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "TV Information popup then restart during OOBE; no ULPK content."
+    },
+    {
+      "3p_id": "31007548",
+      "verdict": "NO",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Verifies basic TV status on Support Code page (model, serial, network); no ULPK/ULI field mentioned."
+    }
+  ],
+  "TC-PROV-004": [
+    {
+      "3p_id": "31008652",
+      "verdict": "YES",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Opens NOC query with serial number and verifies Provisioning section status, directly validating NOC device registration."
+    },
+    {
+      "3p_id": "31008651",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Validates ULPK ID on NOC query but focuses on ULPK/ULI verification rather than overall device registration status."
+    },
+    {
+      "3p_id": "31008650",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Validates serial number on NOC query site, confirms TV data exists in NOC but focuses on serial number not registration status."
+    },
+    {
+      "3p_id": "31007494",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests app launch and VIZIO Home functionality when skipping TOS during OOBE; unrelated to NOC registration."
+    },
+    {
+      "3p_id": "31007961",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Same as above - app launch testing when skipping TOS; no NOC registration verification."
+    },
+    {
+      "3p_id": "31007995",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests OOBE information screen cycling through update stages; not about NOC device registration."
+    },
+    {
+      "3p_id": "31007594",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Check for Updates behavior when network is offline; different feature entirely."
+    },
+    {
+      "3p_id": "31007741",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests grayed-out Connect button behavior in WiFi password entry UI; unrelated to NOC."
+    },
+    {
+      "3p_id": "31006080",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests OOBE behavior based on TV activation status in NOC DB, which relates to registration but tests a different user-facing behavior."
+    },
+    {
+      "3p_id": "31007475",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests dismissing notification in hidden network security type selection; unrelated to NOC registration."
+    }
+  ],
+  "TC-OTA-001": [
+    {
+      "3p_id": "31007993",
+      "verdict": "YES",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Verifies 'Checking for Updates' screen appears during OOBE when firmware update is available, directly matching OOBE update check intent."
+    },
+    {
+      "3p_id": "31007994",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests slow internet message during OOBE OS download; related to OOBE update flow but tests a specific error scenario, not the basic check."
+    },
+    {
+      "3p_id": "31006602",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests HDMI input launch behavior after OOBE exits; different feature from firmware update check."
+    },
+    {
+      "3p_id": "31007992",
+      "verdict": "YES",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Verifies 'Checking for Updates' screen during OOBE when no update available, confirming the update check occurs and reports status."
+    },
+    {
+      "3p_id": "31006536",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests WiFi recovery during an active OTA update triggered from menu, not OOBE firmware check."
+    },
+    {
+      "3p_id": "31005938",
+      "verdict": "YES",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Verifies 'Checking for Updates' with WiFi during OOBE when no update available, directly validates OOBE update check flow."
+    },
+    {
+      "3p_id": "31005939",
+      "verdict": "YES",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Verifies 'Checking for Updates' with Ethernet during OOBE when no update available, same OOBE update check with different network type."
+    },
+    {
+      "3p_id": "31007938",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests connecting Ethernet while OOBE continues with WiFi during update check; focuses on network switching, not the update check itself."
+    },
+    {
+      "3p_id": "31005842",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests viewing TV Information menu during OOBE update screen; different intent from verifying update check occurs."
+    },
+    {
+      "3p_id": "31006603",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests HDMI launch behavior when TOS is cancelled during OOBE; unrelated to firmware update check."
+    }
+  ],
+  "TC-OTA-002": [
+    {
+      "3p_id": "31007590",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Navigates to ALL SETTINGS->SUPPORT->Check for Updates but selects NO to decline; tests the prompt UI not the actual update check."
+    },
+    {
+      "3p_id": "31007994",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests slow internet during OOBE firmware download; not a manual menu-initiated check."
+    },
+    {
+      "3p_id": "31007589",
+      "verdict": "YES",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Navigates to menu Check for Updates, selects YES, verifies 'no update available' result; directly tests manual check-for-updates functionality."
+    },
+    {
+      "3p_id": "31005938",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "OOBE-initiated update check during factory reset setup, not menu-driven manual check."
+    },
+    {
+      "3p_id": "31007992",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "OOBE-initiated 'Checking for Updates' during initial setup, not a user-triggered menu action."
+    },
+    {
+      "3p_id": "31007552",
+      "verdict": "YES",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Navigates to Support Code page and clicks CHECK FOR UPDATES, initiates manual check; same user-facing behavior via alternative menu path."
+    },
+    {
+      "3p_id": "31007993",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "OOBE-initiated update check during initial setup, not manual menu check."
+    },
+    {
+      "3p_id": "31007997",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests DC power cycle during 'Installing App Updates' screen in OOBE; different feature entirely."
+    },
+    {
+      "3p_id": "31008656",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Updates via sidebar menu using OOB firmware; uses menu-based update but specific to OOB FW enablement, different test focus."
+    },
+    {
+      "3p_id": "31005941",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "OOBE-initiated 'Checking for Updates' when firmware is available; not a menu-triggered manual check."
+    }
+  ],
+  "TC-OTA-003": [
+    {
+      "3p_id": "31009216",
+      "verdict": "YES",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Directly tests silent update via standby mode in Eco Mode, matching the portal test's silent standby OTA update intent."
+    },
+    {
+      "3p_id": "31009217",
+      "verdict": "YES",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Directly tests silent update via standby mode in Quick Start Mode, same functional intent with different power mode."
+    },
+    {
+      "3p_id": "31008658",
+      "verdict": "YES",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests silent update via standby in Quick Start Mode for OOB SKU; same standby OTA behavior being verified."
+    },
+    {
+      "3p_id": "31008657",
+      "verdict": "YES",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests silent update via standby in Eco Mode for OOB SKU; same standby OTA behavior being verified."
+    },
+    {
+      "3p_id": "31006536",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests WiFi recovery during an active OTA update; different feature from silent standby update."
+    },
+    {
+      "3p_id": "31007993",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "OOBE-initiated firmware check, not a silent standby update."
+    },
+    {
+      "3p_id": "31007590",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests declining the Check for Updates prompt in menu; unrelated to silent standby updates."
+    },
+    {
+      "3p_id": "31007992",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "OOBE-initiated check for updates when none available; not a standby silent update."
+    },
+    {
+      "3p_id": "31005941",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "OOBE-initiated check for updates when available; not a standby silent update."
+    },
+    {
+      "3p_id": "31007997",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests DC power cycle during OOBE 'Installing App Updates'; not silent standby update."
+    }
+  ],
+  "TC-OTA-004": [
+    {
+      "3p_id": "31006536",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests WiFi recovery during OTA update download; does not verify firmware version display post-update."
+    },
+    {
+      "3p_id": "31007579",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Navigates to TV Information and verifies Firmware field is listed, but not specifically post-update version validation."
+    },
+    {
+      "3p_id": "31007590",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests declining the Check for Updates prompt; unrelated to verifying firmware version after update."
+    },
+    {
+      "3p_id": "31005842",
+      "verdict": "PARTIAL",
+      "confidence": "LOW_CONFIDENCE",
+      "reason": "Shows TV Information including firmware field during OOBE; displays firmware but not a post-update verification."
+    },
+    {
+      "3p_id": "31007993",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests OOBE update check and download; related to OTA flow but does not verify version display after completion."
+    },
+    {
+      "3p_id": "31008658",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Performs standby silent update which likely includes post-update verification, but primary intent is the update mechanism not version display."
+    },
+    {
+      "3p_id": "31007587",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Initiates Check for Updates when firmware available and triggers update; related OTA flow but not focused on post-update version verification."
+    },
+    {
+      "3p_id": "31008657",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Performs standby silent update in Eco Mode; update flow likely confirms version but primary focus is the update mechanism."
+    },
+    {
+      "3p_id": "31008656",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Updates via sidebar menu with OOB FW; performs full update but primary intent is the update path, not version display verification."
+    },
+    {
+      "3p_id": "31009217",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Standby silent update in Quick Start Mode; update process may confirm new version but not focused on version display verification."
+    }
+  ],
+  "TC-OTA-005": [
+    {
+      "3p_id": "31008657",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Performs standby silent update and verifies TV wakes successfully, but doesn't test app launch, power cycle, or Settings navigation post-update."
+    },
+    {
+      "3p_id": "31009216",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Standby silent update in Eco Mode; verifies update completes but not comprehensive post-update stability testing."
+    },
+    {
+      "3p_id": "31008658",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Standby silent update in Quick Start; verifies update completes but lacks post-update smoke test coverage."
+    },
+    {
+      "3p_id": "31009217",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Standby silent update in Quick Start Mode; update completion verified but no app launch or stability checks."
+    },
+    {
+      "3p_id": "31006536",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests WiFi recovery during OTA download; tests resilience during update, not post-update system stability."
+    },
+    {
+      "3p_id": "31006081",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests OOBE retry logic when activation API times out; unrelated to post-update stability."
+    },
+    {
+      "3p_id": "31007997",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests DC power cycle during 'Installing App Updates' in OOBE; tests mid-update resilience, not post-update stability."
+    },
+    {
+      "3p_id": "31007993",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "OOBE firmware update check; about initiating updates, not verifying post-update system stability."
+    },
+    {
+      "3p_id": "31005941",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "OOBE 'Checking for Updates' when available; about the update process, not post-update stability verification."
+    },
+    {
+      "3p_id": "31005943",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests DC power cycle during 'Installing OS Updates'; tests mid-update power resilience, not post-update stability."
+    }
+  ],
+  "TC-OOBE-001": [
+    {
+      "3p_id": "31008235",
+      "verdict": "YES",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Verifies OOBE displays correctly after factory reset (V logo, galaxy background, OOBE elements), confirming OOBE wizard auto-launches."
+    },
+    {
+      "3p_id": "31006603",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "OOBE launches as step 1 after factory reset, but the test focus is on HDMI behavior after OOBE exits with TOS cancelled."
+    },
+    {
+      "3p_id": "31008201",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Duplicate of 31006603; OOBE launch is a precondition but test focus is HDMI launch after OOBE exit."
+    },
+    {
+      "3p_id": "31006602",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "OOBE launches as precondition, but test validates HDMI behavior after completing OOBE with TOS accepted."
+    },
+    {
+      "3p_id": "31008170",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests the factory reset menu action itself; OOBE launch may follow but is not the verified outcome."
+    },
+    {
+      "3p_id": "31006897",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Triggers OOBE via factory reset but focuses on verifying the ORDER of Activity Data and Viewing Data screens, not that OOBE launches."
+    },
+    {
+      "3p_id": "31009356",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Starts OOBE via factory reset but tests backing out of OOBE from language screen to access User Manual\u2014different intent."
+    },
+    {
+      "3p_id": "31006598",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "OOBE launches as step 1 but test focus is HDMI behavior after OOBE exits in offline/cancel-TOS scenario."
+    },
+    {
+      "3p_id": "31005639",
+      "verdict": "YES",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Performs factory reset via OSD menu and verifies OOBE screen launches\u2014same functional outcome as portal test."
+    },
+    {
+      "3p_id": "31006597",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "OOBE launches as precondition but test validates HDMI behavior after OOBE exit with offline network and TOS accepted."
+    }
+  ],
+  "TC-OOBE-002": [
+    {
+      "3p_id": "31006947",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Wi-Fi generation indicator UI element on password entry screen during OOBE, not the full Wi-Fi connection flow."
+    },
+    {
+      "3p_id": "31007009",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Same as 31006947\u2014verifies Wi-Fi generation indicator display, not successful network connection completion."
+    },
+    {
+      "3p_id": "31007071",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Same as 31006947\u2014tests Wi-Fi generation indicator on password screen, not the connect-and-advance flow."
+    },
+    {
+      "3p_id": "31007247",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Verifies captive portal SSID is listed on OOBE network setup page\u2014tests SSID visibility but not the connection flow."
+    },
+    {
+      "3p_id": "31006702",
+      "verdict": "PARTIAL",
+      "confidence": "LOW_CONFIDENCE",
+      "reason": "Same title as 31007247 (captive portal SSID listing) but no steps available to confirm scope."
+    },
+    {
+      "3p_id": "31006723",
+      "verdict": "NO",
+      "confidence": "LOW_CONFIDENCE",
+      "reason": "Title suggests mobile browser authentication for captive portal; steps are incomplete/corrupt ('Ravi J'), unrelated to OOBE Wi-Fi setup."
+    },
+    {
+      "3p_id": "31006708",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests re-selecting captive portal SSID after navigating back on OOBE network page\u2014related to network setup but different behavior."
+    },
+    {
+      "3p_id": "31007258",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests selecting another Wi-Fi after returning from captive portal page during OOBE\u2014network setup adjacent but different focus."
+    },
+    {
+      "3p_id": "31007251",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests re-selecting captive portal SSID after returning to network page during OOBE\u2014navigation behavior, not connection completion."
+    },
+    {
+      "3p_id": "31006812",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests captive portal mobile browser auth from Settings menu (not during OOBE)\u2014entirely different context."
+    }
+  ],
+  "TC-OOBE-004": [
+    {
+      "3p_id": "31006098",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests that user is prompted for VIZIO Account AFTER OOBE if they skipped VA during OOBE\u2014post-OOBE behavior, not the in-OOBE flow itself."
+    },
+    {
+      "3p_id": "31006099",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests that user is NOT prompted after OOBE if VA was set up during OOBE\u2014verifies post-OOBE state, not the sign-in/skip step itself."
+    },
+    {
+      "3p_id": "31006097",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests that skip option is REMOVED for TVs activated after cut-off date\u2014related to account flow but validates a restriction, not the normal sign-in/skip flow."
+    },
+    {
+      "3p_id": "31006084",
+      "verdict": "YES",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests skip option during VIZIO Account setup in OOBE\u2014verifies user can skip VA setup and proceed, matching portal test's 'complete or skip account sign-in step.'"
+    },
+    {
+      "3p_id": "31006603",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests HDMI launch behavior after OOBE exits when TOS is cancelled\u2014unrelated to account sign-in flow."
+    },
+    {
+      "3p_id": "31008201",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Same as 31006603\u2014HDMI launch after OOBE exit, no relation to account sign-in step."
+    },
+    {
+      "3p_id": "31006109",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests post-OOBE left nav showing Sign in/Sign up option if user skipped VA\u2014validates post-OOBE state, not the in-OOBE account flow."
+    },
+    {
+      "3p_id": "31006602",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests HDMI launch after OOBE with TOS accepted\u2014no relation to account sign-in step."
+    },
+    {
+      "3p_id": "31006723",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Mobile browser authentication for captive portal network\u2014completely unrelated to VIZIO account sign-in during OOBE."
+    },
+    {
+      "3p_id": "31006879",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests username/password entry via virtual keyboard for captive portal network login\u2014not VIZIO account sign-in during OOBE."
+    }
+  ],
+  "TC-OOBE-005": [
+    {
+      "3p_id": "31007495",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests OOBE with TOS skipped\u2014lands on HDMI screen and pressing Home re-triggers TOS; does NOT complete OOBE to home screen."
+    },
+    {
+      "3p_id": "31007962",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Duplicate of 31007495\u2014OOBE with skipped TOS re-triggers TOS on Home press; not a successful OOBE completion to home."
+    },
+    {
+      "3p_id": "31007526",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Precondition is 'Complete OOBE and land on VIZIO Home,' but the test focus is verifying default Closed Caption settings\u2014different intent."
+    },
+    {
+      "3p_id": "31005562",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests whether VIZIO Account page appears or transitions directly to VIZIO HOME\u2014related to OOBE flow but focused on one specific screen transition."
+    },
+    {
+      "3p_id": "31008235",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Verifies OOBE launch requirements (V logo, background, bubbles)\u2014about OOBE start, not OOBE completion and home screen arrival."
+    },
+    {
+      "3p_id": "31007961",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests app launch/VIZIO Home/Cast behavior when TOS was skipped during OOBE\u2014about post-skip enforcement, not OOBE completion."
+    },
+    {
+      "3p_id": "31006897",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Verifies the ORDER of screens during OOBE\u2014related to OOBE flow sequence but doesn't verify completion to home screen."
+    },
+    {
+      "3p_id": "31005828",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests backing out of OOBE and pressing Menu to view TV Information\u2014opposite of completing OOBE."
+    },
+    {
+      "3p_id": "31007496",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests skip-network/skip-TOS OOBE path landing on HDMI screen then reconnecting\u2014partial OOBE flow but doesn't reach normal home screen completion."
+    },
+    {
+      "3p_id": "31007494",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests app launch behavior when TOS skipped during OOBE\u2014about TOS enforcement, not OOBE completion to home screen."
+    }
+  ],
+  "TC-APP-001": [
+    {
+      "3p_id": "31007980",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Verifies VIZIO Home launches via OK key on quiescent countdown screen\u2014home loads but trigger is OK-on-countdown, not Home button press."
+    },
+    {
+      "3p_id": "31007981",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests that Left+OK CANCELS the VIZIO Home launch from countdown\u2014opposite intent of verifying home screen loads."
+    },
+    {
+      "3p_id": "31008469",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests D-pad navigation through VIZIO Home content rows\u2014overlaps with portal's 'D-pad navigation responsive' but doesn't test home LAUNCH."
+    },
+    {
+      "3p_id": "31007819",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Presses Home button and verifies VIZIO Home with APPS & INPUTS row appears, but test focus is specifically on 'Last used Input port is hidden' detail."
+    },
+    {
+      "3p_id": "31005544",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests presence and behavior of 'All Inputs' icon in APPS & INPUTS row\u2014home screen content detail, not the launch action."
+    },
+    {
+      "3p_id": "31008059",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Text-to-Speech/TalkBack functionality on Media Player app navigation\u2014completely different feature."
+    },
+    {
+      "3p_id": "31007494",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests app/Home/Cast launch behavior when TOS skipped during OOBE\u2014OOBE enforcement context, not normal Home button press."
+    },
+    {
+      "3p_id": "31007961",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Same as 31007494\u2014tests OOBE TOS skip enforcement for app/Home/Cast launch."
+    },
+    {
+      "3p_id": "31008058",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Text-to-Speech/TalkBack support on VIZIO Home screen\u2014accessibility feature, not home screen launch."
+    },
+    {
+      "3p_id": "31007309",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests power-on via native app hotkeys in ECO mode loading app screens\u2014power management test, not Home button press."
+    }
+  ],
+  "TC-APP-002": [
+    {
+      "3p_id": "31007215",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests generic 'any native app' streaming on captive portal network\u2014not WatchFree+ specific and intent is network connectivity verification."
+    },
+    {
+      "3p_id": "31006848",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Same as 31007215\u2014generic native app streaming on CP network, not WatchFree+ launch verification."
+    },
+    {
+      "3p_id": "31007152",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Same as 31007215\u2014generic native app streaming on CP network, not WatchFree+ launch verification."
+    },
+    {
+      "3p_id": "31006771",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Same as 31007215\u2014generic native app streaming on CP network, not WatchFree+ launch verification."
+    },
+    {
+      "3p_id": "31006338",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests network loss/recovery during WatchFree+ streaming\u2014intent is network resilience, not app launch verification."
+    },
+    {
+      "3p_id": "31006882",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Launches WatchFree+ and verifies streaming starts, but specifically in captive portal network context\u2014network connectivity test, not general app launch."
+    },
+    {
+      "3p_id": "31006769",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Verifies WatchFree+ live and on-demand streaming works on CP network\u2014overlapping functionality but network-specific test context."
+    },
+    {
+      "3p_id": "31006369",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests network loss/recovery during WatchFree+ streaming\u2014intent is network resilience, not app launch verification."
+    },
+    {
+      "3p_id": "31006846",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Verifies WatchFree+ live and on-demand streaming works on CP network\u2014overlapping functionality but network-specific test context."
+    },
+    {
+      "3p_id": "31007213",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Verifies WatchFree+ live and on-demand streaming works on CP network\u2014overlapping functionality but network-specific test context."
+    }
+  ],
+  "TC-APP-003": [
+    {
+      "3p_id": "31006470",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests router power-off while Netflix is at home page and recovery\u2014network resilience test, not Netflix app launch verification."
+    },
+    {
+      "3p_id": "31006407",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Same as 31006470\u2014tests router off/on recovery while at Netflix home page, not app launch."
+    },
+    {
+      "3p_id": "31006472",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests router power-off during Netflix streaming and recovery\u2014network resilience during playback, not app launch."
+    },
+    {
+      "3p_id": "31006409",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Same as 31006472\u2014router off during Netflix streaming, network resilience test."
+    },
+    {
+      "3p_id": "31006345",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Ethernet disconnect while at Netflix home page and reconnection\u2014network resilience, not app launch."
+    },
+    {
+      "3p_id": "31006378",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Ethernet disconnect during Netflix streaming and reconnection\u2014network resilience, not app launch."
+    },
+    {
+      "3p_id": "31006405",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests launching Netflix when router is OFF and verifying recovery\u2014network failure scenario, not normal app launch."
+    },
+    {
+      "3p_id": "31006468",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Same as 31006405\u2014Netflix launch with router OFF and recovery, network failure scenario."
+    },
+    {
+      "3p_id": "31006343",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Netflix launch with Ethernet disconnected and reconnection\u2014network failure scenario, not normal app launch."
+    },
+    {
+      "3p_id": "31006376",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Ethernet disconnect while at Netflix home page and reconnection\u2014network resilience, not app launch."
+    }
+  ],
+  "TC-APP-004": [
+    {
+      "3p_id": "31006771",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests generic 'any native app' streaming on captive portal network\u2014not YouTube-specific and intent is network connectivity verification."
+    },
+    {
+      "3p_id": "31007152",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Same as 31006771\u2014generic native app streaming on CP network, not YouTube launch verification."
+    },
+    {
+      "3p_id": "31007215",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Same as 31006771\u2014generic native app streaming on CP network, not YouTube launch verification."
+    },
+    {
+      "3p_id": "31006848",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Same as 31006771\u2014generic native app streaming on CP network, not YouTube launch verification."
+    },
+    {
+      "3p_id": "31007214",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests generic 'any HTML app' streaming on CP network\u2014not YouTube-specific; YouTube is HTML-based but test is network verification."
+    },
+    {
+      "3p_id": "31007151",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Same as 31007214\u2014generic HTML app streaming on CP network, not YouTube launch verification."
+    },
+    {
+      "3p_id": "31006770",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Same as 31007214\u2014generic HTML app streaming on CP network, not YouTube launch verification."
+    },
+    {
+      "3p_id": "31008147",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests TalkBack/accessibility support across applications\u2014completely different feature from YouTube app launch."
+    },
+    {
+      "3p_id": "31006847",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Same as 31007214\u2014generic HTML streaming on CP network, not YouTube launch verification."
+    },
+    {
+      "3p_id": "31005554",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests OOBE auto-progress to next screen after video tutorial\u2014completely unrelated to YouTube app launch."
+    }
+  ],
+  "TC-SYS-001": [
+    {
+      "3p_id": "31007616",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests that specific remote keys dismiss the All Settings menu, not navigation through settings categories."
+    },
+    {
+      "3p_id": "31007504",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Verifies Quick Settings menu items display (offline), not All Settings category navigation."
+    },
+    {
+      "3p_id": "31007532",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests deep-link into full Settings Menu from Quick Settings tile, but does not verify navigating through each category."
+    },
+    {
+      "3p_id": "31007503",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Verifies Quick Settings menu items display (online), not All Settings category navigation."
+    },
+    {
+      "3p_id": "31007516",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests circular scrolling behavior within Quick Settings, not navigation through All Settings categories."
+    },
+    {
+      "3p_id": "31007505",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Verifies Quick Settings menu items are displayed correctly, overlaps with settings UI but not All Settings category navigation."
+    },
+    {
+      "3p_id": "31008171",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Reset Apps functionality from factory reset menu, completely different feature."
+    },
+    {
+      "3p_id": "31007514",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests auto-dismissal of Settings Menu after 60s inactivity, not category navigation."
+    },
+    {
+      "3p_id": "31007508",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Quick Settings dismissal by pressing Menu button again, not navigation through categories."
+    },
+    {
+      "3p_id": "31007510",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Quick Settings dismissal by pressing Home button, not navigation through categories."
+    }
+  ],
+  "TC-SYS-002": [
+    {
+      "3p_id": "31007643",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Verifies TV Information display (Serial, Model, Firmware, Network) but primary test focus continues to Restart action."
+    },
+    {
+      "3p_id": "31007639",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Verifies TV Information fields but primary focus is testing back-key dismissal of the popup."
+    },
+    {
+      "3p_id": "31007638",
+      "verdict": "YES",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Verifies TV Information display showing Serial Number, Model Name, Firmware, Network details \u2014 same end-state as portal test."
+    },
+    {
+      "3p_id": "31005836",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Verifies TV Information fields but primary focus is testing back-key dismissal behavior."
+    },
+    {
+      "3p_id": "31005835",
+      "verdict": "YES",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Verifies TV Information display showing Serial Number, Model, Firmware, Network, IP, MAC \u2014 same functional verification as portal test."
+    },
+    {
+      "3p_id": "31007644",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Verifies TV Information display but primary test focus continues to Reset action from that screen."
+    },
+    {
+      "3p_id": "31005837",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Verifies TV Information fields but primary focus is testing Restart functionality from that screen."
+    },
+    {
+      "3p_id": "31007506",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests TV Name display at top of menu items, not System Information screen with model/serial/firmware details."
+    },
+    {
+      "3p_id": "31005838",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Verifies TV Information fields but primary focus is testing Reset action from that screen."
+    },
+    {
+      "3p_id": "31005843",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Verifies TV Information during 'checking for updates' screen then tests dismissal \u2014 different context but same info verified."
+    }
+  ],
+  "TC-SYS-003": [
+    {
+      "3p_id": "31008170",
+      "verdict": "YES",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Navigates to Reset to Factory Settings and selects Reset TV \u2014 directly tests factory reset execution."
+    },
+    {
+      "3p_id": "31005639",
+      "verdict": "YES",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Performs factory reset via OSD Menu and expects TV to launch OOBE \u2014 same intent and outcome."
+    },
+    {
+      "3p_id": "31006047",
+      "verdict": "YES",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Performs factory reset via OSD Menu expecting OOBE launch \u2014 same functional verification as portal test."
+    },
+    {
+      "3p_id": "31005953",
+      "verdict": "YES",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Performs factory reset via OSD Menu expecting OOBE launch \u2014 same functional verification as portal test."
+    },
+    {
+      "3p_id": "31005984",
+      "verdict": "YES",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Performs factory reset via IR Remote expecting OOBE launch \u2014 same functional verification as portal test."
+    },
+    {
+      "3p_id": "31008171",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Selects Reset Apps (not Reset TV) \u2014 resets apps only, TV does not return to OOBE or clear all data."
+    },
+    {
+      "3p_id": "31007780",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Reset TV Advertiser ID under Privacy & Legal \u2014 ad tracking reset, not factory reset."
+    },
+    {
+      "3p_id": "31008172",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Selects Restart from factory reset menu \u2014 restart does not clear data or return to OOBE."
+    },
+    {
+      "3p_id": "31005910",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Starts with factory reset but focuses on completing OOBE via a specific troubleshoot flow after reset."
+    },
+    {
+      "3p_id": "31005594",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests HELP page when no network is connected \u2014 entirely different feature."
+    }
+  ],
+  "TC-SYS-004": [
+    {
+      "3p_id": "31008497",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Cast wake-up countdown timer behavior, not Sleep Timer standby functionality."
+    },
+    {
+      "3p_id": "31005511",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests menu auto-dismiss after 60s inactivity \u2014 menu timeout is not sleep timer."
+    },
+    {
+      "3p_id": "31007822",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Sets 30-min sleep timer value but does not verify TV actually enters standby when timer expires."
+    },
+    {
+      "3p_id": "31008495",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests boot countdown timer with remote hot keys \u2014 different power-on feature, not sleep timer."
+    },
+    {
+      "3p_id": "31008060",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Text-to-Speech announcing sleep timer notification \u2014 accessibility feature, not sleep timer standby behavior."
+    },
+    {
+      "3p_id": "31008181",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Verifies TV does NOT power off when audio app stops \u2014 opposite intent, no relation to sleep timer."
+    },
+    {
+      "3p_id": "31007985",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests no-signal countdown timer on HDMI input \u2014 different auto-off mechanism, not sleep timer."
+    },
+    {
+      "3p_id": "31007823",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Sets 60-min sleep timer value but does not verify TV actually enters standby when timer expires."
+    },
+    {
+      "3p_id": "31007821",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Verifies sleep timer default is Off and displays options \u2014 tests settings UI, not standby behavior."
+    },
+    {
+      "3p_id": "31007530",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Verifies Sleep Timer is visible and selectable in Quick Settings \u2014 tests accessibility of setting, not timer countdown/standby."
+    }
+  ],
+  "TC-SYS-005": [
+    {
+      "3p_id": "31008091",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests correct PIN grants access to Reset System PIN \u2014 verifies PIN protection but not content restriction settings visibility."
+    },
+    {
+      "3p_id": "31008090",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests initial Set System PIN flow when no PIN exists \u2014 PIN setup, not accessing restrictions with existing PIN."
+    },
+    {
+      "3p_id": "31008092",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests incorrect PIN is rejected \u2014 related to PIN protection but verifies denial, not access to restriction settings."
+    },
+    {
+      "3p_id": "31007853",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Reset System PIN functionality within Parental Controls \u2014 PIN management, not content restriction access."
+    },
+    {
+      "3p_id": "31008164",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests Reset TV behavior when System PIN is set \u2014 about factory reset interaction with PIN, not parental controls access."
+    },
+    {
+      "3p_id": "31007852",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests first-time System PIN setup via digit pad \u2014 PIN creation flow, not accessing content restrictions."
+    },
+    {
+      "3p_id": "31007854",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests that PIN value 0000 is rejected as invalid \u2014 edge-case PIN validation rule, not parental controls access."
+    },
+    {
+      "3p_id": "31007858",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests PIN lock timing across power cycles \u2014 PIN locking mechanism, not content restriction access."
+    },
+    {
+      "3p_id": "31008381",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Verifies System menu lists Parental Controls as an item \u2014 confirms existence but does not test PIN or restriction settings."
+    },
+    {
+      "3p_id": "31007720",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests All Settings menu ordering \u2014 about menu structure, not Parental Controls access or PIN protection."
+    }
+  ]
+}

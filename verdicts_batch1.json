@@ -1,0 +1,498 @@
+{
+  "TC-PWR-002": [
+    {
+      "3p_id": "31007309",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Powers on TV from off state but uses native app hotkey (not Power button) and expects app screen (not home screen)"
+    },
+    {
+      "3p_id": "31007301",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests AC power off/on (plug cycle) to VIZIO Home, not standby-to-on via remote Power button"
+    },
+    {
+      "3p_id": "31008429",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests power on via app hotkeys specifically after maintenance reboot scenario, different intent entirely"
+    },
+    {
+      "3p_id": "31007303",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Same mechanism (remote power button to VIZIO Home) but specifically tests 3-second ECO mode timing benchmark rather than general power-on functionality"
+    },
+    {
+      "3p_id": "31008426",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests maintenance reboot trigger behavior after 6 DC power cycles, not standard power-on from standby"
+    },
+    {
+      "3p_id": "31008428",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests power on via HTML app hotkeys after maintenance reboot, completely different scenario and trigger"
+    },
+    {
+      "3p_id": "31007800",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests front panel button to power OFF the TV, not power ON via remote"
+    },
+    {
+      "3p_id": "31008430",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests power on via Home hotkey specifically after maintenance reboot, different scenario and purpose"
+    },
+    {
+      "3p_id": "31008432",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests maintenance reboot timing by powering on at 5th minute after 6th DC OFF, unrelated to basic power-on"
+    },
+    {
+      "3p_id": "31007311",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Powers on from off state via native app hotkeys to Last Used TV Input, different trigger mechanism and expected landing screen"
+    }
+  ],
+  "TC-PWR-003": [
+    {
+      "3p_id": "31013870",
+      "verdict": "YES",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Step 2 tests pressing power button to power off the TV, same functional intent as portal test's standby transition via remote"
+    },
+    {
+      "3p_id": "31008431",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests maintenance reboot suspension behavior after 6 DC power cycles, unrelated to standby transition"
+    },
+    {
+      "3p_id": "31007302",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests AC power off/on timing in ECO mode, not remote-initiated standby transition"
+    },
+    {
+      "3p_id": "31007800",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "TV powers off to standby but via front panel button with 3-second countdown, not via remote Power button"
+    },
+    {
+      "3p_id": "31009029",
+      "verdict": "YES",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Step 2 tests pressing power button to power off TV, same user-facing behavior as portal test's standby transition"
+    },
+    {
+      "3p_id": "31008179",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests that TV does NOT power off during retail demo, opposite intent from verifying power-off works"
+    },
+    {
+      "3p_id": "31008497",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests cast wake behavior and countdown timer display, unrelated to power-off-to-standby"
+    },
+    {
+      "3p_id": "31007304",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests DC power-on speed in ECO mode, not the power-off-to-standby transition"
+    },
+    {
+      "3p_id": "31007850",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests power off via front panel during demo mode with notification, related behavior but different mechanism and context"
+    },
+    {
+      "3p_id": "31008444",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests TV powering on to correct input after DC power cycle, not the power-off-to-standby transition"
+    }
+  ],
+  "TC-PWR-005": [
+    {
+      "3p_id": "31007800",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests front panel button power-off behavior with countdown, not Quick Start standby resume"
+    },
+    {
+      "3p_id": "31008556",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Uses Quick Start mode and tests power cycling with HDMI device, but focus is HDMI content resume not instant-on home screen loading"
+    },
+    {
+      "3p_id": "31007302",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests AC power off/on timing in ECO mode, not Quick Start standby resume via remote"
+    },
+    {
+      "3p_id": "31007311",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests power on via native app hotkeys in ECO mode, not Quick Start standby resume"
+    },
+    {
+      "3p_id": "31007304",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests DC power on speed in ECO mode, not Quick Start standby resume behavior"
+    },
+    {
+      "3p_id": "31013870",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests basic power on/off via remote but does not verify Quick Start mode or instant-on timing"
+    },
+    {
+      "3p_id": "31006239",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Quick Start mode wake behavior but via Wake on LAN network packet, not remote control Power button"
+    },
+    {
+      "3p_id": "31007799",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests front panel short press UI display (input selector), unrelated to Quick Start resume"
+    },
+    {
+      "3p_id": "31007305",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests restart from OSD menu in ECO mode, not Quick Start standby resume"
+    },
+    {
+      "3p_id": "31009029",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests basic power on/off via remote but does not verify Quick Start mode or instant-on timing"
+    }
+  ],
+  "TC-PWR-006": [
+    {
+      "3p_id": "31007302",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests single AC power cycle timing, not repeated cycle stability"
+    },
+    {
+      "3p_id": "31008431",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Involves 6 consecutive DC power cycles but tests maintenance reboot suspension, not general stability"
+    },
+    {
+      "3p_id": "31008432",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Involves 6 DC power cycles but tests maintenance reboot trigger timing, not cycle stability verification"
+    },
+    {
+      "3p_id": "31007305",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests single restart from OSD menu with timing measurement, not repeated power cycle stability"
+    },
+    {
+      "3p_id": "31006985",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Wi-Fi re-scan behavior during power cycle on troubleshoot page, different feature entirely"
+    },
+    {
+      "3p_id": "31008646",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests power cycle loop stability (500 cycles) but uses special loop-test firmware build, different methodology and scale than standard 10-cycle functional test"
+    },
+    {
+      "3p_id": "31008426",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Involves 6 DC power cycles but purpose is testing maintenance reboot trigger, not general cycle stability"
+    },
+    {
+      "3p_id": "31007304",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests single DC power cycle speed in ECO mode, not repeated cycle stability"
+    },
+    {
+      "3p_id": "31007311",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests single power-on via native app hotkeys, not repeated power cycle stability"
+    },
+    {
+      "3p_id": "31008497",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests countdown timer behavior during cast wake, unrelated to power cycle stability"
+    }
+  ],
+  "TC-VID-002": [
+    {
+      "3p_id": "31008599",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Involves verifying resolution in TV information across formats including 4K, but primary purpose is testing Super Resolution picture enhancement feature"
+    },
+    {
+      "3p_id": "31008605",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Clear Action motion handling feature, not 4K resolution output verification"
+    },
+    {
+      "3p_id": "31008615",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Active Pixel Tuning picture quality feature, unrelated to resolution verification"
+    },
+    {
+      "3p_id": "31008609",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Quantum Color feature across formats, not 4K resolution display verification"
+    },
+    {
+      "3p_id": "31008606",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Tone Mapping for HDR content, not 4K resolution output verification"
+    },
+    {
+      "3p_id": "31008610",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Tint color setting adjustment, unrelated to resolution verification"
+    },
+    {
+      "3p_id": "31008612",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Contrast Enhancer feature, unrelated to 4K resolution verification"
+    },
+    {
+      "3p_id": "31008608",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Contrast setting adjustment, unrelated to resolution verification"
+    },
+    {
+      "3p_id": "31008607",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Black Level setting adjustment, unrelated to resolution verification"
+    },
+    {
+      "3p_id": "31008614",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Sharpness setting adjustment, unrelated to 4K resolution verification"
+    }
+  ],
+  "TC-VID-003": [
+    {
+      "3p_id": "31007680",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests HDMI Device Discovery settings page functionality, not 1080p content display verification"
+    },
+    {
+      "3p_id": "31007682",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Picture Size and Position settings in HDMI menu, not 1080p resolution display verification"
+    },
+    {
+      "3p_id": "31008133",
+      "verdict": "PARTIAL",
+      "confidence": "LOW_CONFIDENCE",
+      "reason": "Involves input switching and resolution display but tests Input Change Control UI behavior, not 1080p content rendering"
+    },
+    {
+      "3p_id": "31008154",
+      "verdict": "PARTIAL",
+      "confidence": "LOW_CONFIDENCE",
+      "reason": "Tests resolution display in Input Change Control overlay during input switching, tangentially related but different focus"
+    },
+    {
+      "3p_id": "31008510",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests HDMI Mode setting options (Auto/Standard/Compatibility), not 1080p display output"
+    },
+    {
+      "3p_id": "31005548",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests HDMI Mode naming conventions, unrelated to 1080p display verification"
+    },
+    {
+      "3p_id": "31005524",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests input switching with audio/video verification on HDMI, related to HDMI content display but not specifically 1080p resolution verification"
+    },
+    {
+      "3p_id": "31008556",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests power cycling with HDMI device in Quick Start mode, not 1080p display verification"
+    },
+    {
+      "3p_id": "31009167",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests HDR content overlay during retail demo mode, unrelated to 1080p display"
+    },
+    {
+      "3p_id": "31007683",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests HDMI Device Info display page in settings, not 1080p content rendering"
+    }
+  ],
+  "TC-VID-004": [
+    {
+      "3p_id": "31008556",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests power cycling with HDMI device, HDR/DV content is incidental test material not the verification focus"
+    },
+    {
+      "3p_id": "31005524",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests input switching between tuner and HDMI, not HDR10 indicator verification"
+    },
+    {
+      "3p_id": "31005525",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Plays HDR10 content and verifies playback but focus is on frame tearing artifacts, not HDR indicator display"
+    },
+    {
+      "3p_id": "31005522",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests input switching after streaming DV content, not HDR10 content display verification"
+    },
+    {
+      "3p_id": "31008508",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Game Menu settings including Game HDR option availability, not HDR10 content playback verification"
+    },
+    {
+      "3p_id": "31008346",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests Dolby Vision logo display not HDR10; both verify HDR format indicators but different formats (DV vs HDR10)"
+    },
+    {
+      "3p_id": "31008606",
+      "verdict": "PARTIAL",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Tone Mapping with HDR content and verifies HDR logo appears, but primary focus is tone mapping feature not HDR10 indicator verification"
+    },
+    {
+      "3p_id": "31007980",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests HDMI no-signal countdown OK-key behavior, unrelated to HDR10 content display"
+    },
+    {
+      "3p_id": "31007981",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests HDMI no-signal countdown cancellation behavior, unrelated to HDR10 content display"
+    },
+    {
+      "3p_id": "31007683",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests HDMI Device Info settings page, unrelated to HDR10 content rendering"
+    }
+  ],
+  "TC-VID-005": [
+    {
+      "3p_id": "31008346",
+      "verdict": "YES",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Plays Dolby Vision content and verifies DV logo displays for 3 seconds, same functional intent and expected outcome"
+    },
+    {
+      "3p_id": "31005498",
+      "verdict": "YES",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Plays Dolby Vision content on Disney+ and verifies DV logo displays for 3 seconds, same verification"
+    },
+    {
+      "3p_id": "31005496",
+      "verdict": "YES",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Plays Dolby Vision content on Netflix and verifies DV logo displays, same functional intent"
+    },
+    {
+      "3p_id": "31005499",
+      "verdict": "YES",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Switches to Apple TV HDMI input and verifies Dolby Vision logo appears with DV content, same verification"
+    },
+    {
+      "3p_id": "31005497",
+      "verdict": "YES",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Verifies DV logo appears when switching from non-DV to DV content on Netflix, same end-state verification with additional transition step"
+    },
+    {
+      "3p_id": "31008140",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Talk Back audio attenuation to 50% volume, completely unrelated to Dolby Vision display"
+    },
+    {
+      "3p_id": "31008556",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests power cycling with HDMI device, DV content is incidental test material not the verification focus"
+    },
+    {
+      "3p_id": "31008301",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Dolby Audio logo display, different format entirely (audio vs vision)"
+    },
+    {
+      "3p_id": "31008358",
+      "verdict": "PARTIAL",
+      "confidence": "MEDIUM_CONFIDENCE",
+      "reason": "Tests Dolby Vision logo in Input Change Control overlay specifically, not during general content playback"
+    },
+    {
+      "3p_id": "31008059",
+      "verdict": "NO",
+      "confidence": "HIGH_CONFIDENCE",
+      "reason": "Tests Text-to-Speech accessibility feature on Media Player navigation, unrelated to Dolby Vision"
+    }
+  ]
+}
