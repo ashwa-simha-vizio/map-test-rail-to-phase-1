@@ -1,0 +1,579 @@
+{
+  "test_cases": [
+    {
+      "id": "TC-SYS-001",
+      "category": "Settings/Menu UI",
+      "title": "Verify Settings menu navigation",
+      "priority": "HIGH",
+      "est_time": "3 min",
+      "description": "Step 1: Press the GEAR/MENU button on the remote.\nExpected: Settings menu/Quick Settings sidebar appears within 2 seconds.\n\nStep 2: Navigate to 'All Settings' to open the full settings tree.\nExpected: Full settings menu loads showing all top-level categories (Network, Picture, Sound, System, etc.).\n\nStep 3: Navigate into each top-level category (Network, HDMI & Gaming, Accessibility, System, etc.) and verify sub-menus load.\nExpected: Each category expands to show its sub-items without errors, freezes, or crashes.\n\nStep 4: Navigate back using the Back button from each sub-menu.\nExpected: Returns to parent menu correctly; no state corruption.\n\nStep 5: Press Home to exit settings entirely.\nExpected: Returns to Home screen; settings state is not persisted incorrectly.",
+      "expected_output": "All settings menu categories are navigable. Sub-menus load correctly. Back navigation works. No crashes or UI freezes during full menu traversal.",
+      "3p_ids": [
+        "31006153",
+        "31007368",
+        "31006124",
+        "31007662",
+        "31008381",
+        "31007537",
+        "31008452",
+        "31013764",
+        "31013871",
+        "31007503",
+        "31007504",
+        "31007505"
+      ]
+    },
+    {
+      "id": "TC-SYS-002",
+      "category": "Settings/Menu UI",
+      "title": "Verify System Information display",
+      "priority": "HIGH",
+      "est_time": "2 min",
+      "description": "Step 1: Navigate to Settings > System > System Information.\nExpected: System Information screen loads.\n\nStep 2: Verify the following fields are displayed: Model Name, Serial Number, Firmware Version, IP Address, MAC Address.\nExpected: All fields are populated with valid values (non-empty, correct format).\n\nStep 3: Press Menu/Settings button during OOBE on 'Choose a Language' screen.\nExpected: TV Information overlay is accessible showing the same system details.\n\nStep 4: Press Menu/Settings button during OOBE on 'Connect Your Network' screen.\nExpected: TV Information is accessible and displays system details even before network connection.",
+      "expected_output": "System information is accessible from Settings and during OOBE contexts. All required fields (Model, Serial, FW Version, IP, MAC) display correctly.",
+      "3p_ids": [
+        "31005835",
+        "31005842",
+        "31005828",
+        "31007638"
+      ]
+    },
+    {
+      "id": "TC-SYS-003",
+      "category": "Settings/Menu UI",
+      "title": "Verify Factory Reset execution",
+      "priority": "HIGH",
+      "est_time": "5 min",
+      "description": "Step 1: Navigate to Settings > System > Reset to Factory Settings.\nExpected: Reset menu appears showing options: Reset TV, Reset Apps, Restart, Cancel.\n\nStep 2: Select 'Reset TV'.\nExpected: Confirmation dialog appears warning all data will be erased.\n\nStep 3: Confirm the factory reset.\nExpected: TV begins reset process (progress indicator shown).\n\nStep 4: Wait for reset to complete.\nExpected: TV reboots and launches into OOBE (Choose a Language screen) within 3 minutes.\n\nStep 5: Verify factory reset from the front panel button (press and hold reset button on TV body).\nExpected: Same factory reset flow triggers from physical button.",
+      "expected_output": "Factory reset completes successfully from both menu and front panel. TV returns to OOBE. All user data cleared.",
+      "3p_ids": [
+        "31008163",
+        "31008165",
+        "31008170"
+      ]
+    },
+    {
+      "id": "TC-SYS-004",
+      "category": "Settings/Menu UI",
+      "title": "Verify Sleep Timer functionality",
+      "priority": "MEDIUM",
+      "est_time": "2 min",
+      "description": "Step 1: Navigate to Settings > System > Sleep Timer.\nExpected: Sleep Timer options are shown (Off, 30 min, 1 hr, 2 hr, etc.).\n\nStep 2: Set sleep timer to minimum value (e.g., 30 minutes).\nExpected: Timer is set; confirmation shown.\n\nStep 3: Verify system countdown UI message displays with timer icon.\nExpected: When timer approaches expiry, TV displays a 30-second countdown notification.\n\nStep 4: Let countdown expire.\nExpected: TV powers off to standby after countdown completes.",
+      "expected_output": "Sleep timer can be set, displays countdown notification, and TV powers off on expiry.",
+      "3p_ids": [
+        "31007977"
+      ]
+    },
+    {
+      "id": "TC-SYS-005",
+      "category": "Settings/Menu UI",
+      "title": "Verify Parental Controls access",
+      "priority": "MEDIUM",
+      "est_time": "3 min",
+      "description": "Step 1: Navigate to Settings > System > Parental Controls.\nExpected: PIN entry screen appears.\n\nStep 2: Enter correct PIN.\nExpected: Parental Controls menu opens showing rating locks, channel blocks, input locks.\n\nStep 3: Attempt to access locked content without entering PIN.\nExpected: PIN Required prompt appears blocking access.\n\nStep 4: Enter incorrect PIN 3 times.\nExpected: Lockout or delay mechanism activates.",
+      "expected_output": "PIN is required to access locked content/settings. Correct PIN grants access. Incorrect PIN blocks access with appropriate UI feedback.",
+      "3p_ids": [
+        "31008067"
+      ]
+    },
+    {
+      "id": "TC-SYS-006",
+      "category": "Settings/Menu UI",
+      "title": "Verify Menu timeout and auto-dismissal behavior",
+      "priority": "HIGH",
+      "est_time": "3 min",
+      "description": "Step 1: Open the Settings menu by pressing the GEAR/MENU button.\nExpected: Settings menu appears.\n\nStep 2: Leave the menu idle (no button presses) for 60 seconds.\nExpected: Menu automatically closes/dismisses after 60 seconds of inactivity.\n\nStep 3: Verify the TV returns to the previous content/state after menu dismissal.\nExpected: Content resumes normally; no frozen or black screen.\n\nStep 4: With a gaming console connected via HDMI, verify that the gaming console's MENU button does NOT dismiss or interfere with the TV Settings UI.\nExpected: TV UI settings remain open; gaming console button presses do not close TV menu.\n\nStep 5: Open Quick Settings menu and leave idle for 60 seconds.\nExpected: Quick Settings also auto-dismisses after 60-second inactivity timeout.",
+      "expected_output": "Both Settings and Quick Settings menus auto-dismiss after 60 seconds of inactivity. Gaming console button presses do not interfere with TV settings UI.",
+      "3p_ids": [
+        "31005511",
+        "31005512",
+        "31006155",
+        "31007370",
+        "31007514"
+      ]
+    },
+    {
+      "id": "TC-SYS-007",
+      "category": "Settings/Menu UI",
+      "title": "Verify Quick Settings menu behavior and dismissal paths",
+      "priority": "HIGH",
+      "est_time": "4 min",
+      "description": "Step 1: Press MENU/GEAR button to open Quick Settings sidebar.\nExpected: Quick Settings sidebar appears showing key menu items.\n\nStep 2: Verify TV Name is displayed at the top of the Quick Settings menu.\nExpected: TV Name appears (up to 24 characters).\n\nStep 3: Dismiss Quick Settings by pressing MENU button again.\nExpected: Menu closes, returns to content.\n\nStep 4: Re-open Quick Settings, then dismiss by pressing Back button.\nExpected: Menu closes.\n\nStep 5: Re-open Quick Settings, then dismiss by pressing Home button.\nExpected: Menu closes, Home screen appears.\n\nStep 6: Re-open Quick Settings, then dismiss by pressing an app Hot-Key button.\nExpected: Menu closes, corresponding app launches.\n\nStep 7: Re-open Quick Settings, then dismiss by pressing Input button.\nExpected: Menu closes, Input selection appears.\n\nStep 8: Re-open Quick Settings, then dismiss by pressing Mic button.\nExpected: Menu closes, voice assistant activates.\n\nStep 9: While Quick Settings is open, press Channel Up/Down.\nExpected: Quick Settings closes and channel changes.\n\nStep 10: While Quick Settings is open, press Volume Up/Down.\nExpected: Volume adjusts; Quick Settings may remain open or close per spec.\n\nStep 11: Start playing content, open Quick Settings, verify it does not block pop-up ads or system notifications.\nExpected: System pop-ups appear above/alongside Quick Settings overlay.",
+      "expected_output": "Quick Settings opens/closes via all specified button paths. TV Name shown (max 24 chars). Channel/Volume keys handled correctly. Pop-up ads not blocked.",
+      "3p_ids": [
+        "31007506",
+        "31007507",
+        "31007508",
+        "31007509",
+        "31007510",
+        "31007511",
+        "31007512",
+        "31007513",
+        "31007515",
+        "31007516",
+        "31007517",
+        "31007518",
+        "31007519",
+        "31007520",
+        "31007521"
+      ]
+    },
+    {
+      "id": "TC-SYS-008",
+      "category": "Settings/Menu UI",
+      "title": "Verify Quick Settings content and online/offline states",
+      "priority": "MEDIUM",
+      "est_time": "3 min",
+      "description": "Step 1: With network connected (online), open Quick Settings.\nExpected: Quick Settings shows full menu items including network-dependent options.\n\nStep 2: Verify all general menu items are present in Quick Settings (Picture, Sound, Network, Sleep Timer, etc.).\nExpected: All expected menu items visible.\n\nStep 3: Navigate to 'Get Connected' item in Quick Settings.\nExpected: Navigating to this item provides a path to the Network connection screen.\n\nStep 4: Disconnect network, then open Quick Settings (offline state).\nExpected: Quick Settings adapts to show offline-appropriate items; network-dependent items are disabled/hidden.\n\nStep 5: Verify Quick Settings can be re-opened after being dismissed.\nExpected: Menu re-opens correctly each time without state corruption.",
+      "expected_output": "Quick Settings displays correct items for online/offline states. Network shortcut works. Menu re-opens reliably after dismissal.",
+      "3p_ids": [
+        "31005585",
+        "31007503",
+        "31007504",
+        "31007505"
+      ]
+    },
+    {
+      "id": "TC-SYS-009",
+      "category": "Settings/Menu UI",
+      "title": "Verify Network Settings menu UI elements",
+      "priority": "HIGH",
+      "est_time": "4 min",
+      "description": "Step 1: Navigate to Settings > Network.\nExpected: Network settings menu loads showing current connection status and options.\n\nStep 2: Verify 'My Networks' sub-section is present showing saved/connected networks.\nExpected: My Networks displays current SSID or 'Not Connected'.\n\nStep 3: Open 'More Access Points' list.\nExpected: List of available WiFi networks appears.\n\nStep 4: Verify there is no limit on the number of SSIDs displayed in 'More Access Points'.\nExpected: All detected networks are listed.\n\nStep 5: Verify the list auto-rescans while user is actively viewing the network menu.\nExpected: Network list refreshes periodically; selector/highlight stays on the same SSID during refresh.\n\nStep 6: Verify rescans only occur when user is actively looking at the network menu (not in background).\nExpected: No background rescans when menu is closed.\n\nStep 7: Navigate away from network menu and return.\nExpected: Fresh scan occurs on re-entry.",
+      "expected_output": "Network menu shows connection status, My Networks section, and full SSID list. Auto-rescan works correctly with selector persistence. No background scanning.",
+      "3p_ids": [
+        "31006125",
+        "31006966",
+        "31006967",
+        "31006973",
+        "31006974",
+        "31007028",
+        "31007029",
+        "31007035",
+        "31007036",
+        "31007090",
+        "31007091",
+        "31007097",
+        "31007098"
+      ]
+    },
+    {
+      "id": "TC-SYS-010",
+      "category": "Settings/Menu UI",
+      "title": "Verify WiFi connection flow via Settings menu (multi-band/encryption)",
+      "priority": "HIGH",
+      "est_time": "5 min",
+      "description": "Step 1: Navigate to Settings > Network > More Access Points.\nExpected: WiFi SSID list appears.\n\nStep 2: Select a 2.4GHz WPA2 network, enter correct password.\nExpected: Keyboard appears, password accepted, connection successful, keyboard closes, returns to Network settings.\n\nStep 3: Select a 5GHz WPA2/WPA3 network, enter correct password.\nExpected: Connection successful via System Menu for 5GHz band.\n\nStep 4: Select a 6GHz WPA3-Personal SAE network, enter correct password.\nExpected: Connection successful for 6GHz WPA3-SAE.\n\nStep 5: Select a 6GHz WPA3-Enhanced Open network.\nExpected: Connection successful for Enhanced Open.\n\nStep 6: Select a 6GHz WPA2+WPA3 Mixed Mode network.\nExpected: Connection successful for mixed mode.\n\nStep 7: After successful connection, verify keyboard screen closes and Network settings page is displayed.\nExpected: UI returns to Network settings showing connected status.",
+      "expected_output": "WiFi connection works from Settings menu for all band/encryption combinations (2.4/5/6 GHz, WPA2/WPA3/SAE/Enhanced Open/Mixed). Keyboard dismisses after successful connection.",
+      "3p_ids": [
+        "31006306",
+        "31006309",
+        "31006313",
+        "31006316",
+        "31006319",
+        "31006320",
+        "31006321",
+        "31006579",
+        "31007751"
+      ]
+    },
+    {
+      "id": "TC-SYS-011",
+      "category": "Settings/Menu UI",
+      "title": "Verify network switching and error handling in Settings",
+      "priority": "HIGH",
+      "est_time": "4 min",
+      "description": "Step 1: While connected to a WiFi network, navigate to Settings > Network > More Access Points.\nExpected: Current and available networks displayed.\n\nStep 2: Choose a different network, enter valid credentials.\nExpected: TV disconnects from current network, connects to new network, and returns to Network settings showing new connection.\n\nStep 3: Choose a different network, enter password with fewer than 8 characters.\nExpected: Error notification displayed indicating password too short.\n\nStep 4: Choose a different network, enter incorrect password (8+ chars).\nExpected: Connection attempt fails; error notification shows 'Incorrect password' or similar message.\n\nStep 5: Trigger WiFi disconnect from Settings > Network > Disconnect or equivalent.\nExpected: WiFi disconnect diagnostic/confirmation appears.\n\nStep 6: Verify error notification UI elements (icon, text, dismiss behavior).\nExpected: Notifications are clearly readable, dismissible, and do not persist indefinitely.",
+      "expected_output": "Network switching works with valid credentials. Invalid credentials show appropriate error messages. Short passwords rejected. Disconnect diagnostic accessible.",
+      "3p_ids": [
+        "31006350",
+        "31006351",
+        "31006360",
+        "31006361",
+        "31006381",
+        "31006382",
+        "31006391",
+        "31006392",
+        "31006412",
+        "31006413",
+        "31006422",
+        "31006423",
+        "31006475",
+        "31006476",
+        "31006485",
+        "31006486",
+        "31006540",
+        "31006576",
+        "31006577",
+        "31006578"
+      ]
+    },
+    {
+      "id": "TC-SYS-012",
+      "category": "Settings/Menu UI",
+      "title": "Verify Network Settings launch from troubleshooting screens",
+      "priority": "MEDIUM",
+      "est_time": "3 min",
+      "description": "Step 1: Trigger a 'No Network' troubleshooting/galaxy screen (disconnect WiFi, attempt network-dependent action).\nExpected: 'No Network' troubleshooting screen appears.\n\nStep 2: Verify option to launch Network Settings is present on troubleshooting screen.\nExpected: A button/link to open Network Settings is available.\n\nStep 3: Tap/select the Network Settings option from troubleshooting.\nExpected: Network settings menu opens directly from the troubleshooting context.\n\nStep 4: Connect to a network from this flow.\nExpected: Connection successful; troubleshooting screen resolves.\n\nStep 5: Repeat from different troubleshooting entry points (SmartCast apps, streaming content errors, etc.).\nExpected: Network Settings is accessible from all 'No Network' troubleshooting screens.",
+      "expected_output": "Network Settings is launchable from all 'No Network' troubleshooting/galaxy screens. User can connect to WiFi and resolve the issue from that flow.",
+      "3p_ids": [
+        "31006349",
+        "31006359",
+        "31006380",
+        "31006390",
+        "31006411",
+        "31006421",
+        "31006474",
+        "31006484"
+      ]
+    },
+    {
+      "id": "TC-SYS-013",
+      "category": "Settings/Menu UI",
+      "title": "Verify Captive Portal and SoftAP network settings",
+      "priority": "MEDIUM",
+      "est_time": "3 min",
+      "description": "Step 1: Set up a Captive Portal WiFi network in the test environment.\nExpected: Network is broadcasting.\n\nStep 2: Navigate to Settings > Network and verify the Captive Portal SSID appears in the network list.\nExpected: Captive Portal SSID is listed alongside normal networks.\n\nStep 3: Select the Captive Portal SSID from Menu > Network.\nExpected: Captive Portal setup/authentication flow launches.\n\nStep 4: Complete Captive Portal authentication.\nExpected: TV connects through captive portal; connection status shows 'Connected'.\n\nStep 5: Verify Manual SoftAP login supports settings from multiple platforms (Windows, macOS, Android, iOS).\nExpected: SoftAP configuration accepts connections from all tested platforms.",
+      "expected_output": "Captive Portal SSIDs appear in network list. Captive Portal auth flow works from Settings. SoftAP login supports multi-platform access.",
+      "3p_ids": [
+        "31006717",
+        "31006733",
+        "31006736",
+        "31006811",
+        "31006814",
+        "31007121",
+        "31007184"
+      ]
+    },
+    {
+      "id": "TC-SYS-014",
+      "category": "Settings/Menu UI",
+      "title": "Verify Network Security Type and DHCP Settings menus",
+      "priority": "MEDIUM",
+      "est_time": "3 min",
+      "description": "Step 1: Navigate to Settings > Network > Network Security Type.\nExpected: Menu appears showing header text and help description.\n\nStep 2: Verify the list of available security types displayed (WPA2, WPA3, Open, etc.).\nExpected: All supported security types listed correctly.\n\nStep 3: Navigate to Settings > Network > DHCP Settings.\nExpected: DHCP Settings menu opens.\n\nStep 4: Verify DHCP in default mode (Auto/On).\nExpected: IP Address, Subnet, Gateway, DNS fields shown with auto-acquired values.\n\nStep 5: Switch DHCP to Off mode.\nExpected: Manual IP entry fields become editable.\n\nStep 6: Switch DHCP to ManualDNS mode.\nExpected: Only DNS fields become editable; IP/Subnet/Gateway remain auto-acquired.",
+      "expected_output": "Network Security Type menu shows correct options with help text. DHCP Settings correctly displays Auto, Off, and ManualDNS modes with appropriate editable fields.",
+      "3p_ids": [
+        "31007472",
+        "31007473",
+        "31007487",
+        "31007488",
+        "31007489",
+        "31007939",
+        "31007940",
+        "31007954",
+        "31007955",
+        "31007956"
+      ]
+    },
+    {
+      "id": "TC-SYS-015",
+      "category": "Settings/Menu UI",
+      "title": "Verify OOBE launch from OSD menu and settings access during OOBE",
+      "priority": "HIGH",
+      "est_time": "4 min",
+      "description": "Step 1: From normal TV operation, navigate to Settings > System > Reset to Factory Settings or OSD Menu option to launch OOBE.\nExpected: OOBE can be re-launched from the OSD menu.\n\nStep 2: During OOBE on 'Choose a Language' screen, press the Menu key.\nExpected: Side bar menu or TV Info overlay appears.\n\nStep 3: Verify TV Information is accessible by pressing settings/menu button during OOBE.\nExpected: System information (model, firmware, etc.) is viewable during OOBE without exiting the wizard.\n\nStep 4: Back out of OOBE from 'Choose a Language' screen, launch Side Bar menu.\nExpected: User Manual or help content is accessible from the sidebar.\n\nStep 5: During OOBE on 'Connect to a WiFi Network' screen, tap 'Skip Network' / 'Setup Network Later'.\nExpected: Updated text message confirms skip and OOBE proceeds to next step.\n\nStep 6: Verify the 'Set Up Later' text messaging is correct and consistent.\nExpected: Text matches specification across all skip scenarios.",
+      "expected_output": "OOBE can be launched from OSD menu. Menu/Settings key works during OOBE to show TV Info. Skip Network option works with correct messaging. Sidebar accessible during OOBE.",
+      "3p_ids": [
+        "31005639",
+        "31005702",
+        "31005765",
+        "31005953",
+        "31005984",
+        "31006047",
+        "31007638",
+        "31007645",
+        "31009356",
+        "31009357",
+        "31006892",
+        "31006893",
+        "31006894"
+      ]
+    },
+    {
+      "id": "TC-SYS-016",
+      "category": "Settings/Menu UI",
+      "title": "Verify HDMI & Gaming Settings menu options",
+      "priority": "HIGH",
+      "est_time": "5 min",
+      "description": "Step 1: Navigate to Settings > HDMI & Gaming.\nExpected: HDMI & Gaming menu opens showing HDMI Settings sub-menu.\n\nStep 2: Open HDMI Settings and verify the following options are present and accessible: CEC, CEC Function, eARC, Auto Low Latency Mode, Variable Refresh Rate, HDMI Color Subsampling, HDMI Mode, Game Low Latency, Film Mode, Game HDR, Noise Reduction, Auto Game Mode, Color Temperature, 4:4:4 Color Space, Color Space Range, Picture Size and Position.\nExpected: All 16 HDMI sub-settings items are listed and navigable.\n\nStep 3: Toggle CEC On/Off.\nExpected: CEC setting toggles correctly; CEC Function sub-option appears when CEC is On.\n\nStep 4: Navigate to Picture Size and Position.\nExpected: Picture adjustment controls appear.\n\nStep 5: Verify AMC FreeSync logos appear in Gaming Menu when connected to compatible source.\nExpected: FreeSync certification logos displayed in Gaming settings.",
+      "expected_output": "HDMI & Gaming menu contains all 16 required sub-settings. Each item is navigable and toggleable. CEC controls and FreeSync logos display correctly.",
+      "3p_ids": [
+        "31007662",
+        "31007663",
+        "31007664",
+        "31007665",
+        "31007666",
+        "31007667",
+        "31007668",
+        "31007669",
+        "31007670",
+        "31007671",
+        "31007672",
+        "31007673",
+        "31007674",
+        "31007675",
+        "31007676",
+        "31007677",
+        "31007682",
+        "31008360"
+      ]
+    },
+    {
+      "id": "TC-SYS-017",
+      "category": "Settings/Menu UI",
+      "title": "Verify Bluetooth and Remote menu options",
+      "priority": "MEDIUM",
+      "est_time": "3 min",
+      "description": "Step 1: Navigate to Settings > Bluetooth and Remote.\nExpected: Bluetooth and Remote menu opens showing paired devices and options.\n\nStep 2: Verify menu shows: paired remote, Headphones section, More Available Devices.\nExpected: All sections present.\n\nStep 3: Navigate to Headphones > More Available Devices.\nExpected: BT device discovery list appears.\n\nStep 4: Verify that if a remote is paired and TV is restarted from OSD menu, remote remains paired after restart.\nExpected: Remote reconnects automatically after restart.\n\nStep 5: Navigate to Gaming Controller sub-menu.\nExpected: Gaming Controller options appear (Amazon Luna Controller, etc.).\n\nStep 6: Select Amazon Luna Controller > verify Menu works as Settings.\nExpected: Luna controller menu integration functions as expected.",
+      "expected_output": "Bluetooth/Remote menu shows all sections (paired remote, headphones, available devices, gaming controllers). Remote pairing persists through restart. Controller menus accessible.",
+      "3p_ids": [
+        "31007681",
+        "31007702",
+        "31007921",
+        "31008066",
+        "31008114"
+      ]
+    },
+    {
+      "id": "TC-SYS-018",
+      "category": "Settings/Menu UI",
+      "title": "Verify Antenna Channels settings menu",
+      "priority": "MEDIUM",
+      "est_time": "4 min",
+      "description": "Step 1: Navigate to Settings > Antenna Channels.\nExpected: Antenna Channels menu opens showing all available options.\n\nStep 2: Verify menu options include: Find Channels, Find New Channels, Hide Channels.\nExpected: All channel management options present.\n\nStep 3: Select Find Channels and verify available options within the wizard.\nExpected: Channel scan wizard launches with frequency/type selection.\n\nStep 4: Select Find New Channels and verify options.\nExpected: Incremental channel scan options appear.\n\nStep 5: Select 'Done' button after a scan operation.\nExpected: Returns to the Antenna Channels menu and tuner is ready.\n\nStep 6: Open Hide Channels.\nExpected: Channel list appears with toggle options to show/hide individual channels.",
+      "expected_output": "Antenna Channels menu shows Find/Find New/Hide Channels options. Each sub-menu loads correctly. Done button returns to parent. Hide Channels allows per-channel toggling.",
+      "3p_ids": [
+        "31008263",
+        "31008281",
+        "31008285",
+        "31007575",
+        "31007601"
+      ]
+    },
+    {
+      "id": "TC-SYS-019",
+      "category": "Settings/Menu UI",
+      "title": "Verify Closed Captions settings toggle and modes",
+      "priority": "CRITICAL",
+      "est_time": "4 min",
+      "description": "Step 1: Navigate to Settings > Captions (or Accessibility > Captions).\nExpected: Captions settings menu opens.\n\nStep 2: Verify Closed Captions is OFF by default.\nExpected: CC toggle shows OFF state on fresh/reset TV.\n\nStep 3: Toggle Closed Captions ON.\nExpected: CC toggle changes to ON; setting is persisted.\n\nStep 4: Navigate to Analog Closed Captions sub-menu.\nExpected: Analog CC options displayed (CC1, CC2, CC3, CC4, TEXT1-4).\n\nStep 5: Navigate to Digital Closed Captions sub-menu.\nExpected: Digital CC service options displayed.\n\nStep 6: Toggle CC from remote CC button.\nExpected: CC toggles on/off via dedicated remote button.\n\nStep 7: Verify CC can be toggled using remote CC button.\nExpected: Same toggle behavior as menu setting.",
+      "expected_output": "CC is OFF by default. Can be toggled ON/OFF from Settings and CC remote button. Analog and Digital CC sub-menus show correct options.",
+      "3p_ids": [
+        "31007630",
+        "31008002",
+        "31008003",
+        "31008008",
+        "31008009",
+        "31013772",
+        "31013877"
+      ]
+    },
+    {
+      "id": "TC-SYS-020",
+      "category": "Settings/Menu UI",
+      "title": "Verify Closed Captions cross-input and application behavior",
+      "priority": "CRITICAL",
+      "est_time": "5 min",
+      "description": "Step 1: Enable Closed Captions from Settings.\nExpected: CC is ON globally.\n\nStep 2: Verify CC setting is a Global Setting (applies across all inputs/apps).\nExpected: CC state persists when switching inputs.\n\nStep 3: Switch to Composite input with CC-enabled content.\nExpected: Closed Captions appear on Composite input content.\n\nStep 4: Switch to Tuner input with CC-enabled broadcast.\nExpected: Closed Captions appear on Tuner/antenna content.\n\nStep 5: Open a streaming application with CC-supported content.\nExpected: Some applications follow the TV's CC setting.\n\nStep 6: In an app with CC-supported content, press the CC button on remote.\nExpected: App responds to CC key if content has CC support.\n\nStep 7: Change Digital Style settings (font size, color, background).\nExpected: CC display changes to reflect new style settings.\n\nStep 8: Change CC setting from SmartCast app (mobile).\nExpected: CC setting change is annunciated/reflected on the TV.",
+      "expected_output": "CC is a global setting persistent across inputs. Works on Composite, Tuner, and streaming apps. CC button works in apps. Digital Style changes apply. SmartCast app integration works.",
+      "3p_ids": [
+        "31008331",
+        "31008332",
+        "31008333",
+        "31008334",
+        "31008335",
+        "31008336",
+        "31008337",
+        "31007631",
+        "31007632"
+      ]
+    },
+    {
+      "id": "TC-SYS-021",
+      "category": "Settings/Menu UI",
+      "title": "Verify Accessibility settings (TalkBack and Zoom)",
+      "priority": "CRITICAL",
+      "est_time": "4 min",
+      "description": "Step 1: Navigate to Settings > Accessibility.\nExpected: Accessibility menu opens showing TalkBack, Zoom Mode, Video Description options.\n\nStep 2: Enable TalkBack.\nExpected: TalkBack activates; all subsequent menu navigation is spoken aloud.\n\nStep 3: Navigate through settings with TalkBack ON and adjust settings using basic remote.\nExpected: TalkBack speaks all settings changes as they are adjusted.\n\nStep 4: Change Menu Language to Spanish or French, then verify TalkBack behavior.\nExpected: TalkBack is NOT supported on Spanish or French languages; feature is disabled or shows warning.\n\nStep 5: Disable TalkBack.\nExpected: Speech output stops; normal navigation resumes.\n\nStep 6: Test TalkBack ON/OFF when no network is connected.\nExpected: TalkBack functions without network dependency.\n\nStep 7: Long-press the MENU key to enable Zoom navigation mode.\nExpected: Zoom mode activates with confirmation dialog.\n\nStep 8: Verify short-press of MENU key when Zoom is enabled.\nExpected: MENU key still opens settings; Zoom remains active.\n\nStep 9: Long-press MENU key again to disable Zoom.\nExpected: Zoom mode deactivates with confirmation.\n\nStep 10: Test Zoom Mode ON/OFF when no network is connected.\nExpected: Zoom functions without network dependency.",
+      "expected_output": "TalkBack enables/disables correctly, speaks settings changes, doesn't work in Spanish/French, functions offline. Zoom mode activates/deactivates via long-press MENU, works offline.",
+      "3p_ids": [
+        "31005592",
+        "31005593",
+        "31007652",
+        "31008138",
+        "31008144",
+        "31008028",
+        "31008030",
+        "31008031"
+      ]
+    },
+    {
+      "id": "TC-SYS-022",
+      "category": "Settings/Menu UI",
+      "title": "Verify Accessibility - Video Description settings",
+      "priority": "MEDIUM",
+      "est_time": "2 min",
+      "description": "Step 1: Navigate to Settings > Accessibility > Video Description.\nExpected: Video Description menu opens.\n\nStep 2: Verify Video Description toggle is available.\nExpected: Toggle present and functional.\n\nStep 3: Verify Video Description option is removed for Spanish under Accessibility > Video Description (per Change List).\nExpected: When language is set to Spanish, Video Description option is not shown or is disabled.\n\nStep 4: Switch back to English and verify Video Description reappears.\nExpected: Option returns when language is English.",
+      "expected_output": "Video Description is accessible under Accessibility settings. Not available in Spanish language mode per requirements.",
+      "3p_ids": [
+        "31007772",
+        "31007628"
+      ]
+    },
+    {
+      "id": "TC-SYS-023",
+      "category": "Settings/Menu UI",
+      "title": "Verify Menu Language settings",
+      "priority": "HIGH",
+      "est_time": "3 min",
+      "description": "Step 1: Navigate to Settings > System > Menu Language.\nExpected: Menu Language settings screen opens showing available languages.\n\nStep 2: Select Spanish as menu language.\nExpected: All menu items, labels, and system text switch to Spanish immediately.\n\nStep 3: Navigate through settings in Spanish to verify all strings are translated.\nExpected: No English fallback text visible; all UI elements in Spanish.\n\nStep 4: Switch to French.\nExpected: All menu items switch to French.\n\nStep 5: Switch back to English.\nExpected: All menu items return to English.\n\nStep 6: Verify Menu Language requirements (supported languages, font rendering, special characters).\nExpected: All supported languages render correctly without truncation or encoding errors.",
+      "expected_output": "Menu Language switches correctly between English, Spanish, and French. All UI strings translate completely. Special characters render properly.",
+      "3p_ids": [
+        "31007560",
+        "31007561",
+        "31007562",
+        "31007563",
+        "31007574"
+      ]
+    },
+    {
+      "id": "TC-SYS-024",
+      "category": "Settings/Menu UI",
+      "title": "Verify System menu and Power options",
+      "priority": "MEDIUM",
+      "est_time": "3 min",
+      "description": "Step 1: Navigate to Settings > System.\nExpected: System menu opens showing all system options.\n\nStep 2: Verify Power option is present in System menu.\nExpected: Power settings accessible (Quick Start, ECO mode options).\n\nStep 3: Restart TV from OSD Menu while in ECO Mode.\nExpected: TV powers off and powers on within 10 seconds.\n\nStep 4: Restart TV from Reset Factory Settings > Restart option in ECO Mode.\nExpected: TV restarts within expected timeframe.\n\nStep 5: Verify Store Demo mode options (Demo 1, Demo 2).\nExpected: Store Demo modes are accessible under System settings.\n\nStep 6: Select Store Demo > Demo 1.\nExpected: Demo mode 1 activates.\n\nStep 7: Select Store Demo > Demo 2.\nExpected: Demo mode 2 activates.",
+      "expected_output": "System menu shows Power option with ECO/Quick Start modes. Restart works from OSD and Reset menu. Store Demo modes 1 & 2 accessible and activatable.",
+      "3p_ids": [
+        "31008470",
+        "31007305",
+        "31007307",
+        "31005596",
+        "31005597"
+      ]
+    },
+    {
+      "id": "TC-SYS-025",
+      "category": "Settings/Menu UI",
+      "title": "Verify Factory Reset sub-options (Reset Apps, Restart, Cancel)",
+      "priority": "MEDIUM",
+      "est_time": "3 min",
+      "description": "Step 1: Navigate to Settings > System > Reset to Factory Settings.\nExpected: Reset menu shows all options: Reset TV, Reset Apps, Restart, Cancel.\n\nStep 2: Select 'Reset Apps'.\nExpected: Apps are reset to default state; user settings and accounts preserved.\n\nStep 3: Navigate back to Reset menu, select 'Restart'.\nExpected: TV restarts (warm reboot) without factory reset.\n\nStep 4: After restart, verify TV returns to Home screen (not OOBE).\nExpected: TV boots to normal state; user data intact.\n\nStep 5: Navigate to Reset menu, select 'Cancel'.\nExpected: Dialog closes; no action taken; returns to Settings.",
+      "expected_output": "Reset Apps resets apps without full wipe. Restart performs warm reboot. Cancel dismisses dialog safely. Only Reset TV performs full factory reset.",
+      "3p_ids": [
+        "31008171",
+        "31008172",
+        "31008173"
+      ]
+    },
+    {
+      "id": "TC-SYS-026",
+      "category": "Settings/Menu UI",
+      "title": "Verify Privacy & Legal menu and Viewing Data settings",
+      "priority": "HIGH",
+      "est_time": "3 min",
+      "description": "Step 1: Navigate to Settings > Privacy & Legal.\nExpected: Privacy & Legal menu option is accessible.\n\nStep 2: Open Privacy & Legal and verify sub-options.\nExpected: Shows Viewing Data, Advertising, and legal document links.\n\nStep 3: Verify Advertising sub-menu.\nExpected: Advertising menu appears with Limited Ad Tracking option.\n\nStep 4: Focus on Limited Ad Tracking option.\nExpected: Help/description text appears at bottom of menu explaining the option.\n\nStep 5: After declining Viewing Data during OOBE, navigate to Settings > Privacy > Viewing Data.\nExpected: Viewing Data toggle shows OFF state.\n\nStep 6: Toggle Viewing Data ON from the menu.\nExpected: Viewing Data setting changes to ON; opt-in confirmed.\n\nStep 7: Verify Network > Terms of Service and policies link when OOBE and Network were skipped.\nExpected: VIZIO Terms of Service and policies are accessible from Network settings even without completing OOBE.",
+      "expected_output": "Privacy & Legal menu accessible with Advertising/Viewing Data sub-options. Limited Ad Tracking shows description text. Viewing Data can be toggled post-OOBE. ToS accessible after OOBE skip.",
+      "3p_ids": [
+        "31008511",
+        "31008207",
+        "31008212",
+        "31008408",
+        "31008409",
+        "31006177",
+        "31007392"
+      ]
+    },
+    {
+      "id": "TC-SYS-027",
+      "category": "Settings/Menu UI",
+      "title": "Verify OSD Menu launch and Input selection",
+      "priority": "MEDIUM",
+      "est_time": "2 min",
+      "description": "Step 1: Select OSD Menu from Bluetooth Remote (BTRCU) by pressing GEAR/MENU button.\nExpected: OSD Menu appears with list of options.\n\nStep 2: Verify OSD Menu contents.\nExpected: Menu shows expected items (Settings, Input, Picture Mode, etc.).\n\nStep 3: Select 'Input' key on OSD Menu list.\nExpected: Input selection screen appears showing all available inputs (HDMI 1-4, AV, Tuner, etc.).\n\nStep 4: Launch Picture Mode Sidebar via PIC key on remote.\nExpected: Picture Mode sidebar appears with available picture modes (Standard, Calibrated, Game, etc.).\n\nStep 5: Select a different picture mode.\nExpected: Picture mode changes immediately.",
+      "expected_output": "OSD Menu launches from BTRCU. Input selection accessible from OSD. PIC key launches Picture Mode sidebar with working mode selection.",
+      "3p_ids": [
+        "31008452",
+        "31008453",
+        "31008276"
+      ]
+    },
+    {
+      "id": "TC-SYS-028",
+      "category": "Settings/Menu UI",
+      "title": "Verify OOBE Network skip and 'Set Up Later' messaging",
+      "priority": "MEDIUM",
+      "est_time": "2 min",
+      "description": "Step 1: During OOBE, navigate to the Network connection popup/screen.\nExpected: Network connection options appear.\n\nStep 2: Tap 'Set Up Later' on the Network popup.\nExpected: Updated text message confirms network will be set up later.\n\nStep 3: Verify the text message content matches specification.\nExpected: Correct wording displayed per UX requirements.\n\nStep 4: Verify OOBE proceeds to next step after skipping network.\nExpected: OOBE continues without network dependency.\n\nStep 5: In OOBE 'Connect to a WiFi Network' screen, tap 'Skip Network' or 'Setup Network Later'.\nExpected: Network step is bypassed; OOBE advances.",
+      "expected_output": "'Set Up Later' and 'Skip Network' options work correctly with proper messaging. OOBE proceeds without requiring network connection.",
+      "3p_ids": [
+        "31006892",
+        "31006893",
+        "31006894",
+        "31009357"
+      ]
+    },
+    {
+      "id": "TC-SYS-029",
+      "category": "Settings/Menu UI",
+      "title": "Verify TV Information access during OOBE",
+      "priority": "MEDIUM",
+      "est_time": "2 min",
+      "description": "Step 1: Start OOBE (factory reset or first boot) and stop at 'Choose a Language' screen.\nExpected: Language selection screen displayed.\n\nStep 2: Press settings/menu button on 'Choose a Language' screen.\nExpected: TV INFORMATION overlay appears showing model, firmware version, etc.\n\nStep 3: Dismiss TV Information and proceed to 'Connect Your Network' screen.\nExpected: Returns to OOBE flow.\n\nStep 4: Connect network during OOBE, then press settings/menu button.\nExpected: TV INFORMATION accessible with network-specific info (IP, MAC) now populated.\n\nStep 5: Back out of OOBE from 'Connect Your Network' screen, press menu.\nExpected: TV Information still accessible from backed-out state.",
+      "expected_output": "TV Information is accessible via Menu button at all OOBE stages. Shows system info before and after network connection.",
+      "3p_ids": [
+        "31005835",
+        "31005842",
+        "31005828",
+        "31007638"
+      ]
+    },
+    {
+      "id": "TC-SYS-030",
+      "category": "Settings/Menu UI",
+      "title": "Verify Support menu access",
+      "priority": "LOW",
+      "est_time": "1 min",
+      "description": "Step 1: Navigate to Settings > Support (or System > Support).\nExpected: Support menu opens.\n\nStep 2: Verify support options are displayed (Check for Updates, System Information, Contact Support, etc.).\nExpected: All support menu items present and navigable.\n\nStep 3: Verify the GEAR/MENU button on remote opens settings consistently.\nExpected: GEAR or MENU button always opens the Settings/Quick Settings regardless of current TV state (home, app, input).",
+      "expected_output": "Support menu accessible with all expected options. GEAR/MENU button consistently opens settings from any TV state.",
+      "3p_ids": [
+        "31007537",
+        "31013764",
+        "31013871"
+      ]
+    }
+  ],
+  "rationale": {
+    "TC-SYS-001": "Consolidates 12 menu navigation/traversal TCs into single full-tree navigation test with parameterized sub-menu entries.",
+    "TC-SYS-002": "Consolidates 4 System Information display TCs (different access contexts) into single TC testing all contexts.",
+    "TC-SYS-003": "Consolidates 3 Factory Reset TCs (menu trigger + front panel trigger + Reset TV option) into single end-to-end reset validation.",
+    "TC-SYS-004": "Maps to 1 sleep timer countdown/notification TC.",
+    "TC-SYS-005": "Maps to 1 PIN-protected access TC.",
+    "TC-SYS-006": "Consolidates 5 menu timeout/dismissal TCs (60s timeout in Settings + Quick Settings + gaming controller non-interference) into single idle-behavior test.",
+    "TC-SYS-007": "Consolidates 15 Quick Settings dismissal TCs (6 button types + timeout + re-open + channel/volume responses + pop-up interaction) via parameterized button loop.",
+    "TC-SYS-008": "Consolidates 4 Quick Settings content/state TCs (online vs offline, general items, network shortcut) into single state-aware verification.",
+    "TC-SYS-009": "Consolidates 13 Network menu UI TCs (SSID list, auto-rescan, selector persistence, rescan-only-when-active) \u2014 same 4 assertions repeated across 3+ model variants in manual suite.",
+    "TC-SYS-010": "Consolidates 9 WiFi connection-via-menu TCs (2.4/5/6 GHz \u00d7 WPA2/WPA3/SAE/Enhanced Open/Mixed) into parameterized band\u00d7encryption matrix.",
+    "TC-SYS-011": "Consolidates 20 network switch/error TCs (8 'Choose Different Network' repeats \u00d7 valid/invalid + disconnect diagnostic + error notifications) into single happy/unhappy path test.",
+    "TC-SYS-012": "Consolidates 8 'Launch Network Settings from troubleshooting screen' TCs (same flow repeated from different entry points) into parameterized entry-point test.",
+    "TC-SYS-013": "Consolidates 7 Captive Portal/SoftAP TCs (SSID listing + setup flow repeated across contexts + multi-platform SoftAP) into single captive portal flow test.",
+    "TC-SYS-014": "Consolidates 10 Network Security Type / DHCP Settings TCs (menu text + security list + 3 DHCP modes \u00d7 2 model variants) into single menu validation.",
+    "TC-SYS-015": "Consolidates 13 OOBE-from-menu TCs (6 'Launch OOBE from OSD' repeats + menu key during OOBE + Set Up Later messages + sidebar access) into single OOBE settings interaction test.",
+    "TC-SYS-016": "Consolidates 18 HDMI & Gaming menu TCs (16 individual setting items + CEC toggle + FreeSync logos) into single menu-tree traversal with assertion per item.",
+    "TC-SYS-017": "Consolidates 5 Bluetooth/Remote/Controller TCs (menu presence + headphones + remote persistence + gaming controllers) into single BT menu verification.",
+    "TC-SYS-018": "Consolidates 5 Antenna Channels menu TCs (Find Channels + Find New + Hide + Done button + options list) into single channel settings workflow.",
+    "TC-SYS-019": "Consolidates 7 CC toggle/mode TCs (ON/OFF, Analog, Digital, CC button \u00d7 2 remote variants, default state) into single CC settings test.",
+    "TC-SYS-020": "Consolidates 9 CC cross-input/app TCs (Global Setting + Composite + Tuner + App follow + CC key in app + Digital Style + SmartCast app) into single cross-platform CC behavior test.",
+    "TC-SYS-021": "Consolidates 8 Accessibility TCs (TalkBack ON/OFF + language restriction + offline + Zoom enable/disable via long-press + short-press behavior) into single a11y workflow.",
+    "TC-SYS-022": "Consolidates 2 Video Description TCs (standard + Spanish removal per Change List) into single language-aware test.",
+    "TC-SYS-023": "Consolidates 5 Menu Language TCs (English/Spanish/French switching + requirements verification) via language loop.",
+    "TC-SYS-024": "Consolidates 5 System/Power/Store Demo TCs (power option + ECO restart \u00d7 2 + Store Demo 1 + Demo 2) into single system menu test.",
+    "TC-SYS-025": "Consolidates 3 Factory Reset sub-option TCs (Reset Apps + Restart + Cancel) that test non-full-reset paths.",
+    "TC-SYS-026": "Consolidates 7 Privacy/Legal/Advertising/Viewing Data TCs (menu access + advertising sub-menu + ad tracking text + viewing data toggle + ToS after skip) into single privacy settings test.",
+    "TC-SYS-027": "Consolidates 3 OSD Menu/Input/Picture Mode TCs (OSD launch from BTRCU + Input selection + PIC key sidebar) into single OSD interaction test.",
+    "TC-SYS-028": "Consolidates 4 OOBE network skip messaging TCs ('Set Up Later' text \u00d7 3 repeats + Skip Network) into single skip-flow verification.",
+    "TC-SYS-029": "Consolidates 4 TV Information during OOBE TCs (Menu button on Choose Language + Connect Network + network connected + backed-out state) into single OOBE-info test.",
+    "TC-SYS-030": "Consolidates 3 Support menu / GEAR button TCs (support menu access + GEAR button consistency \u00d7 2 remote variants)."
+  }
+}

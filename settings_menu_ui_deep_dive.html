@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Settings/Menu UI Coverage Deep-Dive</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; margin: 0; padding: 20px; background: #0d1117; color: #c9d1d9; }
+.container { max-width: 1200px; margin: 0 auto; }
+h1 { color: #58a6ff; font-size: 24px; margin-bottom: 5px; }
+h2 { color: #79c0ff; font-size: 18px; margin-top: 30px; }
+.subtitle { color: #8b949e; font-size: 14px; margin-bottom: 30px; }
+.summary-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 20px 0; }
+.stat-card { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 20px; text-align: center; }
+.stat-number { font-size: 36px; font-weight: bold; }
+.stat-label { font-size: 12px; color: #8b949e; text-transform: uppercase; letter-spacing: 1px; margin-top: 5px; }
+.stat-pct { font-size: 14px; color: #8b949e; }
+.covered .stat-number { color: #3fb950; }
+.partial .stat-number { color: #d29922; }
+.not-covered .stat-number { color: #f85149; }
+
+.donut-container { text-align: center; margin: 30px 0; }
+.donut-container svg { width: 200px; height: 200px; }
+
+table { width: 100%; border-collapse: collapse; margin: 15px 0; font-size: 13px; }
+th { background: #21262d; padding: 10px 12px; text-align: left; border-bottom: 2px solid #30363d; color: #79c0ff; }
+td { padding: 8px 12px; border-bottom: 1px solid #21262d; }
+tr:hover { background: #161b22; }
+.badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: 600; }
+.badge-covered { background: #0d3117; color: #3fb950; border: 1px solid #238636; }
+.badge-partial { background: #2d1f00; color: #d29922; border: 1px solid #9e6a03; }
+.badge-not-covered { background: #2d0000; color: #f85149; border: 1px solid #da3633; }
+
+.bar-container { width: 100%; height: 24px; background: #21262d; border-radius: 4px; overflow: hidden; display: flex; margin: 8px 0; }
+.bar-covered { background: #238636; height: 100%; }
+.bar-partial { background: #9e6a03; height: 100%; }
+.bar-not-covered { background: #da3633; height: 100%; }
+
+.gap-area { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 16px; margin: 10px 0; }
+.gap-title { font-weight: 600; color: #f85149; margin-bottom: 8px; }
+.gap-count { color: #8b949e; font-size: 12px; }
+.gap-items { font-size: 12px; color: #8b949e; margin-top: 8px; }
+
+.recommendation { background: #0d2818; border: 1px solid #238636; border-radius: 8px; padding: 16px; margin: 10px 0; }
+.recommendation h3 { color: #3fb950; margin: 0 0 8px 0; font-size: 14px; }
+.recommendation p { margin: 4px 0; font-size: 13px; }
+
+.legend { display: flex; gap: 20px; justify-content: center; margin: 10px 0; font-size: 12px; }
+.legend-item { display: flex; align-items: center; gap: 6px; }
+.legend-dot { width: 12px; height: 12px; border-radius: 50%; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Settings/Menu UI - Coverage Deep-Dive Analysis</h1>
+<p class="subtitle">206 3P Manual Test Cases (TV 101 Full Sweep) vs. 62 PORTAL Phase 1 Automation Test Cases</p>
+
+<div class="summary-grid">
+  <div class="stat-card covered">
+    <div class="stat-number">5</div>
+    <div class="stat-pct">2.6%</div>
+    <div class="stat-label">Fully Covered</div>
+  </div>
+  <div class="stat-card partial">
+    <div class="stat-number">75</div>
+    <div class="stat-pct">38.3%</div>
+    <div class="stat-label">Partially Covered</div>
+  </div>
+  <div class="stat-card not-covered">
+    <div class="stat-number">116</div>
+    <div class="stat-pct">59.2%</div>
+    <div class="stat-label">Not Covered</div>
+  </div>
+</div>
+
+<div class="bar-container">
+  <div class="bar-covered" style="width: 2.6%"></div>
+  <div class="bar-partial" style="width: 38.3%"></div>
+  <div class="bar-not-covered" style="width: 59.2%"></div>
+</div>
+<div class="legend">
+  <div class="legend-item"><div class="legend-dot" style="background:#238636"></div>Covered</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#9e6a03"></div>Partial</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#da3633"></div>Not Covered</div>
+</div>
+
+<h2>Coverage by Functional Area</h2>
+<table>
+<tr><th>Functional Area</th><th>Total TCs</th><th>Covered</th><th>Partial</th><th>Not Covered</th><th>Gap %</th><th>Coverage Bar</th></tr>
+<tr>
+  <td>Network Settings UI</td><td>41</td><td>1</td><td>15</td><td>25</td><td>61%</td>
+  <td><div class="bar-container" style="height:16px"><div class="bar-covered" style="width:2.4390243902439024%"></div><div class="bar-partial" style="width:36.58536585365854%"></div><div class="bar-not-covered" style="width:60.97560975609756%"></div></div></td>
+</tr><tr>
+  <td>Other</td><td>33</td><td>0</td><td>11</td><td>22</td><td>67%</td>
+  <td><div class="bar-container" style="height:16px"><div class="bar-covered" style="width:0.0%"></div><div class="bar-partial" style="width:33.33333333333333%"></div><div class="bar-not-covered" style="width:66.66666666666666%"></div></div></td>
+</tr><tr>
+  <td>Quick Settings Menu</td><td>17</td><td>0</td><td>3</td><td>14</td><td>82%</td>
+  <td><div class="bar-container" style="height:16px"><div class="bar-covered" style="width:0.0%"></div><div class="bar-partial" style="width:17.647058823529413%"></div><div class="bar-not-covered" style="width:82.35294117647058%"></div></div></td>
+</tr><tr>
+  <td>HDMI & Gaming Settings</td><td>17</td><td>0</td><td>16</td><td>1</td><td>6%</td>
+  <td><div class="bar-container" style="height:16px"><div class="bar-covered" style="width:0.0%"></div><div class="bar-partial" style="width:94.11764705882352%"></div><div class="bar-not-covered" style="width:5.88235294117647%"></div></div></td>
+</tr><tr>
+  <td>Closed Captions</td><td>16</td><td>0</td><td>0</td><td>16</td><td>100%</td>
+  <td><div class="bar-container" style="height:16px"><div class="bar-covered" style="width:0.0%"></div><div class="bar-partial" style="width:0.0%"></div><div class="bar-not-covered" style="width:100.0%"></div></div></td>
+</tr><tr>
+  <td>OOBE-Related</td><td>14</td><td>0</td><td>11</td><td>3</td><td>21%</td>
+  <td><div class="bar-container" style="height:16px"><div class="bar-covered" style="width:0.0%"></div><div class="bar-partial" style="width:78.57142857142857%"></div><div class="bar-not-covered" style="width:21.428571428571427%"></div></div></td>
+</tr><tr>
+  <td>General Settings Navigation</td><td>12</td><td>0</td><td>10</td><td>2</td><td>17%</td>
+  <td><div class="bar-container" style="height:16px"><div class="bar-covered" style="width:0.0%"></div><div class="bar-partial" style="width:83.33333333333334%"></div><div class="bar-not-covered" style="width:16.666666666666664%"></div></div></td>
+</tr><tr>
+  <td>Accessibility</td><td>10</td><td>0</td><td>0</td><td>10</td><td>100%</td>
+  <td><div class="bar-container" style="height:16px"><div class="bar-covered" style="width:0.0%"></div><div class="bar-partial" style="width:0.0%"></div><div class="bar-not-covered" style="width:100.0%"></div></div></td>
+</tr><tr>
+  <td>Factory Reset & System</td><td>7</td><td>3</td><td>3</td><td>1</td><td>14%</td>
+  <td><div class="bar-container" style="height:16px"><div class="bar-covered" style="width:42.857142857142854%"></div><div class="bar-partial" style="width:42.857142857142854%"></div><div class="bar-not-covered" style="width:14.285714285714285%"></div></div></td>
+</tr><tr>
+  <td>Bluetooth/Remote/Controllers</td><td>5</td><td>0</td><td>0</td><td>5</td><td>100%</td>
+  <td><div class="bar-container" style="height:16px"><div class="bar-covered" style="width:0.0%"></div><div class="bar-partial" style="width:0.0%"></div><div class="bar-not-covered" style="width:100.0%"></div></div></td>
+</tr><tr>
+  <td>Menu Language</td><td>5</td><td>0</td><td>0</td><td>5</td><td>100%</td>
+  <td><div class="bar-container" style="height:16px"><div class="bar-covered" style="width:0.0%"></div><div class="bar-partial" style="width:0.0%"></div><div class="bar-not-covered" style="width:100.0%"></div></div></td>
+</tr><tr>
+  <td>Antenna/Channels</td><td>4</td><td>0</td><td>3</td><td>1</td><td>25%</td>
+  <td><div class="bar-container" style="height:16px"><div class="bar-covered" style="width:0.0%"></div><div class="bar-partial" style="width:75.0%"></div><div class="bar-not-covered" style="width:25.0%"></div></div></td>
+</tr><tr>
+  <td>Privacy & Advertising</td><td>4</td><td>0</td><td>0</td><td>4</td><td>100%</td>
+  <td><div class="bar-container" style="height:16px"><div class="bar-covered" style="width:0.0%"></div><div class="bar-partial" style="width:0.0%"></div><div class="bar-not-covered" style="width:100.0%"></div></div></td>
+</tr><tr>
+  <td>Menu Timeout Behavior</td><td>3</td><td>0</td><td>0</td><td>3</td><td>100%</td>
+  <td><div class="bar-container" style="height:16px"><div class="bar-covered" style="width:0.0%"></div><div class="bar-partial" style="width:0.0%"></div><div class="bar-not-covered" style="width:100.0%"></div></div></td>
+</tr><tr>
+  <td>Store Demo</td><td>2</td><td>0</td><td>0</td><td>2</td><td>100%</td>
+  <td><div class="bar-container" style="height:16px"><div class="bar-covered" style="width:0.0%"></div><div class="bar-partial" style="width:0.0%"></div><div class="bar-not-covered" style="width:100.0%"></div></div></td>
+</tr><tr>
+  <td>System Information</td><td>2</td><td>0</td><td>0</td><td>2</td><td>100%</td>
+  <td><div class="bar-container" style="height:16px"><div class="bar-covered" style="width:0.0%"></div><div class="bar-partial" style="width:0.0%"></div><div class="bar-not-covered" style="width:100.0%"></div></div></td>
+</tr><tr>
+  <td>Power/Sleep</td><td>2</td><td>0</td><td>2</td><td>0</td><td>0%</td>
+  <td><div class="bar-container" style="height:16px"><div class="bar-covered" style="width:0.0%"></div><div class="bar-partial" style="width:100.0%"></div><div class="bar-not-covered" style="width:0.0%"></div></div></td>
+</tr><tr>
+  <td>Parental Controls</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0%</td>
+  <td><div class="bar-container" style="height:16px"><div class="bar-covered" style="width:100.0%"></div><div class="bar-partial" style="width:0.0%"></div><div class="bar-not-covered" style="width:0.0%"></div></div></td>
+</tr><tr>
+  <td>Picture Mode</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0%</td>
+  <td><div class="bar-container" style="height:16px"><div class="bar-covered" style="width:0.0%"></div><div class="bar-partial" style="width:100.0%"></div><div class="bar-not-covered" style="width:0.0%"></div></div></td>
+</tr></table>
+
+<h2>Key Coverage Gaps (100% Uncovered Areas)</h2>
+<div class="gap-area">
+  <div class="gap-title">Closed Captions <span class="gap-count">(16 test cases, 0% automated coverage)</span></div>
+  <div class="gap-items">No PORTAL automation test case addresses any aspect of this area.</div>
+</div><div class="gap-area">
+  <div class="gap-title">Accessibility <span class="gap-count">(10 test cases, 0% automated coverage)</span></div>
+  <div class="gap-items">No PORTAL automation test case addresses any aspect of this area.</div>
+</div><div class="gap-area">
+  <div class="gap-title">Bluetooth/Remote/Controllers <span class="gap-count">(5 test cases, 0% automated coverage)</span></div>
+  <div class="gap-items">No PORTAL automation test case addresses any aspect of this area.</div>
+</div><div class="gap-area">
+  <div class="gap-title">Menu Language <span class="gap-count">(5 test cases, 0% automated coverage)</span></div>
+  <div class="gap-items">No PORTAL automation test case addresses any aspect of this area.</div>
+</div><div class="gap-area">
+  <div class="gap-title">Privacy & Advertising <span class="gap-count">(4 test cases, 0% automated coverage)</span></div>
+  <div class="gap-items">No PORTAL automation test case addresses any aspect of this area.</div>
+</div><div class="gap-area">
+  <div class="gap-title">Menu Timeout Behavior <span class="gap-count">(3 test cases, 0% automated coverage)</span></div>
+  <div class="gap-items">No PORTAL automation test case addresses any aspect of this area.</div>
+</div><div class="gap-area">
+  <div class="gap-title">Store Demo <span class="gap-count">(2 test cases, 0% automated coverage)</span></div>
+  <div class="gap-items">No PORTAL automation test case addresses any aspect of this area.</div>
+</div><div class="gap-area">
+  <div class="gap-title">System Information <span class="gap-count">(2 test cases, 0% automated coverage)</span></div>
+  <div class="gap-items">No PORTAL automation test case addresses any aspect of this area.</div>
+</div>
+<h2>What IS Covered (5 Test Cases)</h2>
+<table>
+<tr><th>TestRail ID</th><th>Mapped To</th><th>Reason</th></tr>
+<tr><td>31006579</td><td><span class='badge badge-covered'>TC-NET-001/TC-NET-007</span></td><td>WiFi connection with correct password validated by PORTAL</td></tr><tr><td>31008067</td><td><span class='badge badge-covered'>TC-SYS-005</span></td><td>PIN-protected access validated by Parental Controls test</td></tr><tr><td>31008163</td><td><span class='badge badge-covered'>TC-SYS-003</span></td><td>Factory Reset execution directly validated</td></tr><tr><td>31008165</td><td><span class='badge badge-covered'>TC-SYS-003</span></td><td>Factory reset from front panel validated by TC-SYS-003</td></tr><tr><td>31008170</td><td><span class='badge badge-covered'>TC-SYS-003</span></td><td>Reset TV option is full factory reset validated by TC-SYS-003</td></tr></table>
+
+<h2>Automation Recommendations (Priority Order)</h2>
+<div class="recommendation">
+  <h3>1. Closed Captions (16 TCs, 100% gap)</h3>
+  <p>Add a TC-CC-001 automation TC covering CC toggle, analog/digital modes, global setting behavior, and cross-input persistence. High regulatory/accessibility compliance risk.</p>
+</div>
+<div class="recommendation">
+  <h3>2. Accessibility - TalkBack & Zoom (10 TCs, 100% gap)</h3>
+  <p>Add TC-ACC-001/002 covering TalkBack enable/disable, language restrictions, and Zoom navigation mode activation. ADA/Section 508 compliance.</p>
+</div>
+<div class="recommendation">
+  <h3>3. Quick Settings Menu Behavior (17 TCs, 82% gap)</h3>
+  <p>Add TC-QS-001 covering Quick Settings dismissal paths (6 different button interactions), timeout behavior, and state management during content playback.</p>
+</div>
+<div class="recommendation">
+  <h3>4. Network Settings UI Validation (41 TCs, 61% gap)</h3>
+  <p>PORTAL tests network connectivity but NOT the settings menu UI (captive portal, SSID list, security type menu, error notifications). Add TC-NET-UI-001 for menu element validation.</p>
+</div>
+<div class="recommendation">
+  <h3>5. Menu Language (5 TCs, 100% gap)</h3>
+  <p>Add TC-LANG-001 covering English/Spanish/French language switching and UI string validation. Critical for multi-market certification.</p>
+</div>
+<div class="recommendation">
+  <h3>6. Privacy & Legal Menus (4 TCs, 100% gap)</h3>
+  <p>Add TC-PRIV-001 for Viewing Data settings, Limited Ad Tracking toggle, and Privacy & Legal menu access. Regulatory compliance (CCPA/GDPR).</p>
+</div>
+
+<h2>Executive Insight</h2>
+<div style="background:#161b22; border:1px solid #30363d; border-radius:8px; padding:20px; margin:20px 0;">
+  <p style="font-size:15px; line-height:1.6;">
+    Of the <strong>206 "Settings/Menu UI"</strong> test cases in the 3P manual suite, only <strong>5 (2.6%)</strong> are fully automated by PORTAL Phase 1. 
+    Another <strong>75 (38.3%)</strong> have partial overlap where PORTAL tests the underlying functionality (e.g., WiFi connectivity) but NOT the specific menu UI behavior (e.g., keyboard close animation, SSID list rendering).
+  </p>
+  <p style="font-size:15px; line-height:1.6;">
+    The <strong>116 test cases (59.2%)</strong> with zero coverage represent entire feature categories absent from PORTAL: 
+    Closed Captions, Accessibility (TalkBack/Zoom), Menu Language, Privacy settings, Bluetooth/Remote menus, and Gaming Controller menus.
+  </p>
+  <p style="font-size:15px; line-height:1.6; color:#d29922;">
+    <strong>Bottom line:</strong> PORTAL Phase 1 automation provides strong coverage for <em>functional connectivity and system operations</em> (factory reset, network connect, parental controls) but has minimal coverage of <em>Settings menu UI behaviors</em> — the specific area this 3P category targets.
+  </p>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,1238 @@
+[
+  {
+    "id": "31005511",
+    "title": "Menu times out after 60 seconds of inactivity",
+    "preconditions": "TV is powered on HDMI device is powered on and connected to TV CEC: Enabled OTP: Enabled",
+    "steps_separated": "Step 1: Switch active input source to connected HDMI device\n  Expected: TV should load to HDMI device home page\nStep 2: Press Menu button on Remote\n  Expected: Main menu side bar displays\nStep 3: Navigate to System\n  Expected: System menu opens\nStep 4: Allow 60 seconds of inactivity\n  Expected: Menu sidebar should time out and automatically close Time out 60 seconds TV Information doesn't time out"
+  },
+  {
+    "id": "31005512",
+    "title": "TV UI settings  should not close with gaming console MENU button",
+    "preconditions": "Gaming console(Ex: Xbox or PS5) connected to the TV. Original issue was found with PS4 CEC: Enabled (CEC should also be enabled on a gaming device). One Touch Play: Enabled TV and Gaming console powered off",
+    "steps_separated": "Step 1: Power on the gaming console using its own controller\n  Expected: Gaming console and TV both power on. TV loads to gaming console's home page\nStep 2: Press the setting button on TV's remote control\n  Expected: TV settings should opens\nStep 3: Press the MENU button on the gaming console's controller\n  Expected: TV brings up the gaming console's menu in the background. TV settings remains ope"
+  },
+  {
+    "id": "31005585",
+    "title": "Navigation to 'Connect Your Network' screen  when clicked on \u2018Get Connected\u2019 in Quick Settings menu",
+    "preconditions": "1.DUT is powered on 2.Perform Factory Reset (Launch Menu->ALL SETTINGS->SUPPORT->Reset to Factory Settings->Reset TV)-2022 and above chipset OR Perform Factory Reset (Launch Menu->ALL SETTINGS->ADMIN & PRIVACY->Reset to Factory Settings->Reset TV)-2020 chipset 3.Ensure to 'Back-out of OOBE' from 'OO",
+    "steps_separated": "Step 1: Press Menu button.\n  Expected: OSD Menu should get launched\nStep 2: Go to 'GET CONNECTED' Your're currently offline->Press ok\n  Expected: TV will get redirect to 'Connect Your Network' galaxy screen ie To connect your TV to your network you will need to revisit the setup process.Your TV may restart,and your current settings will be saved. CANCEL START SETUP By Default 'START SETUP' button "
+  },
+  {
+    "id": "31005592",
+    "title": "Verify ACCESSIBILITY->TALK BACK ON and OFF when No network is connected",
+    "preconditions": "1.DUT is powered on 2.Perform Factory Reset (Launch Menu->ALL SETTINGS->SUPPORT->Reset to Factory Settings->Reset TV)-2022 and above chipset OR Perform Factory Reset (Launch Menu->ALL SETTINGS->ADMIN & PRIVACY->Reset to Factory Settings->Reset TV)-2020 chipset 3.Ensure to 'Back-out of OOBE' from 'OO",
+    "steps_separated": "Step 1: Launch Menu\n  Expected: Menu should get launched\nStep 2: Go to ACCESSIBILITY\n  Expected: ACCESSIBILITY menu should get launched\nStep 3: Go to Talk Back\n  Expected: Talk by default should be OFF\nStep 4: Enable Talk Back\n  Expected: Talk back should show notification'Talk Back On' and it should start reading the text displayed in the page\nStep 5: Disable talk back\n  Expected: Talk back shoul"
+  },
+  {
+    "id": "31005593",
+    "title": "Verify ACCESSIBILITY->Zoom Mode ON and OFF when No network is connected",
+    "preconditions": "1.DUT is powered on 2.Perform Factory Reset (Launch Menu->ALL SETTINGS->SUPPORT->Reset to Factory Settings->Reset TV)-2022 and above chipset OR Perform Factory Reset (Launch Menu->ALL SETTINGS->ADMIN & PRIVACY->Reset to Factory Settings->Reset TV)-2020 chipset 3.Ensure to 'Back-out of OOBE' from 'OO",
+    "steps_separated": "Step 1: Launch Menu\n  Expected: Menu should get launched\nStep 2: Go to ACCESSIBILITY\n  Expected: ACCESSIBILITY menu should get launched\nStep 3: Go to 'Zoom Mode'->press ok\n  Expected: Zoom mode options should be displayed off and on .By default zoom mode should be 'Off'\nStep 4: Select 'On'\n  Expected: zoom mode should get enabled.It should display notification\"Zoom mode has been turned on' on the "
+  },
+  {
+    "id": "31005596",
+    "title": "ALLSETTINGS >SYSTEM > Store Demo --> Demo 1",
+    "preconditions": "1.DUT is powered on 2.Perform Factory Reset (Launch Menu->ALL SETTINGS->SUPPORT->Reset to Factory Settings->Reset TV)-2022 and above chipset OR Perform Factory Reset (Launch Menu->ALL SETTINGS->ADMIN & PRIVACY->Reset to Factory Settings->Reset TV)-2020 chipset 3.Ensure to 'Back-out of OOBE' from 'OO",
+    "steps_separated": "Step 1: Press Menu button on BT Remote\n  Expected: OSD Menu should get launched\nStep 2: Go to ALL SETTINGS->SYSTEM\n  Expected: System Menu should get launched\nStep 3: Select Store Demo->Press ok\n  Expected: TV shoudld display store demo options Off,Demo 1,Demo 2. By Default Store Demo should be off.\nStep 4: Select Demo 1\n  Expected: TV should display count down timer of 15 secs before launching St"
+  },
+  {
+    "id": "31005597",
+    "title": "ALLSETTINGS >SYSTEM > Store Demo --> Demo 2",
+    "preconditions": "1.DUT is powered on 2.Perform Factory Reset (Launch Menu->ALL SETTINGS->SUPPORT->Reset to Factory Settings->Reset TV)-2022 and above chipset OR Perform Factory Reset (Launch Menu->ALL SETTINGS->ADMIN & PRIVACY->Reset to Factory Settings->Reset TV)-2020 chipset 3.Ensure to 'Back-out of OOBE' from 'OO",
+    "steps_separated": "Step 1: Press Menu button on BT Remote\n  Expected: OSD Menu should get launched\nStep 2: Go to ALL SETTINGS->SYSTEM\n  Expected: System Menu should get launched\nStep 3: Select Store Demo->Press ok\n  Expected: Select Store Demo->Press ok TV should display store demo options Off,Demo 1,Demo 2. By Default Store Demo should be off.\nStep 4: Select Demo 2\n  Expected: TV should display count down timer of "
+  },
+  {
+    "id": "31005639",
+    "title": "Launch OOBE from OSD Menu",
+    "preconditions": "1.TV is powered on 2.TV is connected to wifi network",
+    "steps_separated": "Step 1: Launch OSD Menu\n  Expected: OSD Menu should get launched\nStep 2: Go to ALL SETTINGS \u2192 SUPPORT \u2192 Reset to Factory Settings \u2192 Reset TV(2022 & above chipset) or Go to ALL SETTINGS \u2192 ADMIN & PRIVACY \u2192 Reset to Factory Settings \u2192 Reset TV(2020 chipset)\n  Expected: Popup window will open below description and 4 buttons Cancel - Return back to main menu. Reset TV Reset Apps Restart Cancel Default"
+  },
+  {
+    "id": "31005702",
+    "title": "Launch OOBE from OSD Menu",
+    "preconditions": "TV is powered on TV is connected to wifi network Set Menu Language as Espanol in OSD Menu \u2192 ALL SETTINGS \u2192 SYSTEM",
+    "steps_separated": "Step 1: Launch OSD Menu\n  Expected: OSD Menu should get launched\nStep 2: Go to TODOS LOS AJUSTES \u2192 APOYO \u2192 Reprogramar a la Configuraci\u00f3n de F\u00e1brica (2022 & above chipset) or Go to TODOS LOS AJUSTES \u2192 ADMINISTRACI\u00d3N Y PRIVACIDAD \u2192 Reprogramar a la Configuraci\u00f3n de F\u00e1brica(2020 chipset)\n  Expected: Popup window will open below description and 4 buttons Cancelar - Vuelve al men\u00fa principal. 'Reprogra"
+  },
+  {
+    "id": "31005765",
+    "title": "Launch OOBE from OSD Menu",
+    "preconditions": "TV is powered on TV is connected to wifi network Set Menu Language as Francais in OSD Menu \u2192 ALL SETTINGS \u2192 SYSTEM",
+    "steps_separated": "Step 1: Launch OSD Menu\n  Expected: OSD Menu should get launched\nStep 2: Go to TOUS LES PARAMETRES \u2192 SOUTIEN \u2192 Reintialisez aux Parametres Usine (2022 & above chipset) or Go to TOUS LES PARAMETRES \u2192 ADMIN.ET CONFIDENTIALITE \u2192 Reintialisez aux Parametres Usine(2020 chipset)\n  Expected: Popup window will open below description and 4 buttons Annuler - Vuelve al men\u00fa principal. 'Reinitialisation de la"
+  },
+  {
+    "id": "31005835",
+    "title": "Verify TV INFORMATION by pressing settings/menu button on top of  'Choose a Language'  screen",
+    "preconditions": "1.DUT is powered on 2.Perform Factory Reset (Launch Menu->ALL SETTINGS->SUPPORT->Reset to Factory Settings->Reset TV)-2022 and above chipset OR Perform Factory Reset (Launch Menu->ALL SETTINGS->ADMIN & PRIVACY->Reset to Factory Settings->Reset TV)-2020 chipset 3.TV is on 'Choose a Language' Page",
+    "steps_separated": "Step 1: Launch Menu\n  Expected: TV INFORMATION Menu should get launched\nStep 2: Verify TV Information\n  Expected: TV INFORMATION with below details will get launched TV Serial Number:XXXXXX Model Name:XXXXX Firmware:XXXXX NETWORK Connection:none Wi-Fi Network:N/A IP A dress:0.0.0.0 MAC Address:XXXXXXX Below NETWORK details, below 2 buttons should be displayed RESTART RESET Default focus will be on"
+  },
+  {
+    "id": "31005842",
+    "title": "Verify TV INFORMATION by pressing settings/menu button when network is  connected during OOBE",
+    "preconditions": "1.DUT is powered on 2.Perform Factory Reset (Launch Menu->ALL SETTINGS->SUPPORT->Reset to Factory Settings->Reset TV)-2022 and above chipset OR Perform Factory Reset (Launch Menu->ALL SETTINGS->ADMIN & PRIVACY->Reset to Factory Settings->Reset TV)-2020 chipset 3.Choose a Language'->Pair Remote->Conn",
+    "steps_separated": "Step 1: TV is on 'Checking for Updates' screen,Launch Menu button\n  Expected: TV INFORMATION Menu should get launched on top of 'check for updates' screen\nStep 2: Verify TV Information\n  Expected: TV INFORMATION with below details will get launched TV Serial Number:XXXXXX Model Name:XXXXX Firmware:XXXXX NETWORK Connection:Wifi/Ethernet Wi-Fi Network:XXXXXX IP Address:XX.XX.XX.XX MAC Address:XXXXXX"
+  },
+  {
+    "id": "31005828",
+    "title": "Back Out OOBE->Verify TV INFORMATION by pressing settings/menu button on top of 'Connect Your Network' screen.",
+    "preconditions": "1.DUT is powered on 2.Perform Factory Reset (Launch Menu->ALL SETTINGS->SUPPORT->Reset to Factory Settings->Reset TV)-2022 and above chipset OR Perform Factory Reset (Launch Menu->ALL SETTINGS->ADMIN & PRIVACY->Reset to Factory Settings->Reset TV)-2020 chipset 3.Ensure to 'Back-out of OOBE' from 'OO",
+    "steps_separated": "Step 1: Press 'Home' Button on top of HDMI screen\n  Expected: Connect Your Network' screen should display with 'CANCEL' & 'START SETUP' options.\nStep 2: Press 'Menu' button on top of 'Connect Your Network' galaxy screen,Verify TV Information\n  Expected: TV INFORMATION with below details will get launched TV Serial Number:xxxxxxxxxxxxxxx Model Name:xxxxxx-xxxx Firmware:xxxxxxxxxxxxx NETWORK Connect"
+  },
+  {
+    "id": "31005953",
+    "title": "Launch OOBE from OSD Menu",
+    "preconditions": "1.TV is powered on 2.TV is connected to Ethernet",
+    "steps_separated": "Step 1: Launch OSD Menu\n  Expected: OSD Menu should get launched\nStep 2: Go to ALL SETTINGS \u2192 SUPPORT \u2192 Reset to Factory Settings \u2192 Reset TV(2022 & above chipset) or Go to ALL SETTINGS \u2192 ADMIN & PRIVACY \u2192 Reset to Factory Settings \u2192 Reset TV(2020 chipset)\n  Expected: Popup window will open below description and 4 buttons Cancel - Return back to main menu. Reset TV Reset Apps Restart Cancel Default"
+  },
+  {
+    "id": "31005984",
+    "title": "Launch OOBE from OSD Menu",
+    "preconditions": "1.TV is powered on 2.TV is connected to wifi network",
+    "steps_separated": "Step 1: Launch OSD Menu using IR Remote\n  Expected: OSD Menu should get launched\nStep 2: Go to ALL SETTINGS \u2192 SUPPORT \u2192 Reset to Factory Settings \u2192 Reset TV(2022 & above chipset) or Go to ALL SETTINGS \u2192 ADMIN & PRIVACY \u2192 Reset to Factory Settings \u2192 Reset TV(2020 chipset)\n  Expected: Popup window will open below description and 4 buttons Cancel - Return back to main menu. Reset TV Reset Apps Restar"
+  },
+  {
+    "id": "31006047",
+    "title": "Launch OOBE from OSD Menu",
+    "preconditions": "1.TV is powered on 2.TV is connected to Ethernet",
+    "steps_separated": "Step 1: Launch OSD Menu\n  Expected: OSD Menu should get launched\nStep 2: Go to ALL SETTINGS \u2192 SUPPORT \u2192 Reset to Factory Settings \u2192 Reset TV(2022 & above chipset) or Go to ALL SETTINGS \u2192 ADMIN & PRIVACY \u2192 Reset to Factory Settings \u2192 Reset TV(2020 chipset)\n  Expected: Popup window will open below description and 4 buttons Cancel - Return back to main menu. Reset TV Reset Apps Restart Cancel Default"
+  },
+  {
+    "id": "31006153",
+    "title": "Network menu",
+    "preconditions": "TV must on FUR5.2 firmware or greater",
+    "steps_separated": "Step 1: Open the Quick Settings menu by pressing the gear or menu icon on the remote\n  Expected: Quick settings menu should open\nStep 2: Navigate to \"All Settings\"\n  Expected: Settings menu should open\nStep 3: Navigate to \"Network\"\n  Expected: Network settings menu should open with the following information and options displayed in the following order: 1.) My Networks 2.) More Wi-Fi Networks 3.) N"
+  },
+  {
+    "id": "31006155",
+    "title": "Menu times out after 60 seconds of inactivity (FUR5.1.1)",
+    "preconditions": "Requirement 1, After user pushes menu button and finish navigating through the menu/options, user can push menu button again to close the menu sidebar 2, However if they left the menu bar screen remained open without any navigation/intervention, after 60 seconds of idle activity, menu bar screen mus",
+    "steps_separated": "Step 1: Press Menu button on Remote\n  Expected: Main menu side bar displays\nStep 2: Navigate to Network\n  Expected: Network menu opens\nStep 3: Allow 60 seconds of inactivity\n  Expected: Menu sidebar should time out and automatically close"
+  },
+  {
+    "id": "31006177",
+    "title": "Network> Verify VIZIO Terms of Service and other policies  once OOBE and Network skipped and re-connected to the Network using network settings",
+    "preconditions": "TV is Factory Reset with OOBE skipped",
+    "steps_separated": "Step 1: Using IR remote, press MENU key and select Network.\n  Expected: Network is selected.\nStep 2: Select the language\n  Expected: Language is selected.\nStep 3: Select the Network with correct credentials.\n  Expected: Network is connected when correct credentials are entered.\nStep 4: Wait till it completes downloading the updates.\n  Expected: Updates are downloaded successfully.\nStep 5: Select t"
+  },
+  {
+    "id": "31006306",
+    "title": "2.4Ghz Wi-Fi Encryptions / System Menu Connection",
+    "preconditions": "Spec: https://vizioirvine.atlassian.net/wiki/spaces/USS/pages/149258667415/2.+Network+Requirements#2.4-Set-Up-Network-Connection Please test all wi-fi security options for this testcase: WPA+TKIP/AES WPA+TKIP WPA+AES WPA2+AES WPA2+WPA3 Personal Mixed AES (All SKUs) (This option is available for WiFi",
+    "steps_separated": "Step 1: Go to System Setting > Network, Check Wireless Access Points List.\n  Expected: \"wifi24g\" access point should be discoverable in available wi-fi list\nStep 2: Enter the incorrect password for \"wifi24g\" access point.\n  Expected: TV should prompt \"Unable to connect to wifi24g\"\nStep 3: Use Remote select \"Try Again\" button\n  Expected: TV should return to password input\nStep 4: delete incorrect p"
+  },
+  {
+    "id": "31006309",
+    "title": "5Ghz Wi-Fi / Wi-Fi Encryptions / System Menu Connection",
+    "preconditions": "Please test all wi-fi security options for this testcase: WPA+TKIP/AES WPA+TKIP WPA+AES WPA2+AES WPA2+WPA3 Personal Mixed AES (This option is available for WiFi 6 Routers only) all wifi security options need to pass in order to pass this testcase. make sure in router Admin page, change 5G wi-fi's se",
+    "steps_separated": "Step 1: Go to System Setting > Network, Check Wireless Access Points List.\n  Expected: \"wifi5g\" access point should be discoverable in available wi-fi list\nStep 2: Enter the incorrect password for \"wifi5g\" access point.\n  Expected: TV should prompt \"Unable to connect to wifi5g\"\nStep 3: Use Remote select \"Try Again\" button\n  Expected: TV should return to password input\nStep 4: delete incorrect pass"
+  },
+  {
+    "id": "31006313",
+    "title": "2.4Ghz Wi-Fi Encryptions / System Menu Connection",
+    "preconditions": "Spec: https://vizioirvine.atlassian.net/wiki/spaces/USS/pages/149258667415/2.+Network+Requirements#2.4-Set-Up-Network-Connection Please test all wi-fi security options for this testcase: WPA+TKIP/AES WPA+TKIP WPA+AES WPA2+AES WPA2+WPA3 - Personal Mixed mode - default mode for Wifi 6 routers WPA3+SAE",
+    "steps_separated": "Step 1: Go to System Setting > Network, Check Wireless Access Points List.\n  Expected: \"wifi24g\" access point should be discoverable in available wi-fi list\nStep 2: Enter the incorrect password for \"wifi24g\" access point.\n  Expected: TV should prompt \"Unable to connect to wifi24g\"\nStep 3: Use Remote select \"Try Again\" button\n  Expected: TV should return to password input\nStep 4: delete incorrect p"
+  },
+  {
+    "id": "31006316",
+    "title": "5Ghz Wi-Fi / Wi-Fi Encryptions / System Menu Connection",
+    "preconditions": "Spec: https://vizioirvine.atlassian.net/wiki/spaces/USS/pages/149258667415/2.+Network+Requirements#2.4-Set-Up-Network-Connection Please test all wi-fi security options for this testcase: WPA+TKIP/AES WPA+TKIP WPA+AES WPA2+AES WPA2+WPA3 - Personal Mixed mode - default mode for Wifi 6 routers WPA3+SAE",
+    "steps_separated": "Step 1: Go to System Setting > Network, Check Wireless Access Points List.\n  Expected: \"wifi5g\" access point should be discoverable in available wi-fi list\nStep 2: Enter the incorrect password for \"wifi5g\" access point.\n  Expected: TV should prompt \"Unable to connect to wifi5g\"\nStep 3: Use Remote select \"Try Again\" button\n  Expected: TV should return to password input\nStep 4: delete incorrect pass"
+  },
+  {
+    "id": "31006319",
+    "title": "6Ghz Wi-Fi / WPA3-Personal SAE / System Menu Connection",
+    "preconditions": "Note: WPA3 is only supported by (2022 -K and forward) 4K capable Models. Please Mark \"Not Applicable\" when TV doesn't support WPA3 feature. Make sure in router Admin page, change 6G wi-fi's security option to WPA3-Personal with valid password (8-64 character), Change 6G wi-fi's SSID (wi-fi name) to ",
+    "steps_separated": "Step 1: Go to System Setting > Network, Check Wireless Access Points List.\n  Expected: \"wifi6g\" access point should be discoverable in available wi-fi list\nStep 2: Enter the incorrect password for \"wifi6g\" access point.\n  Expected: TV should prompt \"Unable to connect to 6gwifi\"\nStep 3: Use Remote select \"Try Again\" button\n  Expected: TV should return to password input\nStep 4: delete incorrect pass"
+  },
+  {
+    "id": "31006320",
+    "title": "6Ghz Wi-Fi / WPA3-Enhanced Open/ System Menu Connection",
+    "preconditions": "Note: WPA3 is only supported by (2022 -K and forward) 4K capable Models. Please Mark \"Not Applicable\" when TV doesn't support WPA3 feature. Make sure in router Admin page, change 6G wi-fi's security option to WPA3-Enhanced Open (No Password Needed), Change 6G wi-fi's SSID (wi-fi name) to \"wifi6g\"",
+    "steps_separated": "Step 1: Go to System Setting > Network, Check Wireless Access Points List.\n  Expected: \"wifi6g\" access point should be discoverable in available wi-fi list with \"Open Locked\" icon indicating no password is required.\nStep 2: Select \"wifi6g\" access point and click \"OK\" key on remote.\n  Expected: TV should connect to \"wifi6g\" access point successfully and return to Network Menu UI. (Note: no password"
+  },
+  {
+    "id": "31006321",
+    "title": "6Ghz Wi-Fi / WPA2+WPA3 - Personal Mixed mode/ System Menu Connection",
+    "preconditions": "Spec: https://vizioirvine.atlassian.net/wiki/spaces/USS/pages/149762605520/3.0+Network#3.2.1-----Wi-Fi-Password-Entry Note: WPA3 is only supported by (2022 -K and forward) 4K capable Models. Please Mark \"Not Applicable\" when TV doesn't support WPA3 feature. Make sure in router Admin page, change 6G ",
+    "steps_separated": "Step 1: Go to System Setting > Network, Check Wireless Access Points List.\n  Expected: \"wifi6g\" access point should be discoverable in available wi-fi list\nStep 2: Enter the incorrect password for \"wifi6g\" access point.\n  Expected: TV should prompt \"Unable to connect to 6gwifi\"\nStep 3: Use Remote select \"Try Again\" button\n  Expected: TV should return to password input\nStep 4: delete incorrect pass"
+  },
+  {
+    "id": "31006349",
+    "title": "Verify User able to launch Network Settings from \"No Network\" trouble shooting galaxy screen",
+    "preconditions": "Native APPS Network: ETHERNET Ethernet Disconnection scenarios",
+    "steps_separated": "Step 1: Remove the Ethernet cable from the TV.\n  Expected: Unable to Connect to a Network is seen after Network lost(After 30 seconds Troubleshooting page comes up)\nStep 2: Launch any Native app thorugh hot key after Network lost.\n  Expected: Troubleshooting Galaxy page Comes up\nStep 3: On the Galaxy screen of No Network, Select 'NETWORK SETTINGS'\n  Expected: Network Selection OSD opens up"
+  },
+  {
+    "id": "31006350",
+    "title": "Choose a Different Network from Network Settings and connect to the Network with valid creds",
+    "preconditions": "Native APPS Network: ETHERNET/Wi-Fi Ethernet Disconnection scenarios",
+    "steps_separated": "Step 1: Remove the Ethernet cable from the TV\n  Expected: Unable to Connect to a Network is seen after Network lost(After 30 seconds Troubleshooting page comes up)\nStep 2: Launch any Native app thorugh hot key after Network lost.\n  Expected: Troubleshooting Galaxy page Comes up\nStep 3: On the Galaxy screen of No Network, Select 'NETWORK SETTINGS'\n  Expected: Network Selection OSD opens up\nStep 4: "
+  },
+  {
+    "id": "31006351",
+    "title": "Choose a Different Network from Network Settings and connect to the Network with invalid creds",
+    "preconditions": "Native APPS Network: ETHERNET/Wi-Fi Ethernet Disconnection scenarios",
+    "steps_separated": "Step 1: Remove the Ethernet cable from the TV\n  Expected: Unable to Connect to a Network is seen after Network lost\nStep 2: Launch any Native app thorugh hot key after Network lost.\n  Expected: Troubleshooting Galaxy page Comes up\nStep 3: On the Galaxy screen of No Network, Select 'NETWORK SETTINGS'\n  Expected: Network Selection OSD opens up\nStep 4: Enter invalid credentials for Wi-Fi and connect "
+  },
+  {
+    "id": "31006359",
+    "title": "Verify User able to launch Network Settings from \"No Network\" trouble shooting galaxy screen",
+    "preconditions": "HTML APPS Network: Ethernet Ethernet Disconnection scenarios",
+    "steps_separated": "Step 1: Remove the Ethernet cable from the TV Launch any HTML app through hot key after Network lost. On the Galaxy screen of No Network, Select 'NETWORK SETTINGS'\n  Expected: Unable to Connect to a Network is seen after Network lost(After 30 seconds Troubleshooting page comes up)\nStep 2: Launch any HTML app through hot key after Network lost.\n  Expected: Troubleshooting Galaxy page Comes up\nStep "
+  },
+  {
+    "id": "31006360",
+    "title": "Choose a Different Network from Network Settings and connect to the Network with valid creds",
+    "preconditions": "HTML APPS Network: ETHERNET/Wi-Fi Ethernet Disconnection scenarios",
+    "steps_separated": "Step 1: Remove the Ethernet cable from the TV\n  Expected: Unable to Connect to a Network is seen after Network lost(After 30 seconds Troubleshooting page comes up)\nStep 2: Launch any HTML app thorugh hot key after Network lost.\n  Expected: Troubleshooting Galaxy page Comes up\nStep 3: On the Galaxy screen of No Network, Select 'NETWORK SETTINGS'\n  Expected: Network Selection OSD opens up\nStep 4: En"
+  },
+  {
+    "id": "31006361",
+    "title": "Choose a Different Network from Network Settings and connect to the Network with invalid creds",
+    "preconditions": "HTML APPS Network: ETHERNET/Wi-Fi Ethernet Disconnection scenarios",
+    "steps_separated": "Step 1: Remove the Ethernet cable from the TV\n  Expected: Unable to Connect to a Network is seen after Network lost\nStep 2: Launch any HTML app thorugh hot key after Network lost.\n  Expected: Troubleshooting Galaxy page Comes up\nStep 3: On the Galaxy screen of No Network, Select 'NETWORK SETTINGS'\n  Expected: Network Selection OSD opens up\nStep 4: Enter invalid credentials for Wi-Fi and connect to"
+  },
+  {
+    "id": "31006380",
+    "title": "Verify User able to launch Network Settings from \"No Network\" trouble shooting galaxy screen",
+    "preconditions": "Native APPS Network: ETHERNET Ethernet Disconnection scenarios",
+    "steps_separated": "Step 1: Remove the Ethernet cable from the TV.\n  Expected: Unable to Connect to a Network is seen after Network lost(After 30 seconds Troubleshooting page comes up)\nStep 2: Launch any Native app thorugh hot key after Network lost.\n  Expected: Troubleshooting Galaxy page Comes up\nStep 3: On the Galaxy screen of No Network, Select 'NETWORK SETTINGS'\n  Expected: Network Selection OSD opens up"
+  },
+  {
+    "id": "31006381",
+    "title": "Choose a Different Network from Network Settings and connect to the Network with valid creds",
+    "preconditions": "Native APPS Network: ETHERNET/Wi-Fi Ethernet Disconnection scenarios",
+    "steps_separated": "Step 1: Remove the Ethernet cable from the TV\n  Expected: Unable to Connect to a Network is seen after Network lost(After 30 seconds Troubleshooting page comes up)\nStep 2: Launch any Native app thorugh hot key after Network lost.\n  Expected: Troubleshooting Galaxy page Comes up\nStep 3: On the Galaxy screen of No Network, Select 'NETWORK SETTINGS'\n  Expected: Network Selection OSD opens up\nStep 4: "
+  },
+  {
+    "id": "31006382",
+    "title": "Choose a Different Network from Network Settings and connect to the Network with invalid creds",
+    "preconditions": "Native APPS Network: ETHERNET/Wi-Fi Ethernet Disconnection scenarios",
+    "steps_separated": "Step 1: Remove the Ethernet cable from the TV\n  Expected: Unable to Connect to a Network is seen after Network lost\nStep 2: Launch any Native app thorugh hot key after Network lost.\n  Expected: Troubleshooting Galaxy page Comes up\nStep 3: On the Galaxy screen of No Network, Select 'NETWORK SETTINGS'\n  Expected: Network Selection OSD opens up\nStep 4: Enter invalid credentials for Wi-Fi and connect "
+  },
+  {
+    "id": "31006390",
+    "title": "Verify User able to launch Network Settings from \"No Network\" trouble shooting galaxy screen",
+    "preconditions": "HTML APPS Network: Ethernet Ethernet Disconnection scenarios",
+    "steps_separated": "Step 1: Remove the Ethernet cable from the TV\n  Expected: Unable to Connect to a Network is seen after Network lost(After 30 seconds Troubleshooting page comes up)\nStep 2: Launch any HTML app through hot key after Network lost.\n  Expected: Troubleshooting Galaxy page Comes up\nStep 3: On the Galaxy screen of No Network, Select 'NETWORK SETTINGS'\n  Expected: Network Selection OSD opens up"
+  },
+  {
+    "id": "31006391",
+    "title": "Choose a Different Network from Network Settings and connect to the Network with valid creds",
+    "preconditions": "HTML APPS Network: ETHERNET/Wi-Fi Ethernet Disconnection scenarios",
+    "steps_separated": "Step 1: Remove the Ethernet cable from the TV\n  Expected: Unable to Connect to a Network is seen after Network lost(After 30 seconds\nStep 2: Launch any HTML app thorugh hot key after Network lost.\n  Expected: Troubleshooting page comes up)\nStep 3: On the Galaxy screen of No Network, Select 'NETWORK SETTINGS'\n  Expected: Troubleshooting Galaxy page Comes up\nStep 4: Enter Valid credentials for Wi-Fi"
+  },
+  {
+    "id": "31006392",
+    "title": "Choose a Different Network from Network Settings and connect to the Network with invalid creds",
+    "preconditions": "HTML APPS Network: ETHERNET/Wi-Fi Ethernet Disconnection scenarios",
+    "steps_separated": "Step 1: Remove the Ethernet cable from the TV\n  Expected: Unable to Connect to a Network is seen after Network lost\nStep 2: Launch any HTML app thorugh hot key after Network lost.\n  Expected: Troubleshooting Galaxy page Comes up\nStep 3: On the Galaxy screen of No Network, Select 'NETWORK SETTINGS'\n  Expected: Network Selection OSD opens up\nStep 4: Enter invalid credentials for Wi-Fi and connect to"
+  },
+  {
+    "id": "31006411",
+    "title": "Verify User able to launch Network Settings from \"No Network\" trouble shooting galaxy screen",
+    "preconditions": "Native APPS Network: Wi-Fi Router Turn OFF scenarios",
+    "steps_separated": "Step 1: Disconnect the Network from the router or turn it off or Forget Network through Menu.\n  Expected: Unable to Connect to a Network is seen after Network lost(After 30 seconds Troubleshooting page comes up)\nStep 2: Launch any Native app thorugh hot key after Network lost.\n  Expected: Troubleshooting Galaxy page Comes up\nStep 3: On the Galaxy screen of No Network, Select 'NETWORK SETTINGS'\n  E"
+  },
+  {
+    "id": "31006412",
+    "title": "Choose a Different Network from Network Settings and connect to the Network with valid creds",
+    "preconditions": "Native APPS Network: Wi-Fi Router Turn OFF scenarios",
+    "steps_separated": "Step 1: Disconnect the Network from the router or turn it off or Forget Network through Menu.\n  Expected: Unable to Connect to a Network is seen after Network lost(After 30 seconds Troubleshooting page comes up)\nStep 2: Launch any Native app thorugh hot key after Network lost.\n  Expected: Troubleshooting Galaxy page Comes up\nStep 3: On the Galaxy screen of No Network, Select 'NETWORK SETTINGS'\n  E"
+  },
+  {
+    "id": "31006413",
+    "title": "Choose a Different Network from Network Settings and connect to the Network with invalid creds",
+    "preconditions": "Native APPS Network: Wi-Fi Router Turn OFF scenarios",
+    "steps_separated": "Step 1: Disconnect the Network from the router or turn it off or Forget Network through Menu.\n  Expected: Unable to Connect to a Network is seen after Network lost\nStep 2: Launch any Native app thorugh hot key after Network lost.\n  Expected: Troubleshooting Galaxy page Comes up\nStep 3: On the Galaxy screen of No Network, Select 'NETWORK SETTINGS'\n  Expected: Network Selection OSD opens up\nStep 4: "
+  },
+  {
+    "id": "31006421",
+    "title": "Verify User able to launch Network Settings from \"No Network\" trouble shooting galaxy screen",
+    "preconditions": "HTML APPS Network: Wi-Fi Router Turn OFF scenarios",
+    "steps_separated": "Step 1: Disconnect the Network from the router or turn it off or Forget Network through Menu.\n  Expected: Unable to Connect to a Network is seen after Network lost(After 30 seconds Troubleshooting page comes up)\nStep 2: Launch any HTML app through hot key after Network lost.\n  Expected: Troubleshooting Galaxy page Comes up\nStep 3: On the Galaxy screen of No Network, Select 'NETWORK SETTINGS'\n  Exp"
+  },
+  {
+    "id": "31006422",
+    "title": "Choose a Different Network from Network Settings and connect to the Network with valid creds",
+    "preconditions": "HTML APPS Network: Wi-Fi Router Turn OFF scenarios",
+    "steps_separated": "Step 1: Disconnect the Network from the router or turn it off or Forget Network through Menu.\n  Expected: Unable to Connect to a Network is seen after Network lost(After 30 seconds Troubleshooting page comes up)\nStep 2: Launch any HTML app through hot key after Network lost.\n  Expected: Troubleshooting Galaxy page Comes up\nStep 3: On the Galaxy screen of No Network, Select 'NETWORK SETTINGS'\n  Exp"
+  },
+  {
+    "id": "31006423",
+    "title": "Choose a Different Network from Network Settings and connect to the Network with invalid creds",
+    "preconditions": "HTML APPS Network: Wi-Fi Router Turn OFF scenarios",
+    "steps_separated": "Step 1: Disconnect the Network from the router or turn it off or Forget Network through Menu.\n  Expected: Unable to Connect to a Network is seen after Network lost\nStep 2: Launch any HTML app through hot key after Network lost.\n  Expected: Troubleshooting Galaxy page Comes up\nStep 3: On the Galaxy screen of No Network, Select 'NETWORK SETTINGS'\n  Expected: Network Selection OSD opens up\nStep 4: En"
+  },
+  {
+    "id": "31006474",
+    "title": "Verify User able to launch Network Settings from \"No Network\" trouble shooting galaxy screen",
+    "preconditions": "Native APPS Network: Wi-Fi Router Turn OFF scenarios",
+    "steps_separated": "Step 1: Disconnect the Network from the router or turn it off or Forget Network through Menu.\n  Expected: Unable to Connect to a Network is seen after Network lost(After 30 seconds Troubleshooting page comes up)\nStep 2: Launch any Native app thorugh hot key after Network lost.\n  Expected: Troubleshooting Galaxy page Comes up\nStep 3: On the Galaxy screen of No Network, Select 'NETWORK SETTINGS'\n  E"
+  },
+  {
+    "id": "31006475",
+    "title": "Choose a Different Network from Network Settings and connect to the Network with valid creds",
+    "preconditions": "Native APPS Network: Wi-Fi Router Turn OFF scenarios",
+    "steps_separated": "Step 1: Disconnect the Network from the router or turn it off or Forget Network through Menu.\n  Expected: Unable to Connect to a Network is seen after Network lost(After 30 seconds Troubleshooting page comes up)\nStep 2: Launch any Native app thorugh hot key after Network lost.\n  Expected: Troubleshooting Galaxy page Comes up\nStep 3: On the Galaxy screen of No Network, Select 'NETWORK SETTINGS'\n  E"
+  },
+  {
+    "id": "31006476",
+    "title": "Choose a Different Network from Network Settings and connect to the Network with invalid creds",
+    "preconditions": "Native APPS Network: Wi-Fi Router Turn OFF scenarios",
+    "steps_separated": "Step 1: Disconnect the Network from the router or turn it off or Forget Network through Menu.\n  Expected: Unable to Connect to a Network is seen after Network lost\nStep 2: Launch any Native app thorugh hot key after Network lost.\n  Expected: Troubleshooting Galaxy page Comes up\nStep 3: On the Galaxy screen of No Network, Select 'NETWORK SETTINGS'\n  Expected: Network Selection OSD opens up\nStep 4: "
+  },
+  {
+    "id": "31006484",
+    "title": "Verify User able to launch Network Settings from \"No Network\" trouble shooting galaxy screen",
+    "preconditions": "HTML APPS Network: Wi-Fi Router Turn OFF scenarios",
+    "steps_separated": "Step 1: Disconnect the Network from the router or turn it off or Forget Network through Menu.\n  Expected: Unable to Connect to a Network is seen after Network lost(After 30 seconds Troubleshooting page comes up)\nStep 2: Launch any HTML app through hot key after Network lost.\n  Expected: Troubleshooting Galaxy page Comes up\nStep 3: On the Galaxy screen of No Network, Select 'NETWORK SETTINGS'\n  Exp"
+  },
+  {
+    "id": "31006485",
+    "title": "Choose a Different Network from Network Settings and connect to the Network with valid creds",
+    "preconditions": "HTML APPS Network: Wi-Fi Router Turn OFF scenarios",
+    "steps_separated": "Step 1: Disconnect the Network from the router or turn it off or Forget Network through Menu.\n  Expected: Unable to Connect to a Network is seen after Network lost(After 30 seconds Troubleshooting page comes up)\nStep 2: Launch any HTML app through hot key after Network lost.\n  Expected: Troubleshooting Galaxy page Comes up\nStep 3: On the Galaxy screen of No Network, Select 'NETWORK SETTINGS'\n  Exp"
+  },
+  {
+    "id": "31006486",
+    "title": "Choose a Different Network from Network Settings and connect to the Network with invalid creds",
+    "preconditions": "HTML APPS Network: Wi-Fi Router Turn OFF scenarios",
+    "steps_separated": "Step 1: Disconnect the Network from the router or turn it off or Forget Network through Menu.\n  Expected: Unable to Connect to a Network is seen after Network lost\nStep 2: Launch any HTML app through hot key after Network lost.\n  Expected: Troubleshooting Galaxy page Comes up\nStep 3: On the Galaxy screen of No Network, Select 'NETWORK SETTINGS'\n  Expected: Network Selection OSD opens up\nStep 4: En"
+  },
+  {
+    "id": "31006540",
+    "title": "WiFi Disconnect Diagnostic (All Settings)",
+    "preconditions": "1.DUT Connected to WiFi 2.TV is in ECO Mode/QS Mode",
+    "steps_separated": "Step 1: DC power ON the TV.\n  Expected: TV should power on and displays VIZIO logo\nStep 2: During Bootup, SSH the TV and execute the specified command. /3rd/bin/wpa_supplicant/common/iwpriv wlan0 driver scan_done_timeout\n  Expected: After executing the command, network connection is lost and getting connected.\nStep 3: Click on All Settings \u2192 Network.\n  Expected: WiFi network should be disconnected"
+  },
+  {
+    "id": "31006576",
+    "title": "All Settings-> Verify Network connection Notification on Incorrect password",
+    "preconditions": "DUT is not connected to WiFi. DUT is on 'Not Connected to Network' galaxy Troubleshoot screen BT remote is paired with TV.",
+    "steps_separated": "Step 1: Go to All Settings-> Network\n  Expected: DUT should show list of secured and unsecured SSID's in Wireless Access Points.\nStep 2: Select appropriate Network & enter 8 character Incorrect Password. Hit CONNECT.\n  Expected: Connection should not establish if entered Password is Incorrect. 'Incorrect password entered for \u201cWiFi Network Name\u201d notification should appear with 'Cancel' & 'Try again"
+  },
+  {
+    "id": "31006577",
+    "title": "All Settings-> Verify Network connection Notification when enter password less than 8 character.",
+    "preconditions": "DUT is not connected to WiFi. DUT is on 'Not Connected to Network' galaxy Troubleshoot screen. BT remote is paired with TV.",
+    "steps_separated": "Step 1: Go to All Settings-> Network OR On 'Not Connected to the Internet' Galaxy Troubleshoot screen select 'Network Settings' action button & press OK\n  Expected: DUT should display list of secured and unsecured SSID's in Wireless Access Points.\nStep 2: Select any Secured Network from SSID list and enter password Less than 8 characters and hit 'CONNECT'.\n  Expected: It should display error messa"
+  },
+  {
+    "id": "31006578",
+    "title": "All Settings-> Verify Network connection Notification when enter password greater than 8 character.",
+    "preconditions": "DUT is not connected to WiFi. DUT is on 'Not Connected to Network' galaxy Troubleshoot screen BT remote is paired with TV.",
+    "steps_separated": "Step 1: Go to All Settings-> Network OR On 'Not Connected to the Internet' Galaxy Troubleshoot screen select 'Network Settings' action button & press OK\n  Expected: DUT should display list of secured and unsecured SSID's in Wireless Access Points.\nStep 2: Select any Secured Network from SSID list and enter password Greater than 8 characters and hit 'CONNECT'.\n  Expected: It should display error me"
+  },
+  {
+    "id": "31006579",
+    "title": "All Settings-> Verify Network Connection after entering correct password.",
+    "preconditions": "DUT is not connected to WiFi. DUT is on 'Not Connected to Network' galaxy Troubleshoot screen BT remote is paired with TV.",
+    "steps_separated": "Step 1: Go to All Settings-> Network\n  Expected: It should show list of secured and unsecured SSID's in Wireless Access Points.\nStep 2: Select appropriate Network & enter Correct Password. Hit CONNECT.\n  Expected: Connection should establish successfully."
+  },
+  {
+    "id": "31006717",
+    "title": "Verify Manual SoftAP login must support settings on Windows, MacOS, Android OS, and iOS.",
+    "preconditions": "1.TV should be in OOBE 2.Captive Portal SSID should be listed in OOBE Network Setup Page 3.User should be on Set Up Using Mobile screen",
+    "steps_separated": ""
+  },
+  {
+    "id": "31006733",
+    "title": "Verify Captive Portal SSID listed in Menu Network page",
+    "preconditions": "TV should not be in OOBE Network Setup Page Captive Portal Router is turned ON and in range of the TV",
+    "steps_separated": "Step 1: Press Menu button on the remote.\n  Expected: Menu should get launched\nStep 2: Go to All Settings -> Network\n  Expected: Network page opens up with currently connected SSID and other options\nStep 3: View any available captive portal SSID in the Network -> More access Points\n  Expected: Captive portal SSID must be listed in the More access points"
+  },
+  {
+    "id": "31006736",
+    "title": "Verify Captive Portal Setup using \"TV\" in Menu -> Network -> SSID",
+    "preconditions": "TV should not be in OOBE Network Setup Page Captive Portal Router is turned ON and in range of the TV",
+    "steps_separated": "Step 1: Press Menu button on the remote.\n  Expected: OSD menu opens on the screen\nStep 2: Go to All Settings -> Network\n  Expected: Network page opens up with currently connected SSID and other options\nStep 3: View any available captive portal SSID in the Network -> More access Points\n  Expected: Captive portal SSID must be listed in the More access points\nStep 4: Select the Captive portal SSID\n  "
+  },
+  {
+    "id": "31006811",
+    "title": "Verify Captive Portal SSID listed in Menu Network page",
+    "preconditions": "TV should not be in OOBE Network Setup Page Captive Portal Router is turned ON and in range of the TV",
+    "steps_separated": "Step 1: Press Menu button on the remote.\n  Expected: OSD menu opens on the screen\nStep 2: Go to All Settings -> Network\n  Expected: Network page opens up with currently connected SSID and other options\nStep 3: View any available captive portal SSID in the Network -> More access Points\n  Expected: Captive portal SSID must be listed in the More access points"
+  },
+  {
+    "id": "31006814",
+    "title": "Verify Captive Portal Setup using \"TV\" in Menu -> Network -> SSID",
+    "preconditions": "1. TV should not be in OOBE Network Setup Page 2. Captive Portal Router is turned ON and in range of the TV",
+    "steps_separated": "Step 1: Press Menu button on the remote.\n  Expected: OSD menu opens on the screen\nStep 2: Go to All Settings -> Network\n  Expected: Network page opens up with currently connected SSID and other options\nStep 3: View any available captive portal SSID in the Network -> More access Points\n  Expected: Captive portal SSID must be listed in the More access points\nStep 4: Select the Captive portal SSID\n  "
+  },
+  {
+    "id": "31006892",
+    "title": "Verify the Updated text message  on taping on \"Set Up Later\" confirmation pop up on Network Selection Screen when menu language is set to English during OOBE",
+    "preconditions": "1.Menu language is set to English on OOBE language selection page 2.User should be on Network Selection screen",
+    "steps_separated": "Step 1: Initiate OOBE from OSD menu\n  Expected: OOBE should start successfully\nStep 2: Select English language on Choose your language screen and proceed\n  Expected: English language should get selected successfully on OOBE Choose your language screen\nStep 3: After Bluetooth remote pairing screen navigate to Network Selection screen\n  Expected: Bluetooth remote pairing screen should get displayed "
+  },
+  {
+    "id": "31006893",
+    "title": "Verify the Updated text message  on taping on \"Set Up Later\" confirmation pop up on Network Selection Screen when menu language is set to Spanish during OOBE",
+    "preconditions": "1.Menu language is set to Spanish on OOBE language selection page 2.User should be on Network Selection screen",
+    "steps_separated": "Step 1: Initiate OOBE from OSD menu\n  Expected: OOBE should start successfully\nStep 2: Select Spanish language on Choose your language screen and proceed\n  Expected: Spanish language should get selected successfully on OOBE Choose your language screen\nStep 3: After Bluetooth remote pairing screen navigate to Network Selection screen\n  Expected: Bluetooth remote pairing screen should get displayed "
+  },
+  {
+    "id": "31006894",
+    "title": "Verify the Updated text message  on taping on \"Set Up Later\" confirmation pop up on Network Selection Screen when menu language is set to French during OOBE",
+    "preconditions": "1.Menu language is set to French on OOBE language selection page 2.User should be on Network Selection screen",
+    "steps_separated": "Step 1: Initiate OOBE from OSD menu\n  Expected: OOBE should start successfully\nStep 2: Select French language on Choose your language screen and proceed\n  Expected: French language should get selected successfully on OOBE Choose your language screen\nStep 3: After Bluetooth remote pairing screen navigate to Network Selection screen\n  Expected: Bluetooth remote pairing screen should get displayed su"
+  },
+  {
+    "id": "31006966",
+    "title": "To Verify TV Re-Scan the  Network-More Access Points list Automatically on Sidebar menu in every 10secs",
+    "preconditions": "TV should be powered ON Power Mode: ECO/Quick Start. Input at Power On: Last used TV Input / VIZIO Home",
+    "steps_separated": "Step 1: 1.Open Sidebar menu and navigate to Networks> Tap on More Access Points\n  Expected: 1.More Access Points list should Re-scans for networks every 10 seconds\nStep 2: 2.If TV gets disconnected for whatever reason like change of Wi-Fi Name and Password or Router gets turned Off then turned On or connected SSID will not have internet due to some Network issue and then verify on pressing \"More A"
+  },
+  {
+    "id": "31006967",
+    "title": "Verify the Selector stays on the SSID that it is currently highlighting on Network > More Access Points list from  Sidebar menu",
+    "preconditions": "TV should be powered ON Power Mode: ECO/Quick Start. Input at Power On: Last used TV Input / VIZIO Home",
+    "steps_separated": "Step 1: Open Sidebar menu and navigate to Networks> Tap on More Access Points\n  Expected: More Access Points list should open successfully\nStep 2: Observe the Selector highlighting on the Wi-Fi network > More Access Points listing\n  Expected: The Selector should stay on the SSID that it is currently highlighting, even if the SSID is shifted higher or lower on the list per the Hierarchy rules. This"
+  },
+  {
+    "id": "31006973",
+    "title": "To verify No SSID Network Limits on \"More Access Points\" list on Sidebar Menu",
+    "preconditions": "1.TV should be powered ON 2.Power Mode: ECO/Quick Start. 3.Input at Power On: Last used TV Input / VIZIO Home",
+    "steps_separated": "Step 1: 1.Open Sidebar menu Networks> More Access Points\n  Expected: 1.More Aceess Points screen should get displayed successfully.\nStep 2: 2.Observe the Wi-Fi Networks getting listed under \"More Access Points\" screen.\n  Expected: 2.When the user clicks the \"More Access Points\" screen, the UI should list all Wi-Fi networks that are visible to the TV, even if the signal is weak.\nStep 3: Observe the"
+  },
+  {
+    "id": "31006974",
+    "title": "Verify Re-Scans only occur when user actively looking at the network menu",
+    "preconditions": "1.TV should be powered ON 2.Power Mode: ECO/Quick Start. 3.Input at Power On: Last used TV Input / VIZIO Home",
+    "steps_separated": "Step 1: 1.Open Sidebar menu Networks> More Access Points and observe the Network Rescan is happening periodically in every 10 seconds.\n  Expected: 1.TV Re-scans for networks list every 10 seconds and should re-populate the \"More Access Points\" list automatically with new networks.\nStep 2: observe the Network Rescan is happening periodically in every 10 seconds.\n  Expected: Network Rescans only occ"
+  },
+  {
+    "id": "31007028",
+    "title": "To Verify TV Re-Scan the  Network-More Access Points list Automatically on Sidebar menu in every 10secs",
+    "preconditions": "TV should be powered ON Power Mode: ECO/Quick Start. Input at Power On: Last used TV Input / VIZIO Home",
+    "steps_separated": "Step 1: 1.Open Sidebar menu and navigate to Networks> Tap on More Access Points\n  Expected: 1.More Access Points list should Re-scans for networks every 10 seconds\nStep 2: 2.If TV gets disconnected for whatever reason like change of Wi-Fi Name and Password or Router gets turned Off then turned On or connected SSID will not have internet due to some Network issue and then verify on pressing \"More A"
+  },
+  {
+    "id": "31007029",
+    "title": "Verify the Selector stays on the SSID that it is currently highlighting on Network > More Access Points list from  Sidebar menu",
+    "preconditions": "TV should be powered ON Power Mode: ECO/Quick Start. Input at Power On: Last used TV Input / VIZIO Home",
+    "steps_separated": "Step 1: 1.Open Sidebar menu and navigate to Networks> Tap on More Access Points\n  Expected: 1.More Access Points list should open successfully\nStep 2: Observe the Selector highlighting on the Wi-Fi network > More Access Points listing\n  Expected: 2.The Selector should stay on the SSID that it is currently highlighting, even if the SSID is shifted higher or lower on the list per the Hierarchy rules"
+  },
+  {
+    "id": "31007035",
+    "title": "To verify No SSID Network Limits on \"More Access Points\" list on Sidebar Menu",
+    "preconditions": "1.TV should be powered ON 2.Power Mode: ECO/Quick Start. 3.Input at Power On: Last used TV Input / VIZIO Home",
+    "steps_separated": "Step 1: 1.Open Sidebar menu Networks> More Access Points\n  Expected: 1.More Aceess Points screen should get displayed successfully.\nStep 2: 2.Observe the Wi-Fi Networks getting listed under \"More Access Points\" screen.\n  Expected: 2.When the user clicks the \"More Access Points\" screen, the UI should list all Wi-Fi networks that are visible to the TV, even if the signal is weak.\nStep 3: Observe the"
+  },
+  {
+    "id": "31007036",
+    "title": "Verify Re-Scans only occur when user actively looking at the network menu",
+    "preconditions": "1.TV should be powered ON 2.Power Mode: ECO/Quick Start. 3.Input at Power On: Last used TV Input / VIZIO Home",
+    "steps_separated": "Step 1: 1.Open Sidebar menu Networks> More Access Points and observe the Network Rescan is happening periodically in every 10 seconds.\n  Expected: 1.TV Re-scans for networks list every 10 seconds and should re-populate the \"More Access Points\" list automatically with new networks.\nStep 2: observe the Network Rescan is happening periodically in every 10 seconds.\n  Expected: Network Rescans only occ"
+  },
+  {
+    "id": "31007090",
+    "title": "To Verify TV Re-Scan the  Network-More Access Points list Automatically on Sidebar menu in every 10secs",
+    "preconditions": "1. TV should be powered ON 2. Power Mode: ECO/Quick Start. 3. Input at Power On: Last used TV Input / VIZIO Home",
+    "steps_separated": "Step 1: 1.Open Sidebar menu and navigate to Networks> Tap on More Access Points\n  Expected: 1.More Access Points list should Re-scans for networks every 10 seconds\nStep 2: 2.If TV gets disconnected for whatever reason like change of Wi-Fi Name and Password or Router gets turned Off then turned On or connected SSID will not have internet due to some Network issue and then verify on pressing \"More A"
+  },
+  {
+    "id": "31007091",
+    "title": "Verify the Selector stays on the SSID that it is currently highlighting on Network > More Access Points list from  Sidebar menu",
+    "preconditions": "1. TV should be powered ON 2. Power Mode: ECO/Quick Start. 3. Input at Power On: Last used TV Input / VIZIO Home",
+    "steps_separated": "Step 1: 1.Open Sidebar menu and navigate to Networks> Tap on More Access Points\n  Expected: 1.More Access Points list should open successfully\nStep 2: 2. Observe the Selector highlighting on the Wi-Fi network > More Access Points listing\n  Expected: 2.The Selector should stay on the SSID that it is currently highlighting, even if the SSID is shifted higher or lower on the list per the Hierarchy ru"
+  },
+  {
+    "id": "31007097",
+    "title": "To verify No SSID Network Limits on \"More Access Points\" list on Sidebar Menu",
+    "preconditions": "1.TV should be powered ON 2.Power Mode: ECO/Quick Start. 3. Input at Power On: Last used TV Input / VIZIO Home",
+    "steps_separated": "Step 1: 1.Open Sidebar menu Networks> More Access Points\n  Expected: 1.More Aceess Points screen should get displayed successfully.\nStep 2: 2.Observe the Wi-Fi Networks getting listed under \"More Access Points\" screen.\n  Expected: 2.When the user clicks the \"More Access Points\" screen, the UI should list all Wi-Fi networks that are visible to the TV, even if the signal is weak.\nStep 3: Observe the"
+  },
+  {
+    "id": "31007098",
+    "title": "Verify Re-Scans only occur when user actively looking at the network menu",
+    "preconditions": "1.TV should be powered ON 2.Power Mode: ECO/Quick Start. 3. Input at Power On: Last used TV Input / VIZIO Home",
+    "steps_separated": "Step 1: 1.Open Sidebar menu Networks> More Access Points and observe the Network Rescan is happening periodically in every 10 seconds.\n  Expected: 1.TV Re-scans for networks list every 10 seconds and should re-populate the \"More Access Points\" list automatically with new networks.\nStep 2: observe the Network Rescan is happening periodically in every 10 seconds.\n  Expected: Network Rescans only occ"
+  },
+  {
+    "id": "31007121",
+    "title": "Verify Captive Portal SSID listed in Menu Network page",
+    "preconditions": "TV should not be in OOBE Network Setup Page Captive Portal Router is turned ON and in range of the TV",
+    "steps_separated": "Step 1: Press Menu button on the remote.\n  Expected: OSD menu opens on the screen\nStep 2: Go to All Settings -> Network\n  Expected: Network page opens up with currently connected SSID and other options\nStep 3: View any available captive portal SSID in the Network -> More access Points and select it.\n  Expected: Captive portal SSID must be listed in the More Available Networks or in the MY NETWORKS"
+  },
+  {
+    "id": "31007184",
+    "title": "Verify Captive Portal SSID listed in Menu Network page",
+    "preconditions": "TV should not be in OOBE Network Setup Page Captive Portal Router is turned ON and in range of the TV",
+    "steps_separated": "Step 1: Press Menu button on the remote.\n  Expected: OSD menu opens on the screen\nStep 2: Go to All Settings -> Network\n  Expected: Network page opens up with currently connected SSID and other options .\nStep 3: View any available captive portal SSID in the Network -> More access Points and select it.\n  Expected: Captive portal SSID must be listed in the More Available Networks or in the MY NETWOR"
+  },
+  {
+    "id": "31007305",
+    "title": "Restart TV from OSD Menu on ECO Mode ->Verify Power Off to Power on within 10 seconds",
+    "preconditions": "1.TV is Powered On 2.Input at Power On: VIZIO Home/ Last Used TV Input 3.Power Mode: Eco Mode Note: TV is on FUR8.0.1 or greater than FUR8.0.1 firmware",
+    "steps_separated": "Step 1: Launch OSD Menu\n  Expected: Menu should get launched\nStep 2: Go to ALL SETTINGS->SUPPORT->RESTART TV>Press OK\n  Expected: TV should display below notification Would you like to restart your VIZIO TV? YES NO\nStep 3: Press 'YES'\n  Expected: TV should get restarted\nStep 4: Measure the time taken to Restart the TV and loading VIZIO Home or Last Used TV Input screen\n  Expected: When TV is power"
+  },
+  {
+    "id": "31007307",
+    "title": "Restart TV from Reset Factory Settings> Restart > on ECO Mode -> Verify Power Off to Power on within 10 seconds",
+    "preconditions": "1.TV is Powered On 2.Input at Power On: VIZIO Home/ Last Used TV Input 3.Power Mode: Eco Mode 4.Bluetooth Remote is paired to TV Note: TV is on FUR8.0.1 or greater than FUR8.0.1 firmware",
+    "steps_separated": "Step 1: Launch OSD Menu\n  Expected: Menu should get launched\nStep 2: Go to ALL SETTINGS->SUPPORT->Reset to Factory Settings TV>Press OK\n  Expected: 1.TV should display below popup with 4 buttons Cancel-Returns back to main menu. Reset TV Reset Apps Restart Cancel 2.Cancel should be highlighted by default\nStep 3: Tap on Restart\n  Expected: TV should perform Restart successfully\nStep 4: Measure the "
+  },
+  {
+    "id": "31007368",
+    "title": "Network menu",
+    "preconditions": "TV must on FUR5.2 firmware or greater",
+    "steps_separated": "Step 1: Open the Quick Settings menu by pressing the gear or menu icon on the remote\n  Expected: Quick settings menu should open\nStep 2: Navigate to \"All Settings\"\n  Expected: Settings menu should open\nStep 3: Navigate to \"Network\"\n  Expected: Network settings menu should open with the following information and options displayed in the following order: 1.) My Networks Wireless Access Points 2.) Mo"
+  },
+  {
+    "id": "31007370",
+    "title": "Menu times out after 60 seconds of inactivity (FUR5.1.1)",
+    "preconditions": "Requirement 1, After user pushes menu button and finish navigating through the menu/options, user can push menu button again to close the menu sidebar 2, However if they left the menu bar screen remained open without any navigation/intervention, after 60 seconds of idle activity, menu bar screen mus",
+    "steps_separated": "Step 1: Press Menu button on Remote\n  Expected: Main menu side bar displays\nStep 2: Navigate to Network\n  Expected: Network menu opens\nStep 3: Allow 60 seconds of inactivity\n  Expected: Menu sidebar should time out and automatically close"
+  },
+  {
+    "id": "31007392",
+    "title": "Network> Verify VIZIO Terms of Service and other policies  once OOBE and Network skipped and re-connected to the Network using network settings",
+    "preconditions": "TV is Factory Reset with OOBE skipped",
+    "steps_separated": "Step 1: Using IR remote, press MENU key and select Network.\n  Expected: Network is selected.\nStep 2: Select the language\n  Expected: Language is selected.\nStep 3: Select the Network with correct credentials.\n  Expected: Network is connected when correct credentials are entered.\nStep 4: Wait till it completes downloading the updates.\n  Expected: Updates are downloaded successfully.\nStep 5: Select t"
+  },
+  {
+    "id": "31006124",
+    "title": "Network menu",
+    "preconditions": "1)TV should be in an environment with available 2.4 GHz & 5 GHz, Secured and Unsecured Wireless Access Points , Proper Ethernet cable connection (If the chipset came with Ethernet Port by make). 2)DUT should be in connected state with available Wi-Fi / Ethernet Port (If the chipset came with Etherne",
+    "steps_separated": "Step 1: Open the Quick Settings menu by pressing the gear or menu icon on the remote\n  Expected: Quick settings menu should be opened\nStep 2: Navigate to \"All Settings\" and click 'OK' from remote D-pad keys\n  Expected: Settings menu should be opened\nStep 3: Navigate to \"Network\" and click to continue\n  Expected: Network settings menu should open with the following information and options displayed"
+  },
+  {
+    "id": "31006125",
+    "title": "Network Menu > My Networks",
+    "preconditions": "1)TV should be in an environment with available 2.4 GHz & 5 GHz, Secured and Unsecured Wireless Access Points , Proper Ethernet cable connection (If the chipset came with Ethernet Port by make). 2)DUT should be in connected state with available Wi-Fi / Ethernet Port (If the chipset came with Etherne",
+    "steps_separated": "Step 1: Open the Quick Settings menu by pressing the gear or menu icon on the remote\n  Expected: Quick settings menu should be opened properly.\nStep 2: Navigate to \"All Settings\" and click on OK button from remote\n  Expected: Settings menu should be opened.\nStep 3: Navigate to \"Network\" and click on OK button from remote\n  Expected: Network settings menu should open with the following information "
+  },
+  {
+    "id": "31007472",
+    "title": "Verify the header and Help text on \u201cNetwork Security Type\u201d menu",
+    "preconditions": "1)TV should be in an environment with available 2.4 GHz & 5 GHz, Secured and Unsecured Wireless Access Points , Proper Ethernet cable connection (If the chipset came with Ethernet Port by make). 2)DUT should be in connected state with available Wi-Fi. 3) Input at Power On : VIZIO Home / Last Used In",
+    "steps_separated": "Step 1: Open the Quick Settings menu by pressing the gear or menu icon on the remote > Go to All Settings > Click on currently connected Network > Add Network Manually\n  Expected: A soft keyboard should be displayed with header \u201cEnter Network Name\u201d and 'Connect' button(By default in disabled state till entering any character) along with a text field in default focus to enter hidden SSID name\nStep "
+  },
+  {
+    "id": "31007473",
+    "title": "Verify the list of available security types in 'Network Security Type' sub menu",
+    "preconditions": "1)TV should be in an environment with available 2.4 GHz & 5 GHz, Secured and Unsecured Wireless Access Points , Proper Ethernet cable connection (If the chipset came with Ethernet Port by make). 2)DUT should be in connected state with available Wi-Fi. 3) Input at Power On : VIZIO Home / Last Used In",
+    "steps_separated": "Step 1: Open the Quick Settings menu by pressing the gear or menu icon on the remote > Go to All Settings > Click on currently connected Network > Add Network Manually\n  Expected: A soft keyboard should be displayed with header \u201cEnter Network Name\u201d and 'Connect' button(By default in disabled state till entering any character) along with a text field in default focus to enter hidden SSID name\nStep "
+  },
+  {
+    "id": "31007487",
+    "title": "Verify the DHCP Settings in default mode",
+    "preconditions": "1)TV should be in an environment with available 2.4 GHz & 5 GHz, Secured and Unsecured Wireless Access Points , Proper Ethernet cable connection (If the chipset came with Ethernet Port by make). 2)DUT should be in connected state with available Wi-Fi. 3) Input at Power On : VIZIO Home / Last Used In",
+    "steps_separated": "Step 1: Open the Quick Settings menu by pressing the gear or menu icon on the remote > Go to All Settings > Click on currently connected Network > Click on Advanced Network IP Setup\n  Expected: Should display the following fields properly: (1)DHCP ====> Default is On (automatic setup) (2)IP Address (3)Subnet Mask (4)Gateway (5)Pref. DNS Server (6)Alt. DNS Server (7)RJ45 (display only, no entry) Or"
+  },
+  {
+    "id": "31007488",
+    "title": "Verify the DHCP Settings in Off mode",
+    "preconditions": "1)TV should be in an environment with available 2.4 GHz & 5 GHz, Secured and Unsecured Wireless Access Points , Proper Ethernet cable connection (If the chipset came with Ethernet Port by make). 2)DUT should be in connected state with available Wi-Fi. 3) Input at Power On : VIZIO Home / Last Used In",
+    "steps_separated": "Step 1: Open the Quick Settings menu by pressing the gear or menu icon on the remote > Go to All Settings > Click on currently connected Network > Click on Advanced Network IP Setup\n  Expected: Should display the following fields properly: (1)DHCP ====> Default is On (automatic setup) (2)IP Address (3)Subnet Mask (4)Gateway (5)Pref. DNS Server (6)Alt. DNS Server (7)RJ45 (display only, no entry) Or"
+  },
+  {
+    "id": "31007489",
+    "title": "Verify the DHCP Settings in ManualDNS mode",
+    "preconditions": "1)TV should be in an environment with available 2.4 GHz & 5 GHz, Secured and Unsecured Wireless Access Points , Proper Ethernet cable connection (If the chipset came with Ethernet Port by make). 2)DUT should be in connected state with available Wi-Fi. 3) Input at Power On : VIZIO Home / Last Used In",
+    "steps_separated": "Step 1: Open the Quick Settings menu by pressing the gear or menu icon on the remote > Go to All Settings > Click on currently connected Network > Click on Advanced Network IP Setup\n  Expected: Should display the following fields properly: (1)DHCP ====> Default is On (automatic setup) (2)IP Address (3)Subnet Mask (4)Gateway (5)Pref. DNS Server (6)Alt. DNS Server (7)RJ45 (display only, no entry) Or"
+  },
+  {
+    "id": "31007503",
+    "title": "Verify Quick Settings menu(Online)",
+    "preconditions": "Network: Wi-Fi Or Ethernet Connected Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode",
+    "steps_separated": "Step 1: Press Settings/Menu button on the remote\n  Expected: following items should be displayed on the Settings/Menu screen: i: Picture Mode ii: Pair headphones OR Bluetooth Headphones iii: Closed Caption iv: Sleep Timer v: a) Gaming (half tile, left) b) Accessibility (half tile, right) vi: a) All Settings (bottom line, left) b) Help (bottom line, right) vii: Dynamic Card: a) Time & Date b) Netwo"
+  },
+  {
+    "id": "31007504",
+    "title": "Verify Quick Settings menu(Offline)",
+    "preconditions": "Network: Not Connected Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Press Settings/Menu button on the remote\n  Expected: following items should be displayed on the Settings/Menu screen: i: Picture Mode ii: Pair headphones OR Bluetooth Headphones iii: Closed Caption iv: Sleep Timer v: a) Gaming (half tile, left) b) Accessibility (half tile, right) vi: a) All Settings (bottom line, left) b) Help (bottom line, right) vii: Dynamic Card: a) Connection not avail"
+  },
+  {
+    "id": "31007505",
+    "title": "Verify the general menu items in quick settings",
+    "preconditions": "1.TV Powered ON and not in OOBE. \u200b2.Network Connected with Internet. \u200bNote: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode",
+    "steps_separated": "Step 1: Launch OSD Menu by pressing \"Gear \" button from RCU\n  Expected: OSD Menu should launch Successfully The following items should be displayed on the Settings/Menu screen: i: Picture Mode ii: Pair headphones OR Bluetooth Headphones iii: Closed Caption iv: Sleep Timer v: a) Gaming (half tile, left) b) Accessibility (half tile, right) vi: a) All Settings (bottom line, left) b) Help (bottom line"
+  },
+  {
+    "id": "31007506",
+    "title": "Verify TV Name at the top of all Menu items",
+    "preconditions": "Network: Wi-Fi Or Ethernet Connected Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Press Settings/Menu button on the remote\n  Expected: Verify that the TV Name must be Displayed as per the User defined or set name if done OOBE"
+  },
+  {
+    "id": "31007507",
+    "title": "Verify TV Name will be of 24 characters at the top of Quick Menu",
+    "preconditions": "Network: Wi-Fi Or Ethernet Connect TV Name must be 24 characters Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Press Settings/Menu button on the remote\n  Expected: Verify that the TV Name must be Displayed with all 24 characters without ellipses."
+  },
+  {
+    "id": "31007508",
+    "title": "Verify Quick Settings Menu dismissal by pressing Menu button again",
+    "preconditions": "Network: Wi-Fi Or Ethernet Connected Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Press Settings/Menu button on the remote\n  Expected: Quick Settings Menu Opens up.\nStep 2: Press Settings/Menu button on the remote\n  Expected: Quick Settings Menu is dismissed."
+  },
+  {
+    "id": "31007509",
+    "title": "Verify Quick Settings Menu dismissal by pressing Back Button",
+    "preconditions": "Network: Wi-Fi Or Ethernet Connected Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Press Settings/Menu button on the remote\n  Expected: Quick Settings Menu Opens up.\nStep 2: Press Back button on the remote\n  Expected: Quick Settings Menu is dismissed."
+  },
+  {
+    "id": "31007510",
+    "title": "Verify Quick Settings Menu dismissal by pressing Home Button",
+    "preconditions": "Network: Wi-Fi Or Ethernet Connected Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Press Settings/Menu button on the remote\n  Expected: Quick Settings Menu Opens up.\nStep 2: Press Home button on the remote\n  Expected: Quick Settings Menu is dismissed."
+  },
+  {
+    "id": "31007511",
+    "title": "Verify Quick Settings Menu dismissal by pressing app Hot-Keys Button",
+    "preconditions": "Network: Wi-Fi Or Ethernet Connected Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Press Settings/Menu button on the remote\n  Expected: Quick Settings Menu Opens up.\nStep 2: Press WatchFree+/Netflix/Disney+/PrimeVideo/Hulu/\u2026 button on the remote\n  Expected: Quick Settings Menu is dismissed."
+  },
+  {
+    "id": "31007512",
+    "title": "Verify Quick Settings Menu dismissal by pressing Input Button",
+    "preconditions": "Network: Wi-Fi Or Ethernet Connected Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Press Settings/Menu button on the remote\n  Expected: Quick Settings Menu Opens up.\nStep 2: Press Input button on the remote\n  Expected: Quick Settings Menu is dismissed."
+  },
+  {
+    "id": "31007513",
+    "title": "Verify Quick Settings Menu dismissal by pressing Mic Button",
+    "preconditions": "Network: Wi-Fi Or Ethernet Connected Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Press Settings/Menu button on the remote\n  Expected: Quick Settings Menu Opens up.\nStep 2: Press Mic button on the remote\n  Expected: Quick Settings Menu is dismissed."
+  },
+  {
+    "id": "31007514",
+    "title": "Verify Auto-Dismissal of Settings Menu",
+    "preconditions": "Network: Wi-Fi Or Ethernet Connected Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Press Menu/Settings button on the remote.\n  Expected: Settings Menu OSD opens up.\nStep 2: Be on the OSD menu without any intervention for 60 seconds\n  Expected: After 60 seconds, OSD menu is dismissed automatically."
+  },
+  {
+    "id": "31007516",
+    "title": "Verify Circular Motion of the Quick Settings Menu",
+    "preconditions": "Network: Wi-Fi Or Ethernet Connected Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Press Settings/Menu button on the remote\n  Expected: Quick Settings Menu Opens up.\nStep 2: Press Down button on the remote multiple times and reach All Settings item.\n  Expected: All Settings item is Highlighted.\nStep 3: Press Down button on the remote\n  Expected: Highlighter/selecter goes to the top and Picture Mode is Highlighted.\nStep 4: Press Up Button on the remote.\n  Expected: Highli"
+  },
+  {
+    "id": "31007517",
+    "title": "Verify Pair headphones OR Bluetooth Headphones Menu item without any paired Headphones/Devices",
+    "preconditions": "Network: Wi-Fi Or Ethernet Connected BT Headphones not paired Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Press Settings/Menu button on the remote\n  Expected: Quick Settings Menu Opens up.\nStep 2: Go to Pair headphones\n  Expected: Pair headphones is highlighted. [Setting name if no paired headphones is \u201cPair Headphones\u201d ]\nStep 3: Press OK or Select button on the remote.\n  Expected: Pair Headphones sub menu opens with list of available devices."
+  },
+  {
+    "id": "31007518",
+    "title": "Verify Pair headphones OR Bluetooth Headphones Menu item for paired Headphones/Devices",
+    "preconditions": "Network: Wi-Fi Or Ethernet Connected BT Headphones paired Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Press Settings/Menu button on the remote\n  Expected: Quick Settings Menu Opens up.\nStep 2: Go to Bluetooth Headphones.\n  Expected: Bluetooth Headphones is highlighted. [Setting name after one Bluetooth headphones is paired is \u201cBluetooth Headphones\u201d]\nStep 3: Press OK or Select button on the remote.\n  Expected: Pair Headphones sub menu shouldn't open"
+  },
+  {
+    "id": "31007526",
+    "title": "Verify Default CC setting after OOBE",
+    "preconditions": "Network: Wi-Fi Or Ethernet Connected Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Turn On Closed Caption and Initiate Factory Reset from OSD menu\n  Expected: Complete OOBE successfully and TV landed on VIZIO Home\nStep 2: Press Settings/Menu button on the remote\n  Expected: Quick Settings Menu Opens up.\nStep 3: Observe the Closed Caption on Quick Settings menu\n  Expected: Closed Captions turns off after exiting OOBE"
+  },
+  {
+    "id": "31007527",
+    "title": "Verify CC setting to OFF",
+    "preconditions": "Network: Wi-Fi Or Ethernet Connected CC is turned ON Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Press Settings/Menu button on the remote.\n  Expected: Quick Settings menu opens up.\nStep 2: Go to CC.\n  Expected: Highlighter will be on CC and ON.\nStep 3: Toggle it to OFF\n  Expected: Closed Captions turned OFF toast message is seen on the TV and value will be set to OFF."
+  },
+  {
+    "id": "31007528",
+    "title": "Verfiy CC setting to ON",
+    "preconditions": "Network: Wi-Fi Or Ethernet Connected CC is turned OFF Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Press Settings/Menu button on the remote.\n  Expected: Quick Settings menu opens up.\nStep 2: Go to CC.\n  Expected: Highlighter will be on CC and OFF.\nStep 3: Toggle it to ON\n  Expected: Closed Captions turned ON toast message is seen on the TV and value will be set to OFF."
+  },
+  {
+    "id": "31007529",
+    "title": "Closed Captions Support Across Sources",
+    "preconditions": "Network: Wi-Fi Or Ethernet Connected Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Open Netflix/Amazon/Hulu/WatchFree+ with CC content\n  Expected: Closed Captions toggle is available and functional.\nStep 2: Switch to Antenna source\n  Expected: Closed Captions toggle is available and functional.\nStep 3: Switch to HDMI source\n  Expected: Closed Captions toggle is disabled. Notification appears: \u201cCheck the closed captioning setting on your HDMI device connected to this TV.\u201d"
+  },
+  {
+    "id": "31007530",
+    "title": "Verify Sleep Timer in Quick Settings",
+    "preconditions": "Network: Wi-Fi Or Ethernet Connected Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Navigate to Sleep Timer in Quick Settings\n  Expected: Sleep Timer setting is visible and selectable.\nStep 2: Press right or left button on the remote\n  Expected: Options to turn off or to set Sleep Timer are displayed."
+  },
+  {
+    "id": "31007531",
+    "title": "Verify Deep Link Behavior of Accessibility Tile to Full Accessibility Settings",
+    "preconditions": "Network: Wi-Fi Or Ethernet Connected Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Press Settings/Menu button on the remote\n  Expected: Quick Settings Menu opens\nStep 2: Navigate to Accessibility tile (half tile, right side)\n  Expected: Accessibility tile is highlighted\nStep 3: Press OK on Accessibility\n  Expected: TV deep links to Accessibility settings in the sidebar\nStep 4: Observe the layout\n  Expected: Sidebar menu displays Accessibility options including: Captions "
+  },
+  {
+    "id": "31007532",
+    "title": "Verify Deep Link Behavior of \u201cAll Settings\u201d Tile",
+    "preconditions": "Network: Wi-Fi Or Ethernet Connected Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Press Settings/Menu button on the remote\n  Expected: Quick Settings Menu opens\nStep 2: Navigate to All Settings tile (bottom left)Tile is highlighted\n  Expected: Press OK on All SettingsTV deep links into the full Settings Menu\nStep 3: Press OK on All Settings\n  Expected: TV deep links into the full Settings Menu"
+  },
+  {
+    "id": "31007609",
+    "title": "Verify that Quick Settings opens when MENU or gear key is pressed",
+    "preconditions": "Input at Power On = VIZIO Home/Last Used Input",
+    "steps_separated": "Step 1: Press the MENU key or gear key for the first time.\n  Expected: Quick Settings Menu opens. Picture Mode Pair headphones OR Bluetooth Headphones Closed Caption Sleep Timer Gaming (half tile, left) Accessibility (half tile, right) All Settings (bottom line, left) Help (bottom line, right) (Dynamic Card) Note: (Dynamic Card - Online) time & date network status (Dynamic Card - Offline) Connecti"
+  },
+  {
+    "id": "31007610",
+    "title": "Verify if we can adjust TV Settings via All Settings Menu and SmartCast Mobile App",
+    "preconditions": "1) Input at Power On = VIZIO Home/Last Used Input 2) DUT and Mobile should be paired",
+    "steps_separated": "Step 1: Press the MENU key or gear key for the first time.\n  Expected: Quick Settings Menu opens.\nStep 2: TV Settings can be adjusted by 1) Pressing Menu key or gear key on the remote and navigate to All Settings and hit OK or 2) Use Menu in SmartCast Mobile app\n  Expected: All Settings on DUT. All Settings on SmartCast Mobile app."
+  },
+  {
+    "id": "31007611",
+    "title": "Verify the order of content in All Settings from DUT screen and Smart Cast Mobile App",
+    "preconditions": "Input at Power On = VIZIO Home/Last Used Input",
+    "steps_separated": "Step 1: The order of All Settings should be same in the DUT vs Smart Cast Mobile App\n  Expected: DUT All Settings & Smart Cast Mobile App"
+  },
+  {
+    "id": "31007612",
+    "title": "Verify that TV settings (e.g., Picture Mode) can be changed from the All Settings Menu using the IR remote",
+    "preconditions": "Input at Power On = VIZIO Home/Last Used Input",
+    "steps_separated": "Step 1: Press the MENU or gear key on the IR remote/BT Remote.\n  Expected: The Quick Settings menu opens.\nStep 2: Navigate to \"All settings\" and select.\n  Expected: Settings Menu opens.\nStep 3: Navigate to \"Picture\" and select.\n  Expected: Picture Menu opens.\nStep 4: Change Picture mode to \"Calibrated\".\n  Expected: Picture mode should change to Calibrated successfully."
+  },
+  {
+    "id": "31007613",
+    "title": "Verify that user-modified or default settings persist across All Settings",
+    "preconditions": "Input at Power On = VIZIO Home/Last Used Input",
+    "steps_separated": "Step 1: Launch the All Settings menu by pressing Gear button on remote for first time\n  Expected: Quick Settings opens with default settings (e.g., Picture Mode = Bright) are displayed\nStep 2: Navigate to All settings > Picture and change Picture mode to Calibrated\n  Expected: Picture mode should change to \"Calibrated\" successfully\nStep 3: Dismiss the Settings by pressing Home on remote and Relaun"
+  },
+  {
+    "id": "31007614",
+    "title": "Verify that the All Settings menu auto-dismisses after 1 minute of inactivity",
+    "preconditions": "",
+    "steps_separated": "Step 1: Press the MENU or gear key on the IR remote\n  Expected: The Quick Settings menu opens.\nStep 2: Do not interact with the menu for 1 minute\n  Expected: The menu remains open during this time\nStep 3: Observe the screen after 1 minute of inactivity\n  Expected: The All Settings menu automatically dismisses and returns to the previous screen"
+  },
+  {
+    "id": "31007615",
+    "title": "Verify that All Settings Menu dismisses 1 minute after Antenna Scan completes",
+    "preconditions": "Antenna should be Connected to DUT",
+    "steps_separated": "Step 1: Press the MENU or gear key on the IR remote/BT Remote.\n  Expected: The Quick Settings menu opens.\nStep 2: Navigate to All settings->Antenna Channels and select Find Channels to scan.\n  Expected: Antenna Channels Scan begins\nStep 3: Wait for Antenna Scan to complete\n  Expected: Scan completes successfully\nStep 4: Do not interact with the menu after scan completion\n  Expected: The menu remai"
+  },
+  {
+    "id": "31007616",
+    "title": "Verify that INPUT, PIC, MIC, HOME, and Partner keys dismiss the All Settings Menu",
+    "preconditions": "1.TV should be Powered On 2.TV should be Connected to Network",
+    "steps_separated": "Step 1: Press the MENU or gear key on the IR remote/BT Remote.\n  Expected: The Quick Settings menu opens.\nStep 2: Navigate to All Settings .\n  Expected: The All Settings Menu Opens.\nStep 3: Press the INPUT key on the IR remote/BT remote.\n  Expected: Settings Menu should get dismiss and Input overlay should launch .\nStep 4: Reopen the Settings Menu.\n  Expected: Settings Menu is displayed again.\nSte"
+  },
+  {
+    "id": "31007618",
+    "title": "Verify that Closed Captions notifications and toggling do not dismiss TV Settings or Quick Menu",
+    "preconditions": "1.TV should be Powered On 2.TV should be Connected to Network",
+    "steps_separated": "Step 1: Press the MENU or gear key on the IR remote/BT Remote.\n  Expected: The Quick Settings menu opens.\nStep 2: Scroll down to Closed Captions and toggle ON/OFF .\n  Expected: CC should toggles ON or OFF, notification appears. Settings or Quick Menu remains open and unaffected\nStep 3: Relaunch Settings MENU again.\n  Expected: The Settings Menu Opens.\nStep 4: Press CC button to ON/OFF on IR remote"
+  },
+  {
+    "id": "31007619",
+    "title": "Verify the INFO is displayed concurrently with that of Menu",
+    "preconditions": "1.TV should be Powered On 2.TV should be Connected to Network",
+    "steps_separated": "Step 1: Press the MENU or gear key on the IR remote/BT Remote.\n  Expected: The Quick Settings menu opens.\nStep 2: Navigate to All Settings.\n  Expected: The All Settings Menu Opens.\nStep 3: Using the IR remote click INFO\n  Expected: While the Menu is opened a notification should be displayed on the top right corner of the DUT notifying on the page the user is present. Ex: If the user is on Watchfre"
+  },
+  {
+    "id": "31007620",
+    "title": "Verify that TV Information Menu page gets dismiss after 3 mins of inactivity",
+    "preconditions": "",
+    "steps_separated": "Step 1: Press the MENU or gear key on the IR remote/BT Remote.\n  Expected: The Quick Settings Menu opens.\nStep 2: Navigate to TV Information Page All Settings -> System -> TV Information .\n  Expected: TV Information Menu Page is displayed.\nStep 3: Do not interact with the DUT for 3 minutes.\n  Expected: Menu remains open during this time.\nStep 4: Observe the screen after 3 minutes of inactivity.\n  "
+  },
+  {
+    "id": "31007622",
+    "title": "Verify Sidebar Timeout Timer Behavior with Talk Back On",
+    "preconditions": "",
+    "steps_separated": "Step 1: Press the MENU key or gear key for the first time.\n  Expected: Quick Settings Menu opens.\nStep 2: Navigate to Accessibility and Press Ok\n  Expected: Accessibility opens.\nStep 3: Navigate to Talk back and using the remote Dpad toggle to On if the default is Off\n  Expected: The Talk back should be enabled and starts reading the Menu options.\nStep 4: Observe the Side Menu options\n  Expected: "
+  },
+  {
+    "id": "31007720",
+    "title": "Verify All settings Menu Order",
+    "preconditions": "1.TV should be powered on. 2.TV should be connected to Network.",
+    "steps_separated": "Step 1: Press the MENU key or gear key for the first time.\n  Expected: The Quick Settings Menu opens.\nStep 2: Navigate to All settings and select.\n  Expected: All Settings Menu opens with below Menu settings. Picture Audio HDMI & Gaming Network Bluetooth and Remote Antenna Channels Accessibility System Support Privacy and Legal"
+  },
+  {
+    "id": "31007721",
+    "title": "Verify circular navigation on All settings Menu",
+    "preconditions": "",
+    "steps_separated": "Step 1: Press the MENU or gear key on the IR remote/BT Remote.\n  Expected: The Quick Settings menu opens.\nStep 2: Navigate to \"All settings\" and select.\n  Expected: All settings Menu opens and focus is on Picture .\nStep 3: While focus on Picture menu item press UP key on remote\n  Expected: Focus is shift to last down menu item Privacy & Legal\nStep 4: While focus on Privacy & Legal last menu item p"
+  },
+  {
+    "id": "31007722",
+    "title": "Verify that pressing LEFT/RIGHT keys toggles options displayed to the right of the setting in the sidebar menu",
+    "preconditions": "",
+    "steps_separated": "Step 1: Navigate to All Settings .\n  Expected: All Settings Menu opens.\nStep 2: Navigate to a setting with toggleable options/bar (e.g., Picture-> Picture Mode)\n  Expected: Current option (e.g., Picture Mode) is highlighted and able to toggle\nStep 3: Press the RIGHT arrow key on the D-pad\n  Expected: The next available option is selected or bar level increases and displayed immediately\nStep 4: Pre"
+  },
+  {
+    "id": "31007723",
+    "title": "Verify navigation and selection behavior in Settings Menu using OK, UP, and DOWN keys",
+    "preconditions": "",
+    "steps_separated": "Step 1: Press the MENU or gear key on the IR remote/BT Remote.\n  Expected: The Quick Settings menu opens.\nStep 2: Navigate to Picture Menu All Settings -> Picture\n  Expected: Picture Menu opens with Picture Mode highlighted.\nStep 3: Press the OK key on remote\n  Expected: Picture Mode options menu opens\nStep 4: Observe the menu header\n  Expected: Header updates to Picture Mode\nStep 5: Observe the o"
+  },
+  {
+    "id": "31007724",
+    "title": "Verify that pressing Cancel in a function or pop-up returns to the originating menu with the setting selected",
+    "preconditions": "",
+    "steps_separated": "Step 1: Press the MENU or gear key on the IR remote/BT Remote.\n  Expected: The Quick Settings menu opens.\nStep 2: Navigate to a setting that launches a function or pop-up ex: Find Channels All settings->Antenna Channels->Find Channels Reset to Factory Settings All Settings->Support->Factory Reset\n  Expected: The setting is highlighted\nStep 3: Press the OK key to launch the function or pop-up\n  Exp"
+  },
+  {
+    "id": "31007725",
+    "title": "Verify that left and right carats guide navigation using Left & Right keys on D-pad Remote in the All Settings Menu",
+    "preconditions": "",
+    "steps_separated": "Step 1: Press the MENU key or gear key and navigate to All Settings .\n  Expected: All Settings Menu opens focus on Picture with Right Carat(>) next to it.\nStep 2: Press the Right arrow key on the D-pad\n  Expected: Picture settings Menu opens.\nStep 3: Scroll up to Picture\n  Expected: Picture Highlighted with left carat( before it.\nStep 4: Press the Left arrow key on the D-pad\n  Expected: Returns to"
+  },
+  {
+    "id": "31007726",
+    "title": "Verify that grayed out settings are non-selectable",
+    "preconditions": "Input = VIZIO Home HDMI CEC device is not connected",
+    "steps_separated": "Step 1: Navigate to the All Settings .\n  Expected: All Settings Menu opens.\nStep 2: Navigate to a setting that is conditionally unavailable (e.g., HDMI & Gaming)\n  Expected: The setting menu appears grayed out(e.g., HDMI & Gaming appears grey out since input is on VIZIO Home & no device is connected).\nStep 3: Attempt to select the grayed-out setting using the OK key\n  Expected: Not able to navigat"
+  },
+  {
+    "id": "31008508",
+    "title": "Verify Game Menu",
+    "preconditions": "TV Powered ON. Network Connected. \u200bNote: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Connect any HDMI source device to HDMI port ex: Apple TV and switch input to that particular HDMI input where source device is connected\n  Expected: Input should switch successfully\nStep 2: Press Settings button on the remote -> Gaming -> Game HDR\n  Expected: Game HDR menu option should be seen enabled\nStep 3: Observe the Game HDR menu\n  Expected: Game HDR option type should be toggle Off "
+  },
+  {
+    "id": "31008509",
+    "title": "Verify HDMI Settings in-accessible while being on VIZIO Home",
+    "preconditions": "TV Powered ON. Network Connected. \u200bNote: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Remain on VIZIO Home screen\n  Expected: TV should switch to the selected input successfully\nStep 2: Navigate to Menu -> Gaming\n  Expected: HDMI Settings should be GRAYED OUT IF the input is Not HDMI input"
+  },
+  {
+    "id": "31007676",
+    "title": "Verify HDMI & Gaming -> HDMI Settings -> 4:4:4 Color Space",
+    "preconditions": "User must be on HDMI page. TV Powered ON. Network Connected. \u200b Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Navigate to \"Settings\" in the Main Menu from All Settings.\n  Expected: User should be on the Settings page.\nStep 2: Select \" HDMI & Gaming\" from the Settings menu.\n  Expected: User should be on the HDMI & Gaming settings page.\nStep 3: Navigate to \"HDMI Settings\" HDMI & Gaming settings.\n  Expected: User should be on the HDMI Settings page.\nStep 4: Navigate to \"4:4:4 Color Space\" under HDMI "
+  },
+  {
+    "id": "31007677",
+    "title": "Verify HDMI & Gaming -> HDMI Settings -> Color Space Range",
+    "preconditions": "User must be on HDMI page. TV Powered ON. Network Connected. Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Navigate to the \"Menu -> All Settings -> HDMI & Gaming -> HDMI Settings\" in the Main Menu.\n  Expected: User should be on the HDMI Settings page.\nStep 2: Locate the \"Color Space Range\" sub-setting.\n  Expected: User should be on the Color Space Range settings page.\nStep 3: verify the presence of a list of options for \"Color Space Range.\"\n  Expected: Options list should include \"Auto (default"
+  },
+  {
+    "id": "31007682",
+    "title": "Verify HDMI & Gaming -> HDMI Settings -> Verify Picture Size and Position",
+    "preconditions": "User must be on HDMI page. TV Powered ON. Network Connected. \u200bNote: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Navigate to \"Settings\" in the Main Menu, select \"HDMI & Gaming,\" then navigate to \"HDMI Settings.\"\n  Expected: User should be on the HDMI Settings page.\nStep 2: Locate the \"Picture Size and Position\" sub-setting.\n  Expected: User should be on the Picture Size and Position settings page.\nStep 3: Navigate to \"Picture Size\" under Picture Size and Position settings.\n  Expected: User should be "
+  },
+  {
+    "id": "31007751",
+    "title": "Verify after WiFi connection successful, the keyboard screen closes and the Network settings displays again.",
+    "preconditions": "1)TV should be in an environment with available 2.4 GHz & 5 GHz, Secured and Unsecured Wireless Access Points , Proper Ethernet cable connection(If the chipset came with Ethernet Port by make). \u200b \u200b2)DUT should be connected to a Wi-Fi network. \u200b \u200b3) Input at Power On : VIZIO Home / Last Used Input ; ",
+    "steps_separated": "Step 1: Launch OSD Menu by pressing \"Gear \" button from RCU\n  Expected: OSD Menu should launch Successfully\nStep 2: Select All Settings >>> Network\n  Expected: Network settings menu should open with the following information and options displayed in the following order: \u200b \u200b1.) My Networks \u200b \u200b2.) More Wi-Fi Networks \u200b \u200b3.) Network Information \u200b \u200b4.) Test Connection \u200b \u200b5.) Add Network Manually \u200b \u200b6."
+  },
+  {
+    "id": "31007939",
+    "title": "Verify the header and Help text on \u201cNetwork Security Type\u201d menu",
+    "preconditions": "\u200b \u200b1)TV should be in an environment with available 2.4 GHz & 5 GHz, Secured and Unsecured Wireless Access Points , Proper Ethernet cable connection (If the chipset came with Ethernet Port by make). \u200b \u200b2)DUT should be in connected state with available Wi-Fi. \u200b \u200b3) Input at Power On : VIZIO Home / Las",
+    "steps_separated": "Step 1: Open the Quick Settings menu by pressing the gear or menu icon on the remote > Go to All Settings > Click on currently connected Network > Add Network Manually\n  Expected: A soft keyboard should be displayed with header \u201cEnter Network Name\u201d and 'Connect' button(By default in disabled state till entering any character) along with a text field in default focus to enter hidden SSID name\nStep "
+  },
+  {
+    "id": "31007940",
+    "title": "Verify the list of available security types in 'Network Security Type' sub menu",
+    "preconditions": "\u200b \u200b1)TV should be in an environment with available 2.4 GHz & 5 GHz, Secured and Unsecured Wireless Access Points , Proper Ethernet cable connection (If the chipset came with Ethernet Port by make). \u200b \u200b2)DUT should be in connected state with available Wi-Fi. \u200b \u200b3) Input at Power On : VIZIO Home / Las",
+    "steps_separated": "Step 1: Open the Quick Settings menu by pressing the gear or menu icon on the remote > Go to All Settings > Click on currently connected Network > Add Network Manually\n  Expected: A soft keyboard should be displayed with header \u201cEnter Network Name\u201d and 'Connect' button(By default in disabled state till entering any character) along with a text field in default focus to enter hidden SSID name\nStep "
+  },
+  {
+    "id": "31007954",
+    "title": "Verify the DHCP Settings in default mode",
+    "preconditions": "\u200b \u200b1)TV should be in an environment with available 2.4 GHz & 5 GHz, Secured and Unsecured Wireless Access Points , Proper Ethernet cable connection (If the chipset came with Ethernet Port by make). \u200b \u200b2)DUT should be in connected state with available Wi-Fi. \u200b \u200b3) Input at Power On : VIZIO Home / Las",
+    "steps_separated": "Step 1: Open the Quick Settings menu by pressing the gear or menu icon on the remote > Go to All Settings > Click on currently connected Network > Click on Advanced Network IP Setup\n  Expected: Should display the following fields properly: \u200b \u200b(1)DHCP ====> Default is On (automatic setup) \u200b(2)IP Address \u200b(3)Subnet Mask \u200b(4)Gateway \u200b(5)Pref. DNS Server \u200b(6)Alt. DNS Server \u200b(7)RJ45 (display only, no "
+  },
+  {
+    "id": "31007955",
+    "title": "Verify the DHCP Settings in Off mode",
+    "preconditions": "\u200b \u200b1)TV should be in an environment with available 2.4 GHz & 5 GHz, Secured and Unsecured Wireless Access Points , Proper Ethernet cable connection (If the chipset came with Ethernet Port by make). \u200b \u200b2)DUT should be in connected state with available Wi-Fi. \u200b \u200b3) Input at Power On : VIZIO Home / Las",
+    "steps_separated": "Step 1: Open the Quick Settings menu by pressing the gear or menu icon on the remote > Go to All Settings > Click on currently connected Network > Click on Advanced Network IP Setup\n  Expected: Should display the following fields properly: \u200b \u200b(1)DHCP ====> Default is On (automatic setup) \u200b(2)IP Address \u200b(3)Subnet Mask \u200b(4)Gateway \u200b(5)Pref. DNS Server \u200b(6)Alt. DNS Server \u200b(7)RJ45 (display only, no "
+  },
+  {
+    "id": "31007956",
+    "title": "Verify the DHCP Settings in ManualDNS mode",
+    "preconditions": "\u200b \u200b1)TV should be in an environment with available 2.4 GHz & 5 GHz, Secured and Unsecured Wireless Access Points , Proper Ethernet cable connection (If the chipset came with Ethernet Port by make). \u200b \u200b2)DUT should be in connected state with available Wi-Fi. \u200b \u200b3) Input at Power On : VIZIO Home / Las",
+    "steps_separated": "Step 1: Open the Quick Settings menu by pressing the gear or menu icon on the remote > Go to All Settings > Click on currently connected Network > Click on Advanced Network IP Setup\n  Expected: Should display the following fields properly: \u200b \u200b(1)DHCP ====> Default is On (automatic setup) \u200b(2)IP Address \u200b(3)Subnet Mask \u200b(4)Gateway \u200b(5)Pref. DNS Server \u200b(6)Alt. DNS Server \u200b(7)RJ45 (display only, no "
+  },
+  {
+    "id": "31007681",
+    "title": "Verify bluetooth and Remote Menu Option",
+    "preconditions": "Preconditions: 1.TV Powered ON and not in OOBE. 2.Network Connected with Internet. Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: MENU --> ALL SETTINGS --> BLUETOOTH DEVICES & REMOTE\n  Expected: should be displayed bellow options: Voice Remote Headphones Game Controller"
+  },
+  {
+    "id": "31007702",
+    "title": "Verify if remote is paired & TV is restarted from the OSD menu",
+    "preconditions": "TV Powered ON. Network Connected(Wi-Fi/Ethernet). BT Remote should be paired to TV Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Go to OSD Menu -> ALL SETTINGS -> Support -> Select Restart TV\n  Expected: Remote should remain paired to TV after restart"
+  },
+  {
+    "id": "31007921",
+    "title": "To Verify All Settings >Bluetooth and Remote> Headphones > More Available Devices",
+    "preconditions": "Power Mode: ECO/Quick Start. Input source: Last used TV input/Vizio home. Network: Wi-Fi Or Ethernet Connected Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Press All Settings> Bluetooth and Remote> Headphones > Verify More Available Devices\n  Expected: Headphone Paired devices(greyed out) More Available Devices(Greyed out)(Loads Spinning wheel for 60 seconds) List of unpaired devices (Max two) More Available Devices(If unpaired devices list is more than two)\nStep 2: Select any unpaired device.\n  Expected: Spinning wheel appears and device wil"
+  },
+  {
+    "id": "31008066",
+    "title": "Gaming Controller Menu options",
+    "preconditions": "1.TV Powered ON and not in OOBE. 2.Network Connected with Internet. Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Press All Settings> Bluetooth devices and Remote> Game Controller\n  Expected: Header should be displayed as GAME CONTROLLER, and the below sub menu should be shown. Paired Devices (grayed out) Other Devices (grayed out with circle animation)"
+  },
+  {
+    "id": "31008114",
+    "title": "Game Controller > Amazon Luna Controller > Menu works as Settings",
+    "preconditions": "FUR: 9.0 or newer. TV powered on. Amazon Luna game controller paired and connected to TV. [HCI logging enabled.] Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Press the \"Menu\" button on the controller.\n  Expected: The behavior should open Settings."
+  },
+  {
+    "id": "31008263",
+    "title": "Verify Settings-> Antenna Channels and all available Options",
+    "preconditions": "1) Channels should not be scanned.\u200b\u200b Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode",
+    "steps_separated": "Step 1: Navigate to \"Settings\" in the Main Menu.\n  Expected: User should be on the Settings page.\nStep 2: Select \"Antenna Channels\" from the Settings menu.\n  Expected: User should be on the Antenna Channels settings page.\nStep 3: Observe the list of available options and their names, ensuring alignment.\n  Expected: The names in Antenna Channels should be aligned with the below options from screens"
+  },
+  {
+    "id": "31008281",
+    "title": "Verify when user select the Done button should returns to the Antenna Channels menu and tunes to the first scanned channel in the channel map.",
+    "preconditions": "Connect the Antenna to the DUT",
+    "steps_separated": "Step 1: 1.Navigate to \"ALL SETTINGS\" -> ANTENNA CHANNNELS-> Find Channels 2.Press Ok On BT or IR Remote\n  Expected: Scanning should be Done less than 1 minute\nStep 2: wait until \"Cancel\" turn to \"Done\" and then select Done\n  Expected: Should returns to the Antenna Channels menu"
+  },
+  {
+    "id": "31008285",
+    "title": "Verify Settings-> Antenna Channels -> Find Channels and all available Options within the window",
+    "preconditions": "1) Antenna is connected to the DUT with no Channels \u200b\u200bScan Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Navigate to \"Settings\" in the Main Menu.\n  Expected: User should be on the Settings page.\nStep 2: Select \"Antenna Channels\" from the Settings menu.\n  Expected: User should be on the Antenna Channels settings page.\nStep 3: Navigate to \"Find Channels\" under Antenna Channels.\n  Expected: Channel scan should be launched with Digital and Analog count is zero & \"Cancel\" being highlighted as show"
+  },
+  {
+    "id": "31007575",
+    "title": "Verify Settings-> Antenna Channels -> Find New Channels and all available Options within the window",
+    "preconditions": "1) Antenna is connected to the DUT. 2) Ensure channels have been previously scanned. \u200b\u200b Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Navigate to \"Settings\" in the Main Menu.\n  Expected: User should be on the Settings page.\nStep 2: Select \"Antenna Channels\" from the Settings menu.\n  Expected: User should be on the Antenna Channels settings page.\nStep 3: Navigate to \"Find New Channels\" under Antenna Channels.\n  Expected: Channel scan should be launched with Digital and Analog count is zero & \"Cancel\" being highlighted as "
+  },
+  {
+    "id": "31007601",
+    "title": "Verfiy Settings-> Antenna Channels-> Hide Channels",
+    "preconditions": "1) Channels have already being scanned by Navigating to Menu->Antenna Channels-> Find Channels\u200b\u200b Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Navigate to \"Settings\" in the Main Menu.\n  Expected: User should be on the Settings page.\nStep 2: Select \"Antenna Channels\" from the Settings menu.\n  Expected: User should be on the Antenna Channels settings page.\nStep 3: Navigate to \"Hide Channels\" under Antenna Channels.\n  Expected: User should be on the Hide Channels settings page with the list of scanned channels and checkbox adjacent "
+  },
+  {
+    "id": "31007628",
+    "title": "[Change List] Verify Video Description removed for Spanish under Accessibility > Video Description",
+    "preconditions": "",
+    "steps_separated": "Step 1: Navigate to \"Settings\" in the Main Menu.\n  Expected: User should be on the Settings page.\nStep 2: Select \"Antenna Channels\" from the Settings menu.\n  Expected: User should be on the Antenna Channels settings page.\nStep 3: Navigate to \"Digital Audio\" under Antenna Channels.\n  Expected: User should be on the Digital Audio settings page.\nStep 4: Observe the list of available digital audio lan"
+  },
+  {
+    "id": "31007652",
+    "title": "Verify Settings-> Accessibility",
+    "preconditions": "TV should be Powered ON Network should be connected TV is not in OOBE page Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Navigate to \"Settings\" in the Main Menu.\n  Expected: User should be on the Settings page.\nStep 2: Select \"Accessibility\" from the Settings menu.\n  Expected: User should be on the Accessibility settings page with the list of Options shown in the image."
+  },
+  {
+    "id": "31007630",
+    "title": "Verify Captions-> Closed Captions can be toggled",
+    "preconditions": "TV is powered ON \u200b\u200b\u200b Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Navigate to \"Settings\" in the Main Menu.\n  Expected: User should be on the Settings page.\nStep 2: Select \"Accessibility\" from the Settings menu.\n  Expected: User should be on the Accessibility settings page.\nStep 3: Navigate to \"Captions\" under Accessibility settings.\n  Expected: User should be on the Captions settings page.\nStep 4: Toggle the Closed Captions option from \"Off (default)\" to"
+  },
+  {
+    "id": "31007631",
+    "title": "Verify Captions-> Analog Closed Captions",
+    "preconditions": "TV is powered ON Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Navigate to \"Settings\" in the Main Menu.\n  Expected: User should be on the Settings page.\nStep 2: Select \"Accessibility\" from the Settings menu.\n  Expected: User should be on the Accessibility settings page.\nStep 3: Navigate to \"Captions\" under Accessibility settings.\n  Expected: User should be on the Captions settings page.\nStep 4: Navigate to \"Analog Closed Captions\" under Captions setti"
+  },
+  {
+    "id": "31007632",
+    "title": "Verify Captions-> Digital Closed Captions",
+    "preconditions": "TV is powered ON Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Navigate to \"Settings\" in the Main Menu.\n  Expected: User should be on the Settings page.\nStep 2: Select \"Accessibility\" from the Settings menu.\n  Expected: User should be on the Accessibility settings page.\nStep 3: Navigate to \"Captions\" under Accessibility settings.\n  Expected: User should be on the Captions settings page.\nStep 4: Navigate to \"Digital Closed Captions\" under Captions sett"
+  },
+  {
+    "id": "31008331",
+    "title": "Verify Closed Captions is a Global Setting",
+    "preconditions": "1.TV Powered ON and not in OOBE. \u200b2.Network Connected with Internet. \u200bNote: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode. HDMI Connected",
+    "steps_separated": "Step 1: Launch Menu by pressing 'Gear/MENU' button on Remote\n  Expected: Settings Page should be displayed\nStep 2: Navigate to Accessibility---->Captions----> Turn on Closed Captions\n  Expected: Closed Captions should be Enabled\nStep 3: Switch between Different HDMI Sources which are connected\n  Expected: Closed Captions Should be Enabled globally across all sources and Inputs"
+  },
+  {
+    "id": "31008332",
+    "title": "Verify Closed Captions Applies to Composite Input",
+    "preconditions": "1.TV Powered ON and not in OOBE. \u200b2.Network Connected with Internet. \u200bNote: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode Applicable only for the models with composite",
+    "steps_separated": "Step 1: Launch Menu by pressing 'Gear/MENU' button on Remote\n  Expected: Settings Page should be displayed\nStep 2: Navigate to Accessibility---->Captions----> Turn on Closed Captions\n  Expected: Closed Captions should be Enabled\nStep 3: Switch Input to Composite and Observe the behaviour\n  Expected: Closed Captions display correctly when Composite is detected Note : If HDMI or Component is detecte"
+  },
+  {
+    "id": "31008333",
+    "title": "Verify Closed Captions Applies to Tuner",
+    "preconditions": "1.TV Powered ON and not in OOBE. \u200b2.Network Connected with Internet. \u200bNote: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode Applicable only for the models with composite",
+    "steps_separated": "Step 1: Launch Menu by pressing 'Gear/MENU' button on Remote\n  Expected: Settings Page should be displayed\nStep 2: Navigate to Accessibility---->Captions----> Turn on Closed Captions\n  Expected: Closed Captions should be Enabled\nStep 3: Switch Input to Tuner and Observe the behaviour\n  Expected: Closed Captions display correctly when Tuner is detected"
+  },
+  {
+    "id": "31008334",
+    "title": "Verify Some Applications follow TV Closed captions setting",
+    "preconditions": "1.TV Powered ON and not in OOBE. \u200b2.Network Connected with Internet. \u200bNote: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Launch Menu by pressing 'Gear/MENU' button on Remote\n  Expected: Settings Page should be displayed\nStep 2: Navigate to Accessibility---->Captions----> Turn on Closed Captions\n  Expected: Closed Captions should be Enabled\nStep 3: Launch any Streaming app which and Confirm Closed Captions are off in the app)\n  Expected: CC should be off in app\nStep 4: Launch any Streaming app which supports "
+  },
+  {
+    "id": "31008335",
+    "title": "Verify App Responds to CC key If Content has CC support",
+    "preconditions": "1.TV Powered ON and not in OOBE. \u200b2.Network Connected with Internet. \u200bNote: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode. Ensure App responds to CC key to toggle captions when content supports it",
+    "steps_separated": "Step 1: Play content that includes closed captions 2.Press CC key on Remote and Observe the behaviour\n  Expected: App responds to CC key Input and toggles captions Accordingly"
+  },
+  {
+    "id": "31008336",
+    "title": "Verify the Closed caption when Digital Style settings are changed",
+    "preconditions": "1.TV Powered ON and not in OOBE. \u200b2.Network Connected with Internet. \u200bNote: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode. Ensure App responds to CC key to toggle captions when content supports it",
+    "steps_separated": "Step 1: Play content that includes closed captions 2.Press CC key on Remote and Observe the behaviour\n  Expected: App responds to CC key Input and toggles captions Accordingly\nStep 2: Select the options present under OSD Menu > Accessibility > Closed Caoption Digital Style settings\n  Expected: The appearance of the captions shoould be display on the TV."
+  },
+  {
+    "id": "31008337",
+    "title": "Verify the closed captions setting change is annunciated on the TV from the SmartCast app",
+    "preconditions": "1.TV Powered ON . \u200b2.Network Connected with Internet. 3.TV should pair with SmartCast app \u200bNote: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Play content that includes closed captions\n  Expected: Content should play without any issues\nStep 2: From the SmartCast app ,disable / enable the closed captions from settings of SmartCast app\n  Expected: If closed captions setting is changed on the SmartCast app, the setting change is annunciated on the TV."
+  },
+  {
+    "id": "31008002",
+    "title": "Verify Toggle Closed Captions",
+    "preconditions": "1.TV Powered ON. 2.Network Connected. 3.TV in Last Used TV Input/ Vizio Home Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default, TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Launch Menu by pressing 'Gear/MENU' button on Remote\n  Expected: Menu page should get Launched.\nStep 2: Navigate to ACCESSIBILITY\n  Expected: ACCESSIBILITY page should get Launched\nStep 3: Select Captions\n  Expected: User should be on the Captions settings page\nStep 4: Click Closed Captions\n  Expected: User should be on the CLOSED CAPTIONS page.\nStep 5: Toggle from Off to On and vice-versa"
+  },
+  {
+    "id": "31008003",
+    "title": "Verify Closed Captions  is OFF by default",
+    "preconditions": "1.TV Powered ON. 2.Network Connected. Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default, TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Launch Menu by pressing 'Gear/MENU' button on Remote\n  Expected: Menu page should get Launched.\nStep 2: Navigate to ACCESSIBILITY\n  Expected: ACCESSIBILITY page should get Launched\nStep 3: Select Captions\n  Expected: User should be on the Captions settings page\nStep 4: Navigate to Closed Captions\n  Expected: Closed Captions is OFF by default"
+  },
+  {
+    "id": "31008008",
+    "title": "Verify Analog Closed Captions",
+    "preconditions": "1.TV Powered ON. 2.Network Connected. 3.TV in Last Used TV Input/ Vizio mode. 5.Applicable only for the models with composite Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default, TV will be in Eco Mode. default In practice only CC1 is used.",
+    "steps_separated": "Step 1: Launch Menu by pressing 'Gear/MENU' button on Remote\n  Expected: Menu page should get Launched.\nStep 2: Navigate to ACCESSIBILITY\n  Expected: ACCESSIBILITY page should get Launched\nStep 3: Select Captions\n  Expected: User should be on the Captions settings page.\nStep 4: Navigate to 'Analog Closed Captions' and click\n  Expected: TV should display the list of available Analog Closed Captions"
+  },
+  {
+    "id": "31008009",
+    "title": "Verify Digital Closed Captions",
+    "preconditions": "1.TV is connected to Network 2.Input at Power On is VIZIO Home or LastUsedTVInput 3.TV Should be Powered ON Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default, TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Launch Menu by pressing 'Gear/MENU' button on Remote\n  Expected: Menu page should get Launched.\nStep 2: Navigate to ACCESSIBILITY\n  Expected: ACCESSIBILITY page should get Launched\nStep 3: Select Captions\n  Expected: User should be on the Captions settings page\nStep 4: Navigate to 'Digital Closed Captions' and click\n  Expected: TV should display the list of available Digital Closed Caption"
+  },
+  {
+    "id": "31007772",
+    "title": "Verify Accessibility-> Video Description",
+    "preconditions": "1) DUT is Powered On and connected to Antenna. 2) Antenna Channels are scanned by navigating to Settings-> All Settings-> Antenna Channels-> Find Channels. Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Navigate to \"Settings\" in the Main Menu.\n  Expected: User should be on the Settings page.\nStep 2: Select \"Accessibility\" from the Settings menu.\n  Expected: User should be on the Accessibility settings page.\nStep 3: Toggle the Video Description option from \"Off (default)\" to \"On\" and vice versa.\n  Expected: The Video Description option should toggle accordingly."
+  },
+  {
+    "id": "31008138",
+    "title": "Verify that Talk back speaks all settings changes adjusted using the basic remote",
+    "preconditions": "1.TV is connected to Network 2.Input at Power On is VIZIO Home or LastUsedTVInput 3.Power Mode: ECO/Quick-Start mode 4.TV is Powered On 5.Menu Language is set to English Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default, TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Enable \"Talk back\" from OSD Menu> Accessibility> Talk Back ON\n  Expected: Talk Back should get enabled successfully\nStep 2: Navigate to all the available menu options and tabs on OSD menu\n  Expected: -On enabling Text-to-Speech \"Talk back\", it should read all the settings changes adjusted using the basic remote in English. -TTS should speak at the current customer volume.\nStep 3: Navigate "
+  },
+  {
+    "id": "31008144",
+    "title": "Verify that Talk back not supported on menu language Spanish or French",
+    "preconditions": "1.TV is connected to Network 2.Input at Power On is VIZIO Home or LastUsedTVInput 3.Power Mode: ECO/Quick-Start mode 4.TV is Powered On 5.Menu Language is set to English Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default, TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Navigate to OSD menu All Settings> Accessibility and observe the Talk Back option\n  Expected: -Talk Back option should be greyed out from OSD menu, when Menu language is set to Spanish/ Espanol. -Talk Back only supports English."
+  },
+  {
+    "id": "31008028",
+    "title": "Verify that long press of the MENU key enables zoom navigation mode and displays a confirming notification.",
+    "preconditions": "1.TV Powered ON. 2.TV in Last Used TV Input / Vizio Home Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default, TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Launch OSD Menu > Accessibility > Enable Zoom Mode\n  Expected: Zoom Mode should get enable\nStep 2: Long press the Menu key and verify\n  Expected: Long press of the MENU key should enables zoom navigation mode and display a confirming notification. Zoom navigation mode is On."
+  },
+  {
+    "id": "31008030",
+    "title": "Verify that long press of the MENU key disable zoom navigation mode and displays a confirming notification.",
+    "preconditions": "1.TV Powered ON. 2.TV in Last Used TV Input / Vizio Home Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default, TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Launch OSD Menu > Accessibility > Enable Zoom Mode\n  Expected: Zoom Mode should get enable\nStep 2: Long press the Menu key and verify\n  Expected: Long press of the MENU key shoulden disables zoom navigation mode and display a confirming notification. \"Zoom navigation mode is Off.\""
+  },
+  {
+    "id": "31008031",
+    "title": "Verify the short press of MENU key when Zoom is enabled",
+    "preconditions": "1.TV Powered ON. 2.TV in Last Used TV Input / Vizio Home Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default, TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Launch OSD Menu > Accessibility > Enable Zoom Mode\n  Expected: Zoom Mode should get enable\nStep 2: Long press the Menu key and verify\n  Expected: Long press of the MENU key shoulden disables zoom navigation mode and display a confirming notification. \"Zoom navigation mode is Off.\"\nStep 3: During zoom navigation mode short press of MENU key & Verify\n  Expected: Menu list should dispaly and "
+  },
+  {
+    "id": "31008381",
+    "title": "System Menu",
+    "preconditions": "TV Powered ON and not in OOBE. \u200b2. Network Connected with Internet. \u200bNote: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Verify the SYSTEM Menu via Menu > All Settings > System\n  Expected: System Menu should be opened with the below options Menu Language TV Information TV Name Time Manage Input List Sleep Timer Power Parental Controls"
+  },
+  {
+    "id": "31007560",
+    "title": "Menu Language Settings",
+    "preconditions": "TV Powered ON and not in OOBE. \u200bNetwork Connected with Internet. \u200bNote: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Navigate to Menu--> All Settings--> System--> Menu Language\n  Expected: There languages must be as below: \u200bMenu Language: \u200bEnglish \u200bEspanol \u200bFrancais"
+  },
+  {
+    "id": "31007561",
+    "title": "System> Menu Language - Spanish",
+    "preconditions": "TV Powered ON and not in OOBE. \u200bNetwork should be connected. \u200bNote: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Lanch OSD Menu\n  Expected: OSD Menu should be launched.\nStep 2: Navigate to All Settings > System > Menu Language > Select Espanol\n  Expected: Espanol will be selected\nStep 3: Verify all Menu items, descriptions, and notifications are changed to Spanish language\n  Expected: All TV Menu and Notifications should change to Spanish."
+  },
+  {
+    "id": "31007562",
+    "title": "System> Menu Language - French",
+    "preconditions": "TV Powered ON and not in OOBE. \u200bNetwork should be connected. \u200bNote: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Lanch OSD Menu\n  Expected: OSD Menu should be launched.\nStep 2: Navigate to All Settings > System > Menu Language >Select Francais\n  Expected: Francais will be selected\nStep 3: Verify all Menu items, descriptions, and notifications are changed to French language\n  Expected: All TV Menu and Notifications should change to French."
+  },
+  {
+    "id": "31007563",
+    "title": "System> Menu Language - English",
+    "preconditions": "TV Powered ON and not in OOBE. \u200bNetwork should be connected. \u200bNote: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Lanch OSD Menu\n  Expected: OSD Menu should be launched.\nStep 2: Navigate to All Settings > System > Menu Language >Select English\n  Expected: English will be selected\nStep 3: Verify all Menu items, descriptions, and notifications are changed to English language\n  Expected: All TV Menu and Notifications should change to English."
+  },
+  {
+    "id": "31007574",
+    "title": "Menu Language Requirements",
+    "preconditions": "TV Powered ON and not in OOBE. \u200b2. Network Connected with Internet. \u200bNote: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Menu--> All Settings--> System--> Menu Language--> Espanol\n  Expected: The menu language for the TV OSD applies to the TV platform display but not the language heard. After changed, the selected language is used thereafter for all annunciations and notifications on the TV and the SmartCast app.\nStep 2: Menu--> All Settings--> System--> Menu Language--> Francais\n  Expected: The menu languag"
+  },
+  {
+    "id": "31008470",
+    "title": "Verify the power option in System menu",
+    "preconditions": "1.TV Should be Powered ON 2.Network should be connected Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Launch Menu by pressing 'Gear/MENU' button on Remote\n  Expected: Menu should be launched Successfully\nStep 2: Navigate to All Settings > System > Power\n  Expected: Power option should be displayed 1.Input at Power On 2.USB Power 3.Power Indicator 4.Auto Power Off 5.Blank Screen"
+  },
+  {
+    "id": "31007977",
+    "title": "Verify that VIZIO home system UI message display with an 30 second countdown icon when TV is on HDMI input page",
+    "preconditions": "1.TV Powered ON \u200b2. Wi-Fi Network should be Connected with Internet. 3.Navigate to all settings> System > Power > Input at Power On > Vizio Home \u200bNote: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default, TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Power on the TV and switch to an HDMI input with no device connected (no signal).\n  Expected: HDMI page should launch with No signal HDMI \u200bAfter 30 seconds, a VIZIO Home UI message appears with a 30-second countdown and options -\u201cNo signal available. Returning to VIZIO Home\u201d -Buttons: \u201cCancel\u201d and \u201cReturn to Home (default)\u201d"
+  },
+  {
+    "id": "31008067",
+    "title": "PIN Required to Access Locked Content or Settings",
+    "preconditions": "1.TV Powered ON and not in OOBE. \u200b2.Network Connected with Internet. \u200bNote: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Try to access a PIN-protected item (e.g., locked channel, Parental Controls menu, Picture Edit Mode, or Reset to Factory Settings).\n  Expected: TV prompts for the saved PIN. Entering the correct PIN unlocks the item."
+  },
+  {
+    "id": "31007537",
+    "title": "Verify SUPPORT menu",
+    "preconditions": "1.TV Powered ON. 2.Network Connected. Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Press MENU/GEAR button on Remote->ALL SETTINGS->SUPPORT->Verify Support Menu\n  Expected: SUPPORT menu opens up with below options: \u200bi: Restart TV \u200bii: Support Code \u200biii: Check for Updates \u200biv: Reset to Factory Settings \u200bv: TV Speaker Test \u200bvi: User Manual"
+  },
+  {
+    "id": "31008163",
+    "title": "Verify Reset to Factory Settings",
+    "preconditions": "1.TV Powered ON. 2.Network Connected. 3.TV in ECO/Quick-Start mode. Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: launch Menu\n  Expected: Menu page should get Launched\nStep 2: Go to ALL SETTINGS->SUPPORT->Reset to Factory Settings\n  Expected: 1.Popup should be displayed with below 4 options and highlighting Cancel by default 'Reset TV' 'Reset Apps' 'Restart' 'Cancel' Restart - Your VIZIO TV will power off and restart. Reset Apps - Deletes application data and restarts your VIZIO TV. You may be require"
+  },
+  {
+    "id": "31008165",
+    "title": "Verify reset to factory settings from the front panel button",
+    "preconditions": "1.TV Powered ON. 2.Network Connected. Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode",
+    "steps_separated": "Step 1: Long press Front panel button for 15 second\n  Expected: TV should display below notification 'To reset to factory settings,hold button for 10 more seconds'\nStep 2: Continue to press the front panel button for 10 more seconds\n  Expected: TV should display below notification 'Memory is being cleared.The TV will reset shortly'\nStep 3: Release the button and wait for 5 more seconds\n  Expected:"
+  },
+  {
+    "id": "31008170",
+    "title": "Reset to Factory Settings>Reset TV",
+    "preconditions": "1.TV Powered ON. 2.Network Connected. Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: launch Menu\n  Expected: Menu page should get Launched\nStep 2: Go to ALL SETTINGS->SUPPORT->Reset to Factory Settings\n  Expected: Popup should be displayed with below 4 options and highlighting Cancel by default 'Reset TV' 'Reset Apps' 'Restart' 'Cancel'\nStep 3: Select Reset TV\n  Expected: 1.DUT should initiate a Factory Reset and launch into the OOBE experience. 2.LED blinks to confirm TV "
+  },
+  {
+    "id": "31008171",
+    "title": "[Change List]Reset to Factory Settings >Reset Apps",
+    "preconditions": "1.TV Powered ON. 2.Network Connected. 3.TV in ECO/Quick-Start mode. Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: launch Menu\n  Expected: Menu page should get Launched\nStep 2: Go to ALL SETTINGS->SUPPORT->Reset to Factory Settings\n  Expected: Popup should be displayed with below 4 options and highlighting Cancel by default 'Reset TV' 'Reset Apps' 'Restart' 'Cancel'\nStep 3: Select Reset Apps\n  Expected: DUT will delete app data and preform a restart\nStep 4: After restart, launch the previous logged in "
+  },
+  {
+    "id": "31008172",
+    "title": "Reset to Factory Settings >Restart",
+    "preconditions": "1.TV Powered ON. 2.Network Connected. 3.TV in ECO/Quick-Start mode. 4.TV connected to Wi-FI Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: launch Menu\n  Expected: Menu page should get Launched\nStep 2: Go to ALL SETTINGS->SUPPORT->Reset to Factory Settings\n  Expected: Popup should be displayed with below 4 options and highlighting Cancel by default 'Reset TV' 'Reset Apps' 'Restart' 'Cancel'\nStep 3: Select Restart\n  Expected: TV should perform a restart"
+  },
+  {
+    "id": "31008173",
+    "title": "Reset to Factory Settings >Cancel",
+    "preconditions": "1.TV Powered ON. 2.Network Connected. 3.TV in ECO/Quick-Start mode. Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: launch Menu\n  Expected: Menu page should get Launched\nStep 2: Go to ALL SETTINGS->SUPPORT->Reset to Factory Settings\n  Expected: Popup should be displayed with below 4 options and highlighting Cancel by default 'Reset TV' 'Reset Apps' 'Restart' 'Cancel'\nStep 3: Select Cancel (highlighted by default)\n  Expected: 1.Cancels and closes the notification - no action taken 2.Returns highlight to "
+  },
+  {
+    "id": "31008511",
+    "title": "Verify Privacy & Legal option in Menu",
+    "preconditions": "1.TV should be Powered ON 2.WIFI network should be Connected 3.TV should not be on OOBE",
+    "steps_separated": "Step 1: Launch Menu by pressing 'Gear/MENU' button on Remote\n  Expected: Menu Page should launch Successfully\nStep 2: Navigate to All settings >> Privacy & Legal\n  Expected: Privacy & Legal page should launch and shown as below: Privacy Policy Viewing Data Advertising License List \u200b \u200b(Advertising should contain following in sub-menu: \u200b- Limited Ad Tracking \u200b- Reset TV Advertising ID)"
+  },
+  {
+    "id": "31008207",
+    "title": "Turn Viewing Data Settings ON after Declining from OOBE",
+    "preconditions": "1.ACCEPT Terms & Conditions on OOBE. \u200b \u200b2.Network: Wi-Fi Or Ethernet Connected \u200b \u200b3. Accept Activity Data \u200b \u200b4. Decline Viewing Data",
+    "steps_separated": "Step 1: Complete remaining steps and launch OSD Menu by pressing \"Gear \" button from RCU\n  Expected: OSD Menu should launch Successfully\nStep 2: Select All Settings >>> Privacy & Legal >>> Viewing Data\n  Expected: Should see options ON OFF(Default)\nStep 3: Select ON\n  Expected: Screen navigates to Viewing Data Policy screen to Decline/ View Policy /Accept.\nStep 4: Select Accept\n  Expected: VIZIO W"
+  },
+  {
+    "id": "31008212",
+    "title": "Verify toggling ON Viewing Data from Menu after user selects DECLINE option for Viewing Data in OOBE",
+    "preconditions": "TV should be Powered ON Network: Wi-Fi Or Ethernet Connected with US network ToS accepted during OOBE. Decline Viewing Data",
+    "steps_separated": "Step 1: After completing remaining steps launch OSD Menu by pressing Gear/Menu on Remote\n  Expected: OSD Menu should be launch successfully\nStep 2: Navigate to All settings > PRIVACY & LEGAL -> Viewing Data\n  Expected: Viewing Data should be Off and can be toggled.\nStep 3: Toggle On the Viewing Data\n  Expected: Should be shown with Viewing Data Page with three Buttons to select as shown below.\nSte"
+  },
+  {
+    "id": "31008408",
+    "title": "Verify Advertising Sub menu",
+    "preconditions": "1.TV Shoulod be Powered ON 2.Network: Wi-Fi or Ethernet Connected with US network 3.ToS accepted during OOBE. \u200b4.Accept Activity Data 5.Viewing Data accepted during OOBE \u200b6.Complete remaining steps till user reaches VIZIO Home",
+    "steps_separated": "Step 1: Launch Menu by pressing 'Gear/MENU' button on Remote\n  Expected: OSD menu should launch successfully\nStep 2: Navigate to ALL SETTINGS > PRIVACY & LEGAL -> Advertising menu\n  Expected: Advertising menu should open up with: i: Limited Ad Tracking ii: Reset TV Advertiser ID"
+  },
+  {
+    "id": "31008409",
+    "title": "Verify text at bottom of Menu when focus is on Limited Ad Tracking",
+    "preconditions": "TV Should be Powered ON Network: Wi-Fi Or Ethernet Connected with US network ToS accepted during OOBE. Viewing Data accepted during OOBE \u200bComplete remaining steps until VIZIO Home is launched",
+    "steps_separated": "Step 1: Launch OSD Menu by pressing 'Gear/MENU' button on Remote\n  Expected: OSD menu should be launch successfully\nStep 2: Go to All Settings > Privacy and Legal > Advertising > Limited Ad Tracking \u200b \u200bFocus should be on Limited Ad Tracking\n  Expected: When focus is on Limited Ad Tracking, text at the bottom of the screen should be: \u200b \u200b\u201cWhen enabled, TV Ad ID will not be passed or used for persona"
+  },
+  {
+    "id": "31008360",
+    "title": "AMC Freesync Logos in Gaming Menu",
+    "preconditions": "1.TV Powered ON and not in OOBE. \u200b2.Network Connected with Internet. \u200bNote: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Connect a gaming device that supports Freesync to the TV and open the gaming menu.\n  Expected: The Freesync logo shows in the gaming menu with Gaming Info. \u200b \u200bNote: Freesync logos do NOT show in Input Change Control. They only show in the gaming menu.\nStep 2: Connect a gaming device that supports Freesync Premium to the TV and open the gaming menu.\n  Expected: The Freesync Premium logo sho"
+  },
+  {
+    "id": "31008452",
+    "title": "Select OSD Menu from  BTRCU and verify",
+    "preconditions": "TV is Powered ON TV is on FUR9.0 or higher",
+    "steps_separated": "Step 1: Select the Gear key from the remote control\n  Expected: On Left side of the screen OSD Menu list should dispalyed vertically &about 1/3 screen width"
+  },
+  {
+    "id": "31008453",
+    "title": "Select Input key on OSD Menu list & verify",
+    "preconditions": "TV is Powered ON TV is on FUR9.0 or higher",
+    "steps_separated": "Step 1: Select the Gear key from the remote control\n  Expected: OSD Menu list should display on screen\nStep 2: Select Input key from BTRCU on top of Input list\n  Expected: All setting (OSD Menu) list should get dimissed"
+  },
+  {
+    "id": "31008276",
+    "title": "Launch Picture Mode Sidebar via PIC Key",
+    "preconditions": "1.TV Powered ON and not in OOBE. \u200b2.Network Connected with Internet. \u200bNote: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Removed. By default TV will be in Eco Mode.",
+    "steps_separated": "Step 1: Press the INPUT button on the remote to open the Input Selector.\n  Expected: The inputs are shown in this order (from top to bottom): \u200b- VIZIO Home \u200b- WatchFree \u200b- HDMI-1 \u200b- HDMI-2 \u200b- HDMI-3 (if available for your TV model) \u200b- Antenna (or current channel number/name after channel scan) \u200b- AirPlay \u200b- Virtual CEC devices (if any) Current selection should be highlighted by underline.\nStep 2: "
+  },
+  {
+    "id": "31007638",
+    "title": "Verify TV INFORMATION by pressing settings/menu button on top of 'Choose a Language' screen",
+    "preconditions": "Go to ALL SETTINGS \u2192 SUPPORT \u2192 Reset to Factory Settings \u2192 Reset TV TV is on Choose a Language Screen",
+    "steps_separated": "Step 1: Launch Menu using Remote \u200b\n  Expected: TV INFORMATION Menu should get launched \u200b\nStep 2: Verify TV Information \u200b\n  Expected: TV INFORMATION with below details will be displayed: \u200b \u200bTV \u200b Serial Number: XXXXXX \u200b Model Name: XXXXX \u200b Firmware: XXXXX \u200b \u200bNETWORK \u200b Connection: N/A \u200b Wi-Fi Network: N/A \u200b IP Address: 0.0.0.0 \u200b MAC Address: XXXXXXX \u200b (\u200bBelow NETWORK details, below 2 buttons should b"
+  },
+  {
+    "id": "31007645",
+    "title": "Press Menu Key on Choose a Language screen",
+    "preconditions": "Go to ALL SETTINGS \u2192 SUPPORT \u2192 Reset to Factory Settings \u2192 Reset TV",
+    "steps_separated": "Step 1: Press Menu Key on Choose a Language screen\n  Expected: MENU key press displays TV information tailored to setup info. \u200b- Restart button launches the \u201cRestart TV\u201d function \u200b- Reset button power cycles the TV. \u200b- MENU or BACK key dismisses TV info screen \u200b \u200bTV Information \u200bTV \u200b Serial Number: \u200b Model Name: \u200b Firmware: \u200bNetwork \u200b Connection: \u200b WiFi Network: \u200b IP Address: \u200b MAC Address: \u200bRESTA"
+  },
+  {
+    "id": "31009356",
+    "title": "OOBE > Back-out of OOBE from 'Choose a Language' screen > Launch Side Bar menu > User Manual",
+    "preconditions": "Ensure 'Input at Power On' is set to 'VIZIO Home' or 'Last Used TV Input' in Menu > All Settings > System Ensure 'Power Mode' is set to 'ECO Mode' / 'Quick Start' in Menu > All Settings > System TV connected to Wi-Fi successfully Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Re",
+    "steps_separated": "Step 1: Launch Menu-> All Settings> Support > Reset to Factory Settings > Reset TV----------->2022 and above chipset or Launch Menu-> All Settings> Admin &Privacy > Reset to Factory Settings > Reset TV----------->2020 chipsets\n  Expected: OOBE process should start successfully\nStep 2: Press Back button on RCU to Back-out of OOBE from 'Choose a Language' screen\n  Expected: Tap on \"CONFIRM\" on Exit "
+  },
+  {
+    "id": "31009357",
+    "title": "OOBE > 'Skip Network' and tap on 'Setup Network Later' option in 'Connect to a WiFi Network' screen > Launch User Manual from Side Bar menu",
+    "preconditions": "Ensure 'Input at Power On' is set to 'VIZIO Home' or 'Last Used TV Input' in Menu > All Settings > System Ensure 'Power Mode' is set to 'ECO Mode' / 'Quick Start' in Menu > All Settings > System TV connected to Wi-Fi successfully Note: From FUR9.0 5586L/5586F Spock3 & higher release Power Mode is Re",
+    "steps_separated": "Step 1: Launch Menu ->Navigate to All Settings> Admin & Privacy > Reset to Factory Settings > Reset TV---->2020 chipset or Launch Menu ->Navigate to All Settings> Support > Reset to Factory Settings > Reset TV---->2022 and above chipset\n  Expected: OOBE process should start successfully\nStep 2: On \"Choose a Language\" screen, Select the Language and proceed to the next screen\n  Expected: TV should "
+  },
+  {
+    "id": "31013764",
+    "title": "GEAR (MENU) button",
+    "preconditions": "Use of BT remote control current model: XRT260, TV in FW and SC config that supports the remote control function.",
+    "steps_separated": ""
+  },
+  {
+    "id": "31013772",
+    "title": "CC button: Verify closed captions support.",
+    "preconditions": "Use of BT remote control current model: XRT260, TV in FW and SC config that supports the remote control function. Requirement: https://vizio.atlassian.net/wiki/spaces/USS/pages/149764571428/5.0+Accessibility#5.1.0.1-----Captions-Requirements",
+    "steps_separated": "Step 1: Test TV 's respond by pressing the button on remote control. verify TV is responding to the function accordingly.\n  Expected: TV respond to the remote control button accordingly\nStep 2: Play CC supported content and press the CC button on the remote when content is playing.\n  Expected: f content includes closed captions support, app must respond to CC key to enable and disable captioning"
+  },
+  {
+    "id": "31013871",
+    "title": "GEAR or MENU button",
+    "preconditions": "Use IR remote control or BT remote control in IR mode, TV in FW and SC config that supports the remote control function. TV is powered on and in Vizio home screen.",
+    "steps_separated": "Step 1: Press Menu or Gear button\n  Expected: TV Quick menu should appear\nStep 2: Press Menu or Gear button\n  Expected: TV Quick menu should exit"
+  },
+  {
+    "id": "31013877",
+    "title": "CC button",
+    "preconditions": "Use IR remote control or BT remote control in IR mode, TV in FW and SC config that supports the remote control function.",
+    "steps_separated": ""
+  }
+]

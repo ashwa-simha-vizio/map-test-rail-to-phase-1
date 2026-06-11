@@ -1,0 +1,1178 @@
+[
+  {
+    "id": "31005511",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Menu timeout after 60s inactivity is specific UI behavior not tested"
+  },
+  {
+    "id": "31005512",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Gaming console MENU button interference not tested"
+  },
+  {
+    "id": "31005585",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-SYS-001",
+    "reason": "Quick Settings shortcut to network screen; TC-SYS-001 covers general navigation but not this flow"
+  },
+  {
+    "id": "31005592",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Accessibility TalkBack toggle with no network not covered"
+  },
+  {
+    "id": "31005593",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Accessibility Zoom Mode toggle with no network not covered"
+  },
+  {
+    "id": "31005596",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Store Demo mode not tested"
+  },
+  {
+    "id": "31005597",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Store Demo mode not tested"
+  },
+  {
+    "id": "31005639",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-OOBE-001",
+    "reason": "OOBE launch from OSD; TC-OOBE-001 tests first-boot launch not manual re-trigger"
+  },
+  {
+    "id": "31005702",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-OOBE-001",
+    "reason": "OOBE launch from OSD; different trigger path"
+  },
+  {
+    "id": "31005765",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-OOBE-001",
+    "reason": "OOBE launch from OSD; different trigger path"
+  },
+  {
+    "id": "31005835",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-SYS-002",
+    "reason": "TV Info display during OOBE; TC-SYS-002 covers system info but different context"
+  },
+  {
+    "id": "31005842",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-SYS-002",
+    "reason": "TV Info display during OOBE with network; different context"
+  },
+  {
+    "id": "31005828",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-SYS-002",
+    "reason": "TV Info during OOBE network screen; different context"
+  },
+  {
+    "id": "31005953",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-OOBE-001",
+    "reason": "OOBE launch from OSD; different trigger path"
+  },
+  {
+    "id": "31005984",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-OOBE-001",
+    "reason": "OOBE launch from OSD; different trigger path"
+  },
+  {
+    "id": "31006047",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-OOBE-001",
+    "reason": "OOBE launch from OSD; different trigger path"
+  },
+  {
+    "id": "31006153",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-SYS-001",
+    "reason": "Network menu accessibility related to settings navigation"
+  },
+  {
+    "id": "31006155",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Menu timeout after 60s; no PORTAL TC tests idle timeout"
+  },
+  {
+    "id": "31006177",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "VIZIO ToS display when OOBE/network skipped not tested"
+  },
+  {
+    "id": "31006306",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-NET-001",
+    "reason": "2.4GHz WiFi via System Menu; NET TCs test connectivity not menu UI flow"
+  },
+  {
+    "id": "31006309",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-NET-002",
+    "reason": "5GHz WiFi via System Menu; NET TCs test connectivity not menu UI flow"
+  },
+  {
+    "id": "31006313",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-NET-001",
+    "reason": "2.4GHz WiFi encryption via System Menu UI flow"
+  },
+  {
+    "id": "31006316",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-NET-002",
+    "reason": "5GHz WiFi encryption via System Menu UI flow"
+  },
+  {
+    "id": "31006319",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-NET-003",
+    "reason": "6GHz WPA3-SAE via System Menu UI flow"
+  },
+  {
+    "id": "31006320",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-NET-003",
+    "reason": "6GHz WPA3-Enhanced Open via System Menu"
+  },
+  {
+    "id": "31006321",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-NET-007",
+    "reason": "6GHz WPA2+WPA3 mixed mode via System Menu"
+  },
+  {
+    "id": "31006349",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Network Settings from No Network troubleshooting not tested"
+  },
+  {
+    "id": "31006350",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-NET-001",
+    "reason": "Different network connect; NET TCs test connectivity not switch flow"
+  },
+  {
+    "id": "31006351",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Invalid credential error handling not tested by PORTAL"
+  },
+  {
+    "id": "31006359",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Network Settings from No Network troubleshooting not tested"
+  },
+  {
+    "id": "31006360",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-NET-001",
+    "reason": "Different network connect with valid creds; menu UI flow"
+  },
+  {
+    "id": "31006361",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Invalid credential error handling not tested"
+  },
+  {
+    "id": "31006380",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Network Settings from troubleshooting not tested"
+  },
+  {
+    "id": "31006381",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-NET-001",
+    "reason": "Different network valid creds; menu UI flow"
+  },
+  {
+    "id": "31006382",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Invalid credential error handling not tested"
+  },
+  {
+    "id": "31006390",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Network Settings from troubleshooting not tested"
+  },
+  {
+    "id": "31006391",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-NET-001",
+    "reason": "Different network valid creds; menu UI flow"
+  },
+  {
+    "id": "31006392",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Invalid credential error handling not tested"
+  },
+  {
+    "id": "31006411",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Network Settings from troubleshooting not tested"
+  },
+  {
+    "id": "31006412",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-NET-001",
+    "reason": "Different network valid creds; menu UI flow"
+  },
+  {
+    "id": "31006413",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Invalid credential error handling not tested"
+  },
+  {
+    "id": "31006421",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Network Settings from troubleshooting not tested"
+  },
+  {
+    "id": "31006422",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-NET-001",
+    "reason": "Different network valid creds; menu UI flow"
+  },
+  {
+    "id": "31006423",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Invalid credential error handling not tested"
+  },
+  {
+    "id": "31006474",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Network Settings from troubleshooting not tested"
+  },
+  {
+    "id": "31006475",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-NET-001",
+    "reason": "Different network valid creds; menu UI flow"
+  },
+  {
+    "id": "31006476",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Invalid credential error handling not tested"
+  },
+  {
+    "id": "31006484",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Network Settings from troubleshooting not tested"
+  },
+  {
+    "id": "31006485",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-NET-001",
+    "reason": "Different network valid creds; menu UI flow"
+  },
+  {
+    "id": "31006486",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Invalid credential error handling not tested"
+  },
+  {
+    "id": "31006540",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "WiFi disconnect diagnostic is settings UI not tested"
+  },
+  {
+    "id": "31006576",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Error notification UI on incorrect password not covered"
+  },
+  {
+    "id": "31006577",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Password validation notification (<8 chars) not covered"
+  },
+  {
+    "id": "31006578",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Password validation notification (>8 chars incorrect) not covered"
+  },
+  {
+    "id": "31006579",
+    "verdict": "COVERED",
+    "mapped_to": "TC-NET-001/TC-NET-007",
+    "reason": "WiFi connection with correct password validated by PORTAL"
+  },
+  {
+    "id": "31006717",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Manual SoftAP login across OS platforms not covered"
+  },
+  {
+    "id": "31006733",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Captive Portal SSID listing in network menu not tested"
+  },
+  {
+    "id": "31006736",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Captive Portal setup via menu UI not covered"
+  },
+  {
+    "id": "31006811",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Captive Portal SSID listing not tested"
+  },
+  {
+    "id": "31006814",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Captive Portal setup not covered"
+  },
+  {
+    "id": "31006892",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Set Up Later UI text messaging not tested"
+  },
+  {
+    "id": "31006893",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Set Up Later UI text messaging not tested"
+  },
+  {
+    "id": "31006894",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Set Up Later UI text messaging not tested"
+  },
+  {
+    "id": "31006966",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Network auto-rescan in sidebar not tested"
+  },
+  {
+    "id": "31006967",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Selector persistence during refresh not covered"
+  },
+  {
+    "id": "31006973",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "SSID list limits not covered"
+  },
+  {
+    "id": "31006974",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Conditional rescan trigger not covered"
+  },
+  {
+    "id": "31007028",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Network rescan not covered"
+  },
+  {
+    "id": "31007029",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Selector persistence not covered"
+  },
+  {
+    "id": "31007035",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "SSID limits not covered"
+  },
+  {
+    "id": "31007036",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Conditional rescan not covered"
+  },
+  {
+    "id": "31007090",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Network rescan not covered"
+  },
+  {
+    "id": "31007091",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Selector persistence not covered"
+  },
+  {
+    "id": "31007097",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "SSID limits not covered"
+  },
+  {
+    "id": "31007098",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Conditional rescan not covered"
+  },
+  {
+    "id": "31007121",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Captive portal SSID not covered"
+  },
+  {
+    "id": "31007184",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Captive portal SSID not covered"
+  },
+  {
+    "id": "31007305",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-PWR-005",
+    "reason": "Restart from OSD in ECO mode; PORTAL tests Quick Start resume not ECO restart"
+  },
+  {
+    "id": "31007307",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-SYS-003",
+    "reason": "Restart via Factory Settings in ECO; tests restart timing not full reset"
+  },
+  {
+    "id": "31007368",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-SYS-001",
+    "reason": "Network menu navigation; part of settings traversal"
+  },
+  {
+    "id": "31007370",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "60-second menu timeout not tested"
+  },
+  {
+    "id": "31007392",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "ToS display after OOBE/Network skip not covered"
+  },
+  {
+    "id": "31006124",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-SYS-001",
+    "reason": "Network menu navigation; part of settings traversal"
+  },
+  {
+    "id": "31006125",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "My Networks sub-menu content not tested"
+  },
+  {
+    "id": "31007472",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Network Security Type menu header/text not covered"
+  },
+  {
+    "id": "31007473",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Security type list in sub-menu not covered"
+  },
+  {
+    "id": "31007487",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-NET-005",
+    "reason": "DHCP settings UI; PORTAL tests DHCP acquisition not settings display"
+  },
+  {
+    "id": "31007488",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-NET-005",
+    "reason": "DHCP Off mode UI; PORTAL tests DHCP not settings state"
+  },
+  {
+    "id": "31007489",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-NET-005/006",
+    "reason": "ManualDNS DHCP setting; PORTAL tests connectivity not settings UI"
+  },
+  {
+    "id": "31007503",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-SYS-001",
+    "reason": "Quick Settings online; settings adjacent but specific quick menu state"
+  },
+  {
+    "id": "31007504",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-SYS-001",
+    "reason": "Quick Settings offline; settings adjacent but offline-specific state"
+  },
+  {
+    "id": "31007505",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-SYS-001",
+    "reason": "General quick settings items; overlaps navigation but tests content"
+  },
+  {
+    "id": "31007506",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "TV Name display at top of menu not tested"
+  },
+  {
+    "id": "31007507",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "TV Name 24-char limit not covered"
+  },
+  {
+    "id": "31007508",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Quick Settings dismissal via Menu button not tested"
+  },
+  {
+    "id": "31007509",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Quick Settings dismissal via Back button not tested"
+  },
+  {
+    "id": "31007510",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Quick Settings dismissal via Home button not tested"
+  },
+  {
+    "id": "31007511",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Quick Settings dismissal via app Hot-Keys not tested"
+  },
+  {
+    "id": "31007512",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Quick Settings dismissal via Input button not tested"
+  },
+  {
+    "id": "31007513",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Quick Settings dismissal via Mic button not tested"
+  },
+  {
+    "id": "31007514",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Quick Settings timeout dismissal not covered"
+  },
+  {
+    "id": "31007515",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Quick Settings re-opening behavior not covered"
+  },
+  {
+    "id": "31007516",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Quick Settings state before content playback not covered"
+  },
+  {
+    "id": "31007517",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Quick Settings response to Channel Up not covered"
+  },
+  {
+    "id": "31007518",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Quick Settings response to Channel Down not covered"
+  },
+  {
+    "id": "31007519",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Quick Settings response to Volume keys not covered"
+  },
+  {
+    "id": "31007520",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Quick Settings vs Pop-up ads not covered"
+  },
+  {
+    "id": "31007521",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Quick Settings Volume keys navigation not covered"
+  },
+  {
+    "id": "31007662",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-SYS-001",
+    "reason": "HDMI & Gaming settings menu presence; navigation covers but not specific options"
+  },
+  {
+    "id": "31007663",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-HDMI-005",
+    "reason": "CEC menu UI; PORTAL tests CEC functionality not menu item"
+  },
+  {
+    "id": "31007664",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-HDMI-005",
+    "reason": "CEC Function menu toggle; PORTAL tests CEC behavior not toggle"
+  },
+  {
+    "id": "31007665",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-SYS-001",
+    "reason": "eARC menu item; no PORTAL TC for eARC"
+  },
+  {
+    "id": "31007666",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-SYS-001",
+    "reason": "Auto Low Latency Mode menu; no PORTAL TC for ALLM"
+  },
+  {
+    "id": "31007667",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-SYS-001",
+    "reason": "Variable Refresh Rate menu; no PORTAL TC for VRR"
+  },
+  {
+    "id": "31007668",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-SYS-001",
+    "reason": "HDMI Color Subsampling menu; no PORTAL TC for this"
+  },
+  {
+    "id": "31007669",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-SYS-001",
+    "reason": "HDMI Mode menu; no PORTAL TC for HDMI mode switching"
+  },
+  {
+    "id": "31007670",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-SYS-001",
+    "reason": "Game Low Latency menu; no PORTAL TC for this"
+  },
+  {
+    "id": "31007671",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-SYS-001",
+    "reason": "Film Mode menu; no PORTAL TC for this"
+  },
+  {
+    "id": "31007672",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-SYS-001",
+    "reason": "Game HDR menu; no PORTAL TC for this"
+  },
+  {
+    "id": "31007673",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-SYS-001",
+    "reason": "Noise Reduction menu; no PORTAL TC for this"
+  },
+  {
+    "id": "31007674",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-SYS-001",
+    "reason": "Auto Game Mode menu; no PORTAL TC for this"
+  },
+  {
+    "id": "31007675",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-SYS-001",
+    "reason": "Color Temperature menu; no PORTAL TC for this"
+  },
+  {
+    "id": "31007676",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-SYS-001",
+    "reason": "4:4:4 Color Space menu; no PORTAL TC for this"
+  },
+  {
+    "id": "31007677",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-SYS-001",
+    "reason": "Color Space Range menu; no PORTAL TC for this"
+  },
+  {
+    "id": "31007682",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-SYS-001",
+    "reason": "Picture Size/Position menu; no PORTAL TC for this"
+  },
+  {
+    "id": "31007751",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-NET-001",
+    "reason": "WiFi connect UI behavior; PORTAL tests connection not keyboard-close"
+  },
+  {
+    "id": "31007939",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-NET-006",
+    "reason": "Security Type menu text; PORTAL tests security not menu UI"
+  },
+  {
+    "id": "31007940",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-NET-006",
+    "reason": "Security type list; PORTAL tests security not menu list"
+  },
+  {
+    "id": "31007954",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-NET-004",
+    "reason": "DHCP settings default mode UI; PORTAL tests DHCP functionality"
+  },
+  {
+    "id": "31007955",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-NET-004",
+    "reason": "DHCP Off mode UI; PORTAL tests DHCP functionality"
+  },
+  {
+    "id": "31007956",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-NET-004",
+    "reason": "ManualDNS mode UI; PORTAL tests DHCP functionality"
+  },
+  {
+    "id": "31007681",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Bluetooth and Remote menu not covered"
+  },
+  {
+    "id": "31007702",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Remote pairing and OSD restart not covered"
+  },
+  {
+    "id": "31007921",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Bluetooth headphones menu not covered"
+  },
+  {
+    "id": "31008066",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Gaming Controller menu not covered"
+  },
+  {
+    "id": "31008114",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Amazon Luna Controller settings not covered"
+  },
+  {
+    "id": "31008263",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-TUN-001",
+    "reason": "Antenna Channels menu options; TC-TUN-001 covers scan not menu UI"
+  },
+  {
+    "id": "31008281",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-TUN-001",
+    "reason": "Done button navigation; TC-TUN-001 covers scan not menu flow"
+  },
+  {
+    "id": "31008285",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-TUN-001",
+    "reason": "Find Channels menu options; TC-TUN-001 covers scan not menu UI"
+  },
+  {
+    "id": "31007575",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-TUN-001",
+    "reason": "Find New Channels menu; TC-TUN-001 covers scan not menu UI"
+  },
+  {
+    "id": "31007601",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Hide Channels is channel list management not covered by scan TC"
+  },
+  {
+    "id": "31007628",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Accessibility Video Description language not covered"
+  },
+  {
+    "id": "31007652",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Accessibility settings menu not covered"
+  },
+  {
+    "id": "31007630",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Closed Captions toggle not covered"
+  },
+  {
+    "id": "31007631",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Analog Closed Captions not covered"
+  },
+  {
+    "id": "31007632",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Digital Closed Captions not covered"
+  },
+  {
+    "id": "31008331",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "CC Global Setting not covered"
+  },
+  {
+    "id": "31008332",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "CC on Composite Input not covered"
+  },
+  {
+    "id": "31008333",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "CC on Tuner not covered"
+  },
+  {
+    "id": "31008334",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "CC app integration not covered"
+  },
+  {
+    "id": "31008335",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "CC key response in apps not covered"
+  },
+  {
+    "id": "31008336",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "CC Digital Style settings not covered"
+  },
+  {
+    "id": "31008337",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "CC annunciation via SmartCast app not covered"
+  },
+  {
+    "id": "31008002",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Toggle Closed Captions not covered"
+  },
+  {
+    "id": "31008003",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "CC default OFF state not covered"
+  },
+  {
+    "id": "31008008",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Analog Closed Captions not covered"
+  },
+  {
+    "id": "31008009",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Digital Closed Captions not covered"
+  },
+  {
+    "id": "31007772",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Accessibility Video Description not covered"
+  },
+  {
+    "id": "31008138",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "TalkBack accessibility not covered"
+  },
+  {
+    "id": "31008144",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "TalkBack language restriction not covered"
+  },
+  {
+    "id": "31008028",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Zoom navigation mode enable not covered"
+  },
+  {
+    "id": "31008030",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Zoom navigation mode disable not covered"
+  },
+  {
+    "id": "31008031",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Zoom mode menu key behavior not covered"
+  },
+  {
+    "id": "31008381",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-SYS-001",
+    "reason": "System Menu structure partially covered by settings navigation"
+  },
+  {
+    "id": "31007560",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Menu Language settings not covered"
+  },
+  {
+    "id": "31007561",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Menu Language Spanish not covered"
+  },
+  {
+    "id": "31007562",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Menu Language French not covered"
+  },
+  {
+    "id": "31007563",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Menu Language English not covered"
+  },
+  {
+    "id": "31007574",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Menu Language requirements not covered"
+  },
+  {
+    "id": "31008470",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-PWR-005",
+    "reason": "Power option in System menu; TC-PWR-005 tests Quick Start not menu entry"
+  },
+  {
+    "id": "31007977",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-SYS-004",
+    "reason": "30s countdown UI; TC-SYS-004 covers sleep timer but different trigger"
+  },
+  {
+    "id": "31008067",
+    "verdict": "COVERED",
+    "mapped_to": "TC-SYS-005",
+    "reason": "PIN-protected access validated by Parental Controls test"
+  },
+  {
+    "id": "31007537",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-SYS-001",
+    "reason": "Support menu partially covered by settings navigation"
+  },
+  {
+    "id": "31008163",
+    "verdict": "COVERED",
+    "mapped_to": "TC-SYS-003",
+    "reason": "Factory Reset execution directly validated"
+  },
+  {
+    "id": "31008165",
+    "verdict": "COVERED",
+    "mapped_to": "TC-SYS-003",
+    "reason": "Factory reset from front panel validated by TC-SYS-003"
+  },
+  {
+    "id": "31008170",
+    "verdict": "COVERED",
+    "mapped_to": "TC-SYS-003",
+    "reason": "Reset TV option is full factory reset validated by TC-SYS-003"
+  },
+  {
+    "id": "31008171",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Reset Apps is partial reset; TC-SYS-003 only validates full reset"
+  },
+  {
+    "id": "31008172",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-SYS-003",
+    "reason": "Restart related to reset menu but is not full factory reset"
+  },
+  {
+    "id": "31008173",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Cancel flow in reset dialog not tested"
+  },
+  {
+    "id": "31008511",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Privacy & Legal menu option not covered"
+  },
+  {
+    "id": "31008207",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Viewing Data settings post-OOBE not covered"
+  },
+  {
+    "id": "31008212",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Viewing Data toggle not covered"
+  },
+  {
+    "id": "31008408",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Advertising sub menu not covered"
+  },
+  {
+    "id": "31008409",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Limited Ad Tracking UI text not covered"
+  },
+  {
+    "id": "31008360",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Gaming Menu Freesync logos not covered"
+  },
+  {
+    "id": "31008452",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-SYS-001",
+    "reason": "OSD Menu launch via BTRCU; TC-SYS-001 covers navigation not remote-specific launch"
+  },
+  {
+    "id": "31008453",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "Input selection via OSD Menu not covered"
+  },
+  {
+    "id": "31008276",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-VID-006",
+    "reason": "Picture Mode sidebar via PIC key; TC-VID-006 covers mode switching not PIC key"
+  },
+  {
+    "id": "31007638",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-SYS-002",
+    "reason": "TV Information during OOBE; TC-SYS-002 shows system info but different context"
+  },
+  {
+    "id": "31007645",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-OOBE-001",
+    "reason": "Menu key on OOBE language screen; OOBE related but specific interaction not tested"
+  },
+  {
+    "id": "31009356",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "OOBE back-out to sidebar and User Manual not covered"
+  },
+  {
+    "id": "31009357",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-OOBE-002",
+    "reason": "Skip Network path; TC-OOBE-002 tests setup but not skip/defer path"
+  },
+  {
+    "id": "31013764",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-SYS-001",
+    "reason": "GEAR button launches settings; TC-SYS-001 covers navigation not button validation"
+  },
+  {
+    "id": "31013772",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "CC button functionality not covered"
+  },
+  {
+    "id": "31013871",
+    "verdict": "PARTIAL",
+    "mapped_to": "TC-SYS-001",
+    "reason": "GEAR button launches settings; TC-SYS-001 covers navigation not button validation"
+  },
+  {
+    "id": "31013877",
+    "verdict": "NOT_COVERED",
+    "mapped_to": "",
+    "reason": "CC button functionality not covered"
+  }
+]

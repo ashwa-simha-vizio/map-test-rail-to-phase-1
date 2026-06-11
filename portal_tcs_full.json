@@ -1,0 +1,560 @@
+[
+  {
+    "id": "TC-PWR-002",
+    "category": "Power Management",
+    "title": "Verify TV power on via remote control",
+    "description": "Confirm the TV is in standby mode. Press the Power button on the remote. Verify the panel backlight activates and the home screen loads within 15 seconds. Confirm the active application is the Vizio home page.",
+    "preconditions": "\u2022 TV is in standby (panel backlight off)\n\u2022 Remote control is functional",
+    "detailed_description": "With the TV in standby, press the Power key on the remote. Confirm the panel backlight activates within 15 seconds. Press Home and confirm the Home Screen loads with 'APPS & INPUTS' visible. Confirm the active app is the Vizio Home Page.",
+    "detailed_expected_output": "Panel backlight turns on within 15 seconds of Power key press. 'APPS & INPUTS' text visible on Home Screen. Active app confirms Vizio Home Page."
+  },
+  {
+    "id": "TC-PWR-003",
+    "category": "Power Management",
+    "title": "Verify TV power off to standby via remote",
+    "description": "While the TV is powered ON and displaying content, press the Power button on the remote. Verify the panel gracefully turns OFF and the screen becomes blank, confirming transition to standby mode.",
+    "preconditions": "\u2022 TV is powered ON and Home Screen is active ('APPS & INPUTS' visible)\n\u2022 Remote control is functional",
+    "detailed_description": "With the TV on and Home Screen displayed, press the Power key. Confirm the panel backlight turns off within 15 seconds and screen goes blank, confirming standby. Wait 5 seconds then wake the TV back to avoid suspending the test service.",
+    "detailed_expected_output": "Panel backlight turns off within 15 seconds. Screen is blank confirming standby. TV recovers to ON state after the 5-second standby period."
+  },
+  {
+    "id": "TC-PWR-005",
+    "category": "Power Management",
+    "title": "Verify TV resume from Quick Start standby mode",
+    "description": "Set the TV to Quick Start power mode. Put the TV into standby. Immediately wake it using the remote. Verify instant-on behavior and home screen loads within 5 seconds.",
+    "preconditions": "\u2022 TV is powered ON and Home Screen is active ('APPS & INPUTS' visible)\n\u2022 Remote control is paired and functional\n\u2022 Quick Start standby mode is enabled on the TV",
+    "detailed_description": "Verify the TV can enter Quick Start standby and resume correctly using the Power key on the remote.\n\nBefore pressing Power, confirm the TV is in the ON state and the Home Screen is active. Press the Power key to put the TV into Quick Start standby. Confirm the panel backlight turns off within 10 sec",
+    "detailed_expected_output": "Panel backlight turns off within 10 seconds of pressing Power to enter standby. Panel backlight turns back on within 15 seconds of the wake Power press. Home Screen loads with 'APPS & INPUTS' visible "
+  },
+  {
+    "id": "TC-PWR-006",
+    "category": "Power Management",
+    "title": "Verify TV power cycle stability (10 consecutive cycles)",
+    "description": "Perform 10 consecutive power on/off cycles using the remote with 30-second intervals between cycles. Verify each cycle completes successfully without delays, boot failures, or display issues.",
+    "preconditions": "\u2022 TV is powered ON and Home Screen is active ('APPS & INPUTS' visible)\n\u2022 Remote control is functional",
+    "detailed_description": "Perform 10 consecutive power on/off cycles using the remote. Before starting, confirm the TV is ON with Home Screen active. For each cycle: press Power to enter standby, wait 5 seconds, press Power to wake, confirm the panel turns back on and the Home Screen loads with 'APPS & INPUTS' before startin",
+    "detailed_expected_output": "All 10 cycles complete without failure. Each cycle: panel off within 10s, panel on within 15s of wake, 'APPS & INPUTS' visible before next cycle. No boot failures or display issues. Final state is Hom"
+  },
+  {
+    "id": "TC-VID-002",
+    "category": "Display/Video Output",
+    "title": "Verify 4K resolution display output",
+    "description": "Play 4K content or connect a 4K source. Navigate to System Information and verify the display resolution shows 3840x2160.",
+    "preconditions": "\u2022 TV is powered ON\n\u2022 4K content source available (streaming app or 4K HDMI source)",
+    "detailed_description": "With 4K content playing, navigate to System Information in Settings and verify the display resolution shows 3840x2160.",
+    "detailed_expected_output": "System Information screen shows '3840' and '2160' confirming 4K output path is functional."
+  },
+  {
+    "id": "TC-VID-003",
+    "category": "Display/Video Output",
+    "title": "Verify 1080p resolution display output",
+    "description": "Connect a 1080p source to HDMI. Switch to that input and verify content displays correctly with proper upscaling to the native panel resolution.",
+    "preconditions": "\u2022 TV is powered ON\n\u2022 1080p source device connected to an HDMI port and powered on",
+    "detailed_description": "Switch the TV to the HDMI input with the 1080p source connected. Verify content displays correctly with the TV scaling it to the native panel resolution.",
+    "detailed_expected_output": "TV switches to the 1080p HDMI input. Active video content displayed confirming signal received and upscaled correctly."
+  },
+  {
+    "id": "TC-VID-004",
+    "category": "Display/Video Output",
+    "title": "Verify HDR10 content display",
+    "description": "Play HDR10 content from a streaming app or HDMI source. Verify the HDR indicator appears on screen and content renders correctly.",
+    "preconditions": "\u2022 TV is powered ON\n\u2022 HDR10 content source available (streaming app or HDMI source)",
+    "detailed_description": "Play HDR10 content from a streaming app or HDMI source. Verify the HDR indicator appears on screen and video is playing without issues.",
+    "detailed_expected_output": "Video state confirms Playing. HDR indicator detected on screen. Content renders correctly with HDR active."
+  },
+  {
+    "id": "TC-VID-005",
+    "category": "Display/Video Output",
+    "title": "Verify Dolby Vision content rendering",
+    "description": "Play Dolby Vision content. Verify the Dolby Vision logo/indicator displays and content renders with proper dynamic metadata.",
+    "preconditions": "\u2022 TV is powered ON\n\u2022 Dolby Vision content source available",
+    "detailed_description": "Play Dolby Vision content. Verify the Dolby Vision indicator is visible on screen and content renders correctly.",
+    "detailed_expected_output": "Video state confirms Playing. Dolby Vision indicator detected on screen. Content renders with Dolby Vision active."
+  },
+  {
+    "id": "TC-VID-006",
+    "category": "Display/Video Output",
+    "title": "Verify Picture Mode switching",
+    "description": "Navigate to Picture Settings and cycle through all picture modes (Calibrated, Vivid, Sports, etc.). Verify each mode applies correctly and switching is smooth with validating the modes",
+    "preconditions": "\u2022 TV is powered ON and Home Screen is active\n\u2022 Picture settings accessible via Settings menu",
+    "detailed_description": "Navigate to Picture Settings and cycle through all available picture modes: Calibrated, Calibrated Dark, Vivid, Sports, Normal (or as available on this model). For each mode, select it and confirm the system registry reflects the change before moving to the next.",
+    "detailed_expected_output": "Each picture mode applies successfully, confirmed by the picture mode system registry value matching the selected mode. No hangs or crashes. All modes apply within 10 seconds each."
+  },
+  {
+    "id": "TC-VID-007",
+    "category": "Display/Video Output",
+    "title": "Verify brightness adjustment across range",
+    "description": "Navigate to Brightness setting. Adjust from minimum (0) to maximum (100). Verify smooth brightness response across the full range.",
+    "preconditions": "\u2022 TV is powered ON\n\u2022 Home Screen displaying ('APPS & INPUTS' visible)\n\u2022 Picture settings accessible via Menu key\n\u2022 \u26a0\ufe0f Exact Brightness or Backlight menu item name must be verified\n  from the TV's Pict",
+    "detailed_description": "Navigate to the Brightness setting in the Picture menu. Adjust from minimum (0) to maximum (100) and verify smooth brightness response across the full range, confirmed by the system registry reflecting each change. For Phase 1, only system registry state changes need to be verified \u2014 no visual or pi",
+    "detailed_expected_output": "Brightness adjustments are applied without errors. System registry value for the brightness or backlight setting increases when adjusted upward with the Right key and decreases when adjusted with the "
+  },
+  {
+    "id": "TC-VID-008",
+    "category": "Display/Video Output",
+    "title": "Verify contrast adjustment across range",
+    "description": "Navigate to Contrast setting. Adjust from minimum to maximum. Verify black and white levels respond appropriately with increased dynamic range.",
+    "preconditions": "\u2022 TV is powered ON and Home Screen is active\n\u2022 Contrast setting accessible in Picture menu",
+    "detailed_description": "Navigate to the Contrast setting in the Picture menu and adjust from minimum to maximum. Verify adjustments apply without any blank or frozen screen at any level.",
+    "detailed_expected_output": "Contrast adjusts across the full range without blank or frozen screen. Each adjustment applies without error or hang."
+  },
+  {
+    "id": "TC-AUD-001",
+    "category": "Audio Output",
+    "title": "Verify internal speaker audio output",
+    "description": "Select TV internal speakers. Play content and verify clear audio output by reading from system registry keys",
+    "preconditions": "\u2022 TV is powered ON\n\u2022 Internal speakers selected as audio output\n\u2022 Volume above 0, not muted\n\u2022 Content is playing",
+    "detailed_description": "With internal speakers as the audio output, confirm the volume is above 0 and audio is not muted. Confirm no soundbar is enabled. Verify content is playing confirming the internal speaker audio path is active.",
+    "detailed_expected_output": "Internal speakers confirmed as audio output (soundbar not enabled). Volume above 0. Audio unmuted. Content playing confirming active internal speaker path."
+  },
+  {
+    "id": "TC-AUD-002",
+    "category": "Audio Output",
+    "title": "Verify volume adjustment via remote",
+    "description": "While playing content, adjust volume using Volume Up/Down buttons. Verify smooth incremental changes and on-screen indicator updates correctly.",
+    "preconditions": "\u2022 TV is powered ON and Home Screen is active ('APPS & INPUTS' visible)\n\u2022 TV is not muted\n\u2022 Volume is at a mid-range level (e.g. 50) so 5 steps up and 5 steps down\n  both stay within the 0\u2013100 range\n\u2022 ",
+    "detailed_description": "From the Home Screen, press Volume Up five times and confirm the volume increases by 5 units. Then press Volume Down five times and confirm the volume returns to its original level.\n\nStarting from the Home Screen, record the initial volume level. Press Volume Up once \u2014 confirm volume is now initial ",
+    "detailed_expected_output": "Volume increases by exactly 1 unit per Volume Up press, confirmed after each key press. On-screen volume OSD indicator is visible during adjustment. Volume decreases by exactly 1 unit per Volume Down "
+  },
+  {
+    "id": "TC-AUD-003",
+    "category": "Audio Output",
+    "title": "Verify mute/unmute functionality",
+    "description": "During audio playback, press Mute button. Verify audio mutes with on-screen indicator. Press Mute again to unmute at previous volume level.",
+    "preconditions": "\u2022 TV is powered ON and audio is playing\n\u2022 Volume above 0 and not muted",
+    "detailed_description": "From the Home Screen with audio playing, press the Mute key. Confirm audio mutes and the on-screen mute indicator is visible. Press Mute again to unmute and confirm volume returns to the original level.",
+    "detailed_expected_output": "Mute state confirmed after first Mute press. On-screen mute indicator visible. Unmuted state confirmed after second Mute press. Volume returns to original level."
+  },
+  {
+    "id": "TC-NET-001",
+    "category": "Network/Connectivity",
+    "title": "Verify Wi-Fi 2.4GHz network connection",
+    "description": "Navigate to Network settings and connect to a 2.4GHz Wi-Fi network. Verify successful connection and IP assignment.",
+    "preconditions": "\u2022 TV is powered ON and Home Screen is active\n\u2022 2.4GHz Wi-Fi network available with known SSID and password",
+    "detailed_description": "Navigate to Network Settings and connect to a 2.4GHz Wi-Fi network. Enter the SSID and password, confirm 'Connected' status and valid IP address assignment.",
+    "detailed_expected_output": "Wi-Fi SSID detected in network list. 'Connected' status text visible after authentication. Network status confirms connected. Valid IP address assigned."
+  },
+  {
+    "id": "TC-NET-002",
+    "category": "Network/Connectivity",
+    "title": "Verify Wi-Fi 5GHz network connection",
+    "description": "Connect to a 5GHz Wi-Fi network. Verify stable connection and ability to play 4K content without buffering.",
+    "preconditions": "\u2022 TV is powered ON and connected to 5GHz Wi-Fi\n\u2022 4K streaming content available",
+    "detailed_description": "Verify TV display is ON using sysreg /hw/power/panel = HAL_PANEL_AND_BACKLIGHT_ON.\nGo to Home and confirm Home screen by checking APPS & INPUTS.\nOpen Quick Settings with Menu, focus All Settings, and enter All Settings.\nNavigate to Network and enter Network menu.\nConfirm target SSID VZ_LAB is visibl",
+    "detailed_expected_output": "5GHz SSID shown as connected. 4K content plays for 30 seconds without buffering. Media state remains Playing throughout."
+  },
+  {
+    "id": "TC-NET-003",
+    "category": "Network/Connectivity",
+    "title": "Verify Wi-Fi 6GHz network connection (Wi-Fi 6E SKUs)",
+    "description": "For Wi-Fi 6E models, connect to a 6GHz network and verify high-throughput performance.",
+    "preconditions": "\u2022 TV is powered ON\n\u2022 TV model supports Wi-Fi 6E (skip if not supported)\n\u2022 6GHz Wi-Fi network available",
+    "detailed_description": "Confirm this TV model supports Wi-Fi 6E. Connect to a 6GHz Wi-Fi network and verify stable connection. Play streaming content to confirm the high-throughput path is functional.",
+    "detailed_expected_output": "Steps:\n\nGoHome and ensure TV is powered ON and TV model supports Wi-Fi 6E\nConnect to a 6GHz Wi-Fi network\nPlay streaming content to confirm high-throughput path\nReturn to Home Screen\n\nExpected Result:"
+  },
+  {
+    "id": "TC-NET-004",
+    "category": "Network/Connectivity",
+    "title": "Verify Ethernet (RJ45) network connection",
+    "description": "Connect Ethernet cable to RJ45 port. Verify automatic connection, IP assignment, and internet access.",
+    "preconditions": "\u2022 TV is powered ON\n\u2022 Ethernet cable connected to TV's RJ45 port",
+    "detailed_description": "With Ethernet cable connected, verify the TV automatically connects, assigns a valid IP address, and internet access is functional. Check Network Information to confirm.",
+    "detailed_expected_output": "Network status confirms connected within 30 seconds. 'Wired' or 'Ethernet' connection type shown. Valid IP address displayed. Internet access confirmed."
+  },
+  {
+    "id": "TC-NET-005",
+    "category": "Network/Connectivity",
+    "title": "Verify DHCP IP address acquisition",
+    "description": "Test Case ID: TC-NET-005\n\nTitle: Verify DHCP IP address acquisition\n\nDescription: After network connection, verify Network Information screen shows valid IP address, subnet mask, gateway, and DNS servers.\n\nPreconditions: TV powered ON and connected to a DHCP network (Wi-Fi or Ethernet)\n\nSteps:\n\nVeri",
+    "preconditions": "TV powered ON and connected to a DHCP network (Wi-Fi or Ethernet)",
+    "detailed_description": "After network connection, verify Network Information screen shows valid IP address, subnet mask, gateway, and DNS servers.",
+    "detailed_expected_output": "Steps:\n\nVerify network is connected via sysreg /hw/network/status = UP (exitApp on failure)\nNavigate to Settings > Network > Network Information\nVerify \"IPv4 Address\" label is present and value matche"
+  },
+  {
+    "id": "TC-NET-006",
+    "category": "Network/Connectivity",
+    "title": "Verify DNS resolution and internet access",
+    "description": "With network connected, launch Netflix and verify the app loads successfully, confirming DNS and internet functionality.",
+    "preconditions": "\u2022 TV is powered ON and connected to internet\n\u2022 Netflix app installed",
+    "detailed_description": "With the TV connected to the internet, launch Netflix and verify it loads successfully, confirming DNS resolution and internet access.",
+    "detailed_expected_output": "Network confirmed connected. Netflix launches and UI renders within 30 seconds. Netflix text detected. Browse or Home UI elements confirm full app load with working DNS and internet."
+  },
+  {
+    "id": "TC-NET-007",
+    "category": "Network/Connectivity",
+    "title": "Verify WPA2/WPA3 encryption authentication",
+    "description": "Connect to both WPA2 and WPA3 networks successfully and verify stable connection.",
+    "preconditions": "\u2022 TV is powered ON\n\u2022 WPA2-secured network available\n\u2022 WPA3-secured network available",
+    "detailed_description": "Connect the TV to a WPA2-secured network. Confirm 'Connected' status. Then switch to a WPA3-secured network and confirm 'Connected' status. Verify both connections maintain stability.",
+    "detailed_expected_output": "WPA2 connects successfully \u2014 'Connected' text and status confirmed. WPA3 connects successfully \u2014 'Connected' text and status confirmed. Both stable."
+  },
+  {
+    "id": "TC-NET-008",
+    "category": "Network/Connectivity",
+    "title": "Verify network information display (IP, MAC)",
+    "description": "Navigate to Network Information and verify all details (IP, MAC, connection type, signal strength) are displayed correctly.",
+    "preconditions": "\u2022 TV is powered ON and connected to a network\n\u2022 Network Information accessible via Settings",
+    "detailed_description": "Navigate to Network Information in Settings and verify all detail fields are displayed: IP address, MAC address, connection type, signal strength, and connection status.",
+    "detailed_expected_output": "Network Information screen loads. IP address, MAC address, connection type, signal strength, and status fields all present and populated. Status shows 'Connected'."
+  },
+  {
+    "id": "TC-PROV",
+    "category": "Remote Control (IR/BT)",
+    "title": "Verify IR remote key response (all keys)",
+    "description": "Test all keys on the remote keys (Power, Home, Volume, D-pad, etc.). Verify each key produces the expected response.",
+    "preconditions": "\u2022 TV is powered ON and Home Screen is active\n\u2022 IR remote functional and pointed at TV",
+    "detailed_description": "Test primary remote keys one by one: press Home and confirm Home Screen loads; press Volume Up/Down and confirm volume changes by 1 unit each press; press Mute and confirm mute toggles with on-screen indicator; press D-pad directions and confirm focus moves; press Enter and confirm action; press Bac",
+    "detailed_expected_output": "Home key: 'APPS & INPUTS' visible. Volume Up/Down: volume changes by 1 each press. Mute: mute state toggles with on-screen indicator. D-pad: focus changes on each press. Enter: action triggered. Back:"
+  },
+  {
+    "id": "TC-PROV-001",
+    "category": "Remote Control (IR/BT)",
+    "title": "Verify BT remote reconnection after power cycle",
+    "description": "Power cycle the TV with a paired BT remote. Verify the remote automatically reconnects without manual intervention.",
+    "preconditions": "\u2022 TV is in standby\n\u2022 Bluetooth remote is already paired to the TV",
+    "detailed_description": "With the TV in standby and the BT remote paired, press the Power key on the BT remote to wake the TV. Verify the TV responds and Home Screen loads without requiring manual re-pairing.",
+    "detailed_expected_output": "TV wakes from standby with panel ON. BT remote Home key produces Home Screen response within 10 seconds. 'APPS & INPUTS' visible without manual re-pairing."
+  },
+  {
+    "id": "TC-RMT-004",
+    "category": "Remote Control (IR/BT)",
+    "title": "Verify navigation D-pad functionality",
+    "description": "Use D-pad and OK button to navigate menus. Verify smooth, responsive navigation with clear focus movement.",
+    "preconditions": "\u2022 TV is powered ON and Settings menu accessible\n\u2022 Remote D-pad and Enter keys functional",
+    "detailed_description": "From the Home Screen, open Settings and navigate using the D-pad. Press Down to move focus, Up to return, Enter to open an item, Back to return. Verify each D-pad press produces a visible focus change and navigation is smooth.",
+    "detailed_expected_output": "Each D-pad direction moves focus to the expected item. Enter opens the focused item. Back returns to previous screen. No missed inputs, no ghosting, no lag."
+  },
+  {
+    "id": "TC-RMT-006",
+    "category": "Remote Control (IR/BT)",
+    "title": "Verify volume up/down key response",
+    "description": "Press Volume Up and Volume Down keys. Verify volume changes incrementally and OSD updates in real-time.",
+    "preconditions": "\u2022 TV is powered ON\n\u2022 Home Screen displaying ('APPS & INPUTS' visible)\n\u2022 Audio is not muted (/tv_settings/audio/mute = false)\n\u2022 Volume is at a mid-range level (not 0 or 100) so a single step\n  in eithe",
+    "detailed_description": "Press Volume Up and Volume Down keys on the remote and verify volume changes incrementally with the OSD updating in real-time. This test validates that each individual remote key press produces a precise 1-unit change, confirming the remote key signal path to the audio subsystem is working correctly",
+    "detailed_expected_output": "Volume system registry (/tv_settings/audio/volume) increments by exactly 1 after a single Volume Up key press, confirmed within 2 seconds. OSD 'Volume' indicator is detected via text search. Volume sy"
+  },
+  {
+    "id": "TC-RMT-007",
+    "category": "Remote Control (IR/BT)",
+    "title": "Verify channel up/down key response",
+    "description": "While viewing antenna/WatchFree+ content, press Channel Up/Down. Verify channels change with banner display.",
+    "preconditions": "\u2022 TV is powered ON\n\u2022 WatchFree+ accessible or antenna content available\n\u2022 Multiple channels available",
+    "detailed_description": "Launch WatchFree+ and confirm content is playing. Press Channel Up and verify the channel changes to a different program within 3 seconds. Press Channel Down and verify the channel changes again within 3 seconds.",
+    "detailed_expected_output": "WatchFree+ launches and content loads. Channel Up produces a different channel or program within 3 seconds. Channel Down produces a different channel or program within 3 seconds."
+  },
+  {
+    "id": "TC-RMT-008",
+    "category": "Remote Control (IR/BT)",
+    "title": "Verify app shortcut keys (Netflix, etc.)",
+    "description": "Press dedicated app shortcut buttons (Netflix, Disney, Hulu). Verify each launches the correct app directly.",
+    "preconditions": "\u2022 TV is powered ON and Home Screen is active\n\u2022 Netflix, Disney+, and Hulu apps installed\n\u2022 Internet connected",
+    "detailed_description": "From the Home Screen, press the Netflix shortcut key and verify Netflix launches within 30 seconds. Return to Home Screen. Press Disney+ shortcut key and verify Disney+ launches within 30 seconds. Return. Press Hulu shortcut key and verify Hulu launches within 30 seconds.",
+    "detailed_expected_output": "Netflix launches within 30 seconds with Netflix text visible. Disney+ launches within 30 seconds. Hulu launches within 30 seconds. Each shortcut opens the correct app directly."
+  },
+  {
+    "id": "TC-HDMI-001",
+    "category": "Input/HDMI/CEC",
+    "title": "Verify HDMI 1 port detection and video output",
+    "description": "Connect source to HDMI 1. Verify signal detection, input switching.",
+    "preconditions": "\u2022 TV is powered ON\n\u2022 Source device connected to HDMI 1 and powered on",
+    "detailed_description": "Switch the TV to HDMI 1 input. Verify the signal is detected, the input is active, and video content from the source device is displayed.",
+    "detailed_expected_output": "HDMI 1 signal confirmed as connected with signal detected. Current input confirms hdmi1. Active video content displayed."
+  },
+  {
+    "id": "TC-HDMI-002",
+    "category": "Input/HDMI/CEC",
+    "title": "Verify HDMI 2 port detection and video output",
+    "description": "Connect source to HDMI 2. Verify signal detection, input switching.",
+    "preconditions": "\u2022 TV is powered ON\n\u2022 Source device connected to HDMI 2 and powered on",
+    "detailed_description": "Switch the TV to HDMI 2 input. Verify the signal is detected, the input is active, and video content from the source device is displayed.",
+    "detailed_expected_output": "HDMI 2 signal confirmed as connected with signal detected. Current input confirms hdmi2. Active video content displayed."
+  },
+  {
+    "id": "TC-HDMI-003",
+    "category": "Input/HDMI/CEC",
+    "title": "Verify HDMI 3 port detection and video output",
+    "description": "Connect source to HDMI 3. Verify signal detection, input switching.",
+    "preconditions": "\u2022 TV is powered ON\n\u2022 Source device connected to HDMI 3 and powered on",
+    "detailed_description": "Switch the TV to HDMI 3 input. Verify the signal is detected, the input is active, and video content from the source device is displayed.",
+    "detailed_expected_output": "HDMI 3 signal confirmed as connected with signal detected. Current input confirms hdmi3. Active video content displayed."
+  },
+  {
+    "id": "TC-HDMI-004",
+    "category": "Input/HDMI/CEC",
+    "title": "Verify HDMI 4 port detection and video output",
+    "description": "Connect source to HDMI 4 (if available). Verify signal detection, input switching, and video display.",
+    "preconditions": "\u2022 TV is powered ON\n\u2022 Source device connected to HDMI 4 and powered on\n\u2022 Skip test if HDMI 4 port is not present on this model",
+    "detailed_description": "Switch the TV to HDMI 4 input. Verify the signal is detected, the input is active, and video content from the source device is displayed.",
+    "detailed_expected_output": "HDMI 4 signal confirmed as connected with signal detected. (or test skipped if port absent) Current input confirms hdmi4. Active video content displayed."
+  },
+  {
+    "id": "TC-HDMI-005",
+    "category": "Input/HDMI/CEC",
+    "title": "Verify HDMI-CEC device discovery",
+    "description": "Connect CEC device as raw input. verify CEC function by default Enable and only then allow to search for device.",
+    "preconditions": "\u2022 TV is powered ON\n\u2022 CEC-capable device connected to HDMI port\n\u2022 HDMI-CEC enabled in Settings",
+    "detailed_description": "With HDMI-CEC enabled, confirm the TV discovers the connected CEC device. Navigate to the input menu and verify the device name appears instead of the generic 'HDMI X' label.",
+    "detailed_expected_output": "CEC enabled confirmed via text search. Device name appears in input menu instead of generic HDMI label, confirmed via text search."
+  },
+  {
+    "id": "TC-HDMI-006",
+    "category": "Input/HDMI/CEC",
+    "title": "Verify HDMI-CEC one-touch play",
+    "description": "With CEC device function enabled , press Play on the external device. Verify TV auto-switches to that input possible only with one touch play enabled..",
+    "preconditions": "\u2022 TV is powered ON\n\u2022 CEC device connected to HDMI port\n\u2022 HDMI-CEC enabled",
+    "detailed_description": "With CEC enabled and a CEC device connected, press Play on the external device. Verify the TV automatically switches to that HDMI input within 15 seconds and displays the device content. this functionality possible only when one touch play enable. by default it's disable.",
+    "detailed_expected_output": "TV auto-switches to the CEC device's HDMI input within 15 seconds. Active video content from the CEC device is displayed. which can be possible with One touch play enable only."
+  },
+  {
+    "id": "TC-HDMI-007",
+    "category": "Input/HDMI/CEC",
+    "title": "Verify HDMI-CEC system standby",
+    "description": "With CEC enabled, put TV in standby. Verify CEC commands are sent properly.\n(NOTE: CEC standby and a regular power-off both end up updating the same /hw/power/panel key.)",
+    "preconditions": "\u2022 TV is powered ON\n\u2022 CEC device connected to HDMI port\n\u2022 HDMI-CEC enabled",
+    "detailed_description": "With CEC enabled, press Power on the remote to put the TV in standby. Verify the CEC system standby command is processed and the panel turns off. After 5 seconds, wake the TV and verify it returns to the Home Screen.",
+    "detailed_expected_output": "Panel turns off confirming standby. CEC system standby command processed. TV wakes and Home Screen loads."
+  },
+  {
+    "id": "TC-HDMI-008",
+    "category": "Input/HDMI/CEC",
+    "title": "Verify HDMI input auto-switching",
+    "description": "Enable auto input switching. Connect/power on HDMI device. Verify TV automatically switches to the active input.",
+    "preconditions": "\u2022 TV is powered ON\n\u2022 Auto input switching enabled in HDMI Settings\n\u2022 HDMI device connected but powered off",
+    "detailed_description": "With auto input switching enabled, power on the connected HDMI device. Verify the TV automatically switches to that HDMI input within 15 seconds without manual input selection.",
+    "detailed_expected_output": "Current input changes to the active HDMI port within 15 seconds. Signal detected. Non-blank screen from auto-switched input. No manual intervention required."
+  },
+  {
+    "id": "TC-HDMI-009",
+    "category": "Input/HDMI/CEC",
+    "title": "Verify HDMI port naming persistence",
+    "description": "Rename an HDMI input. Power cycle the TV and verify the custom name is retained.",
+    "preconditions": "\u2022 TV is powered ON\n\u2022 HDMI input visible in input menu",
+    "detailed_description": "Navigate to HDMI Settings and rename an HDMI input to 'Game Console'. Confirm the custom name is visible. Power cycle the TV and verify 'Game Console' is still shown in the input menu.",
+    "detailed_expected_output": "Game Console' custom name visible in input menu after rename. Custom name persists after power cycle, confirmed via text search."
+  },
+  {
+    "id": "TC-TUN-001",
+    "category": "Antenna/Tuner",
+    "title": "Verify antenna port channel scan",
+    "description": "Connect antenna. Run channel scan and verify ATSC channels are discovered successfully.",
+    "preconditions": "\u2022 TV is powered ON\n\u2022 Antenna cable connected to RF input port\n\u2022 Broadcast signal available",
+    "detailed_description": "Navigate to Antenna Channels in Settings and run a channel scan. Confirm the scan initiates, runs to completion, and ATSC channels are discovered.",
+    "detailed_expected_output": "Channel scan initiates with 'Scanning' text visible. Scan completes within 300 seconds. Channel count or completion text confirms channels were discovered."
+  },
+  {
+    "id": "TC-TUN-002",
+    "category": "Antenna/Tuner",
+    "title": "Verify ATSC tuner channel reception",
+    "description": "Tune to a scanned antenna channel. Verify video and audio play correctly.",
+    "preconditions": "\u2022 TV is powered ON\n\u2022 Antenna channel scan completed\n\u2022 At least one ATSC channel available",
+    "detailed_description": "Tune to a scanned antenna channel. Verify video and audio are playing correctly from the antenna feed.",
+    "detailed_expected_output": "Non-blank screen with active video from antenna. Video is not stalled. Audio path is active \u2014 volume above 0 and not muted."
+  },
+  {
+    "id": "TC-TUN-003",
+    "category": "Antenna/Tuner",
+    "title": "Verify channel up/down tuning",
+    "description": "While viewing antenna content, press Channel Up/Down. Verify channels change properly.",
+    "preconditions": "\u2022 TV is powered ON and viewing an antenna channel\n\u2022 Multiple channels available",
+    "detailed_description": "Verify TV panel is ON using sysreg check for /hw/power/panel = HAL_PANEL_AND_BACKLIGHT_ON.\nGo to Home and confirm APPS & INPUTS is visible.\nOpen Quick Settings using Menu.\nConfirm Quick Settings opened by finding All Settings.\nFocus All Settings and press Enter.\nConfirm All Settings screen loaded by",
+    "detailed_expected_output": "Channel Up changes to a different channel within 3 seconds. Channel Down changes to a different channel within 3 seconds. Video displayed on each channel."
+  },
+  {
+    "id": "TC-PROV-001",
+    "category": "Device Provisioning",
+    "title": "Verify MAC address assignment (WLAN/Ethernet)",
+    "description": "Navigate to Network Information. Verify MAC addresses for Wi-Fi and Ethernet are displayed correctly.\nStep 1: GoHome and ensure TV is powered ON .\n\nStep 2: Navigate to Network Information: Menu \u2192 All Settings \u2192 Network \u2192 Network Information\n\nStep 3: Verify MAC and ip address values displayed for Wi-",
+    "preconditions": "\u2022 TV is powered ON and Navigate to homescreen and verify connected to a network\n\u2022 Network Information accessible via Settings",
+    "detailed_description": "Navigate to Network Information in Settings. Verify MAC addresses for Wi-Fi and Ethernet are displayed and follow the correct format (XX:XX:XX:XX:XX:XX).",
+    "detailed_expected_output": "Steps:\n\nVerify network is connected via sysreg /hw/network/status = UP (exitLoop on failure)\nNavigate to Settings > Network > Network Information\nbefore going to Network verify the network type via sy"
+  },
+  {
+    "id": "TC-PROV-002",
+    "category": "Device Provisioning",
+    "title": "Verify serial number format compliance",
+    "description": "Navigate to System Information. Verify serial number is displayed and follows correct format.",
+    "preconditions": "\u2022 TV is powered ON\n\u2022 Serial number programmed during factory provisioning",
+    "detailed_description": "Navigate to TV Information in Settings > System. Verify the serial number field is displayed and populated with a non-empty value.",
+    "detailed_expected_output": "Serial Number field visible on System Information screen. Field is populated and non-blank."
+  },
+  {
+    "id": "TC-PROV-003",
+    "category": "Device Provisioning",
+    "title": "Verify ULPK ID configuration",
+    "description": "Check system information for ULPK/ULI ID. Verify it is properly programmed.",
+    "preconditions": "\u2022 TV is powered ON\n\u2022 ULPK/ULI ID programmed during factory provisioning",
+    "detailed_description": "Navigate to TV Information in Settings > System. Verify the ULPK or ULI ID field is present and populated, confirming the key was programmed correctly at the factory.",
+    "detailed_expected_output": "ULPK or ULI text found via text search confirming field exists and is populated. ESN system registry key returns a non-empty value confirming ULPK is programmed."
+  },
+  {
+    "id": "TC-PROV-004",
+    "category": "Device Provisioning",
+    "title": "Verify NOC device registration",
+    "description": "With internet connected, verify the TV successfully registers with the Vizio NOC.",
+    "preconditions": "\u2022 TV is powered ON and connected to internet\n\u2022 Serial number and ULPK programmed",
+    "detailed_description": "With internet connected, verify the TV's device identifier is available and the TV successfully registers with Vizio NOC. Confirm registration status via system info or status text.",
+    "detailed_expected_output": "Network confirmed connected. ESN/device identifier is non-empty. Registration status or account linkage visible, confirming successful NOC registration."
+  },
+  {
+    "id": "TC-OTA-001",
+    "category": "OOB/OTA Updates",
+    "title": "Verify OOBE firmware update check",
+    "description": "During initial OOBE setup, verify firmware update check occurs when connected to network.",
+    "preconditions": "\u2022 TV on first boot or after factory reset\n\u2022 Internet connection available during OOBE",
+    "detailed_description": "During OOBE with the TV connected to internet, verify the firmware update check occurs automatically at the appropriate OOBE step. Confirm either a download begins or an up-to-date message is shown.",
+    "detailed_expected_output": "Firmware update check initiated during OOBE, confirmed by 'Update' or related text. Download starts or 'up to date' status confirmed."
+  },
+  {
+    "id": "TC-OTA-002",
+    "category": "OOB/OTA Updates",
+    "title": "Verify menu Check-for-Updates functionality",
+    "description": "Navigate to Settings > System > Check for Updates. Initiate manual check and verify status is reported.",
+    "preconditions": "\u2022 TV is powered ON and connected to internet\n\u2022 Settings menu accessible",
+    "detailed_description": "Navigate to Settings > System > Check for Updates. Initiate a manual firmware update check and verify the status is reported within 60 seconds.",
+    "detailed_expected_output": "Checking' or 'Searching' text confirms the update check started. Result \u2014 'up to date' or 'Update Available' \u2014 displayed within 60 seconds."
+  },
+  {
+    "id": "TC-OTA-003",
+    "category": "OOB/OTA Updates",
+    "title": "Verify silent standby OTA update",
+    "description": "Enable automatic updates. Put TV in standby with update available. Verify update downloads and installs in standby.",
+    "preconditions": "\u2022 TV is powered ON\n\u2022 Automatic updates enabled in Settings\n\u2022 Firmware update available on server",
+    "detailed_description": "Enable automatic updates and put the TV in standby. Allow the update to download and install silently. After update completes, verify the TV wakes and the new firmware version is visible in System Information.",
+    "detailed_expected_output": "TV wakes from standby with panel ON after update. New firmware version visible in System Information. Update completed without interruption."
+  },
+  {
+    "id": "TC-OTA-004",
+    "category": "OOB/OTA Updates",
+    "title": "Verify firmware version display post-update",
+    "description": "After update, navigate to System Information and verify the new firmware version is displayed correctly.",
+    "preconditions": "\u2022 TV is powered ON after a firmware update has been applied",
+    "detailed_description": "After a firmware update, navigate to Settings > System > TV Information and verify the new firmware version number is displayed correctly.",
+    "detailed_expected_output": "Version text found on TV Information screen. Version string matches the expected update target. Update completion confirmed."
+  },
+  {
+    "id": "TC-OTA-005",
+    "category": "OOB/OTA Updates",
+    "title": "Verify system stability post-update",
+    "description": "After firmware update, perform basic functionality tests (power cycle, app launch, content playback).",
+    "preconditions": "\u2022 TV is powered ON after firmware update has completed",
+    "detailed_description": "After firmware update, run basic smoke tests: power cycle the TV and confirm Home Screen loads within 30 seconds, launch Netflix and confirm it opens, open Settings and navigate without crashes.",
+    "detailed_expected_output": "Power cycle completes with Home Screen loading within 30 seconds. Netflix launches within 30 seconds. Settings navigable without crashes. Vizio Home Page active. No hangs or regressions."
+  },
+  {
+    "id": "TC-OOBE-001",
+    "category": "OOBE/Initial Setup",
+    "title": "Verify OOBE wizard launch on first boot",
+    "description": "On first boot or after factory reset, verify the OOBE setup wizard launches automatically.",
+    "preconditions": "\u2022 TV on first boot or after factory reset\n\u2022 No partial OOBE state from a previous run",
+    "detailed_description": "Power on the TV after factory reset. Verify the OOBE setup wizard launches automatically within 30 seconds without any manual intervention. Confirm the first OOBE screen is displayed.",
+    "detailed_expected_output": "Panel powers ON. OOBE first screen appears within 30 seconds. Non-blank screen confirmed. OOBE wizard auto-launched without user action."
+  },
+  {
+    "id": "TC-OOBE-002",
+    "category": "OOBE/Initial Setup",
+    "title": "Verify OOBE network setup flow",
+    "description": "During OOBE, complete Wi-Fi network connection step successfully.",
+    "preconditions": "\u2022 TV in OOBE at the network setup step\n\u2022 Wi-Fi network available with known SSID and password",
+    "detailed_description": "During OOBE at the Wi-Fi setup step, select the known SSID from the network list, enter the password, and confirm connection. Verify 'Connected' status is shown and OOBE advances to the next step.",
+    "detailed_expected_output": "Network setup screen appears during OOBE. Known SSID visible in list. Password accepted. 'Connected' text visible. OOBE advances past network setup step."
+  },
+  {
+    "id": "TC-OOBE-004",
+    "category": "OOBE/Initial Setup",
+    "title": "Verify OOBE account sign-in flow",
+    "description": "During OOBE, complete (or skip) account sign-in step successfully.",
+    "preconditions": "\u2022 TV in OOBE at the account sign-in step\n\u2022 Network not required \u2014 sign-in will be skipped",
+    "detailed_description": "During OOBE at the account setup step, select the option to set up the account later and skip sign-in. Verify OOBE acknowledges the skip and advances to the next step without errors.",
+    "detailed_expected_output": "Account sign-in or skip option presented. Skip acknowledged. OOBE advances to next step. No errors or hangs during account flow."
+  },
+  {
+    "id": "TC-OOBE-005",
+    "category": "OOBE/Initial Setup",
+    "title": "Verify OOBE completion and home screen",
+    "description": "Complete all OOBE steps and verify the TV reaches the Vizio home screen.",
+    "preconditions": "\u2022 TV has just completed a factory reset and is booting into OOBE\n\u2022 First OOBE screen 'Where is Your TV Located' is displaying\n\u2022 No user account is signed in\n\u2022 Network connection not required \u2014 account",
+    "detailed_description": "Complete all OOBE setup screens and verify the TV lands on the Home Screen.\n\nWait for the 'Where is Your TV Located' screen to appear. Navigate down to 'Living Room', confirm it is focused, and press Enter. Wait for the 'Your TV Has Been Named' screen to appear. Wait for the 'Get the most from your ",
+    "detailed_expected_output": "Each OOBE screen appears in sequence and is confirmed before proceeding: 'Where is Your TV Located', 'Your TV Has Been Named', 'Get the most from your TV', account setup screen. Home Screen 'APPS & IN"
+  },
+  {
+    "id": "TC-APP-001",
+    "category": "Streaming Apps",
+    "title": "Verify SmartCast Home launch",
+    "description": "Press Home button. Verify Vizio Home screen loads with content rows.",
+    "preconditions": "\u2022 TV is powered ON\n\u2022 Home Screen accessible via the Home key",
+    "detailed_description": "Press the Home key on the remote. Verify the Vizio Home Screen loads within 15 seconds with 'APPS & INPUTS' visible. Confirm the active app is the Vizio Home Page. Verify D-pad navigation scrolls through content rows responsively.",
+    "detailed_expected_output": "Home Screen loads within 15 seconds. 'APPS & INPUTS' text visible. Active app confirms Vizio Home Page. D-pad navigation responsive through content rows."
+  },
+  {
+    "id": "TC-APP-002",
+    "category": "Streaming Apps",
+    "title": "Verify WatchFree+ app launch",
+    "description": "Launch WatchFree+ app. Verify it opens and live content streams correctly.",
+    "preconditions": "\u2022 TV is powered ON and Home Screen is active\n\u2022 Internet connection available",
+    "detailed_description": "Launch the WatchFree+ app from the Home Screen. Verify the app opens and live content streams correctly within 30 seconds.",
+    "detailed_expected_output": "WatchFree+ text visible within 30 seconds. Active video content displayed. Content is not stalled. Video playback confirmed active."
+  },
+  {
+    "id": "TC-APP-003",
+    "category": "Streaming Apps",
+    "title": "Verify Netflix app launch",
+    "description": "Launch Netflix app. Verify it opens and UI loads successfully.",
+    "preconditions": "\u2022 TV is powered ON and Home Screen is active\n\u2022 Internet connection available\n\u2022 Netflix app installed",
+    "detailed_description": "Launch the Netflix app from the Home Screen. Verify the app opens and the Netflix UI loads successfully within 30 seconds.",
+    "detailed_expected_output": "Netflix text detected within 30 seconds. Active app confirms Netflix. Non-blank screen. Netflix UI elements visible confirming full app load."
+  },
+  {
+    "id": "TC-APP-004",
+    "category": "Streaming Apps",
+    "title": "Verify YouTube app launch",
+    "description": "Launch YouTube app. Verify it opens, loads content, and video playback works.",
+    "preconditions": "\u2022 TV is powered ON and Home Screen is active\n\u2022 Internet connection available\n\u2022 YouTube app installed",
+    "detailed_description": "Launch the YouTube app from the Home Screen. Verify the app opens, content loads, and video playback is active.",
+    "detailed_expected_output": "YouTube text detected confirming app launch. Active app confirms YouTube. Media state confirms Playing. Video playback active and not stalled."
+  },
+  {
+    "id": "TC-SYS-001",
+    "category": "Settings/System UI",
+    "title": "Verify Settings menu navigation",
+    "description": "Open Settings menu and navigate through all main categories (Picture, Audio, Network, System).",
+    "preconditions": "\u2022 TV is powered ON\n\u2022 Home Screen displaying ('APPS & INPUTS' visible)\n\u2022 All Settings menu accessible via the Menu key\n\u2022 No active dialog boxes or overlays on screen",
+    "detailed_description": "Open the Settings menu and navigate through all top-level Settings categories to verify each one opens correctly and the Back key returns to All Settings each time.\n\nPress the Menu key from the Home Screen and navigate to All Settings, then enter it. The All Settings menu contains 10 top-level categ",
+    "detailed_expected_output": "Picture, Audio, HDMI & Gaming, Network, Bluetooth and Remote, Antenna Channels, Accessibility, System, Support, and Privacy & Legal categories are all accessible. Each category loads its sub-menu item"
+  },
+  {
+    "id": "TC-SYS-002",
+    "category": "Settings/System UI",
+    "title": "Verify System Information display",
+    "description": "Navigate to System Information. Verify all details (Model, Serial, Firmware, IP, MAC) are shown correctly.",
+    "preconditions": "\u2022 TV is powered ON and Home Screen is active ('APPS & INPUTS' visible)\n\u2022 TV has a valid serial number and firmware version in system info\n\u2022 Settings menu accessible via the Menu key",
+    "detailed_description": "Navigate from the Home Screen to the TV Information screen and verify all key information fields are displayed correctly.\n\nPress the Menu key and navigate to All Settings. Wait for 'Picture' to appear, confirming All Settings has loaded. Navigate down to System and enter it. Wait for 'TV Information",
+    "detailed_expected_output": "All Settings loads confirmed by 'Picture' text. System menu loads confirmed by 'TV Information' text. TV Information screen loads confirmed by screen title. Model, Serial Number, and Version field lab"
+  },
+  {
+    "id": "TC-SYS-003",
+    "category": "Settings/System UI",
+    "title": "Verify Factory Reset execution",
+    "description": "Initiate factory reset from Settings. Verify TV resets completely and returns to OOBE.",
+    "preconditions": "\u2022 TV is powered ON and Settings accessible\n\u2022 Any user data to be cleared has been backed up",
+    "detailed_description": "Navigate to Settings > System > Reset & Admin (or equivalent) and initiate a factory reset. Confirm the reset confirmation dialog appears and proceed. Verify the TV reboots and the OOBE wizard launches automatically.",
+    "detailed_expected_output": "Reset confirmation dialog displayed. TV reboots automatically. Panel powers back on. OOBE first screen appears confirming full factory reset. All user data cleared."
+  },
+  {
+    "id": "TC-SYS-004",
+    "category": "Settings/System UI",
+    "title": "Verify Sleep Timer functionality",
+    "description": "Set Sleep Timer. Verify TV automatically enters standby when timer expires.",
+    "preconditions": "\u2022 TV is powered ON and content is playing\n\u2022 Sleep Timer accessible via Settings",
+    "detailed_description": "Navigate to Settings and set the Sleep Timer to the shortest available value. Confirm the timer is set. Wait for the timer to expire and verify the TV automatically enters standby.",
+    "detailed_expected_output": "Sleep Timer set and confirmed via text search. TV enters standby automatically when timer expires \u2014 panel turns off and screen goes blank without user action."
+  },
+  {
+    "id": "TC-SYS-005",
+    "category": "Settings/System UI",
+    "title": "Verify Parental Controls access",
+    "description": "Navigate to Parental Controls. Verify menu is accessible and PIN protection works.",
+    "preconditions": "\u2022 TV is powered ON and Settings accessible\n\u2022 Parental Controls PIN is known (use default if not changed)",
+    "detailed_description": "Verify TV display is ON using sysreg check for panel power.\nGo to Home screen and confirm APPS & INPUTS is visible.\nOpen Quick Settings using Menu.\nConfirm Quick Settings is open by finding All Settings.\nFocus All Settings and press Enter.\nConfirm All Settings root menu is loaded by finding Picture.",
+    "detailed_expected_output": "Parental Controls menu accessible via Settings navigation. PIN entry screen presented. After PIN entry, content restriction settings visible. Rating, Restriction, and Block options confirmed. Back key"
+  }
+]
